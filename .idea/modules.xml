@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/android-support-v4/android-support-v4.iml" filepath="$PROJECT_DIR$/android-support-v4/android-support-v4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/firebase-client-android-2.5.2/firebase-client-android-2.5.2.iml" filepath="$PROJECT_DIR$/firebase-client-android-2.5.2/firebase-client-android-2.5.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/goschedule.iml" filepath="$PROJECT_DIR$/goschedule.iml" />
+    </modules>
+  </component>
+</project>

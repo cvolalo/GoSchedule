@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "847519626230",
+    "firebase_url": "https://goschedule-4ffe9.firebaseio.com",
+    "project_id": "goschedule-4ffe9",
+    "storage_bucket": "goschedule-4ffe9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847519626230:android:401889953b54d99c",
+        "android_client_info": {
+          "package_name": "com.projectprototype"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847519626230-iegtp88ebb4m3cmambhisc48aafteqak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF6dEo0M35X-KSdPdwDgqeM0vCdHNFfrI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
