@@ -2,179 +2,186 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="88848548ab56d4fbf3d2d1b0c85bf1ff9b4c1f4b">
-        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\release\com.google.firebase-firebase-analytics-9.4.0_3681cdbc8f43f28dfb501ff5c90e42a471e688b4.jar" />
-    </item>
-    <item
-        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\libs\internal_impl-24.2.0.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
-        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\release\internal_impl-24.2.0_89fb3f239b8739db97eb9234dbc59cbb1463f4a0.jar" />
-    </item>
-    <item
         jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.4.0\jars\classes.jar"
-        jumboMode="false"
+        jumboMode="true"
         revision="24.0.2"
         sha1="a440fb3fec30ff925e9f601cc458fb6671834cb2">
-        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\release\com.google.firebase-firebase-analytics-impl-9.4.0_9357c3eb3a2af987dbdc9eb45df99ea874b22009.jar" />
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-impl-9.4.0_9357c3eb3a2af987dbdc9eb45df99ea874b22009.jar" />
     </item>
     <item
         jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.0\jars\classes.jar"
-        jumboMode="false"
+        jumboMode="true"
         revision="24.0.2"
         sha1="45f5eda279825ff470e3f51019d374d1ef61e000">
-        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\release\com.android.support-support-v4-24.2.0_3debe55fb46cfc522b508ac669faccaffb85c88b.jar" />
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.0_3debe55fb46cfc522b508ac669faccaffb85c88b.jar" />
     </item>
     <item
-        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\classes.jar"
-        jumboMode="false"
+        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.4.0\jars\classes.jar"
+        jumboMode="true"
         revision="24.0.2"
-        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
-        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\release\com.android.support-support-core-utils-24.2.0_e25242edb5a1108308035e4ebd62a1b900f3a426.jar" />
+        sha1="88848548ab56d4fbf3d2d1b0c85bf1ff9b4c1f4b">
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-9.4.0_3681cdbc8f43f28dfb501ff5c90e42a471e688b4.jar" />
     </item>
     <item
-        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.4.0\jars\classes.jar"
-        jumboMode="false"
+        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
         revision="24.0.2"
-        sha1="18b5697c65c4fe5b7381613b8b8ae9ac52e26fa7">
-        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\release\com.google.firebase-firebase-common-9.4.0_b8c87bb98ff315f6bb4cdeb4e79ae9300dc42e94.jar" />
-    </item>
-    <item
-        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
-        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\release\internal_impl-24.2.0_913ae6ab131e120d2f6a6a0f20d28fcd3d1dc83b.jar" />
-    </item>
-    <item
-        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="3b7173b3df4c7029699919414400041f64519e34">
-        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\release\com.google.firebase-firebase-iid-9.4.0_368a16389616796436ab64db807de0e5e03bff86.jar" />
-    </item>
-    <item
-        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="34762013d39dbe6c656050589c44e8b61b9a2c5d">
-        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\release\com.google.firebase-firebase-auth-common-9.4.0_200e43dbec6e513b8e4cd109b202059da788c776.jar" />
-    </item>
-    <item
-        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
-        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\release\com.android.support-support-core-ui-24.2.0_aa331a7599883f7d727fd6388c61083159156279.jar" />
-    </item>
-    <item
-        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="8a36d229011e75f0caef408e1adf0d3fd4d94e02">
-        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-tasks-9.4.0_12f434b412f9a0374fcb9e6ab0cae9b6fc8f6ca5.jar" />
-    </item>
-    <item
-        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
-        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\release\internal_impl-24.2.0_2502d2cfb9a321d69b420fcdd65e6ce2adc0cd28.jar" />
-    </item>
-    <item
-        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="6bc41d9d6fd12d2ef23c785a259011001f4a1a5b">
-        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\release\com.google.firebase-firebase-auth-module-9.4.0_bd7b8cf12fbc98bd1e79f4bdf64c960eda735de9.jar" />
-    </item>
-    <item
-        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="3dee4ce5844d39d843d503fb8fe04e51e5bfffac">
-        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-base-9.4.0_c8d07ae618cbd1012be9df7250bdf0ce52696626.jar" />
-    </item>
-    <item
-        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
-        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\release\com.android.support-support-compat-24.2.0_a457dab05b3733fa2510120b6f668b87e2336c38.jar" />
-    </item>
-    <item
-        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
-        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\release\com.android.support-support-fragment-24.2.0_9ef3c0fbfa7c9c2772d3aa403006449ee4d5ef2d.jar" />
-    </item>
-    <item
-        jar="C:\Users\christine.m.v.olalo\android-sdks\extras\android\m2repository\com\android\support\support-annotations\24.2.0\support-annotations-24.2.0.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
-        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\release\support-annotations-24.2.0_56031e76e25fb9e475b5dd9a8c400631b5868ba9.jar" />
-    </item>
-    <item
-        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="4b630471536351be7c3c3100735c75b7ad2cbd84">
-        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\release\com.google.firebase-firebase-auth-9.4.0_e810f0f91b4afc4aa470a53cf26682c1fd837b40.jar" />
-    </item>
-    <item
-        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
-        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-basement-9.4.0_4bedf95d5e90a4682de76f7e9d836fb0631166f0.jar" />
-    </item>
-    <item
-        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="0e4d53465cc141bec58f18a894e4c4e80633fa32">
-        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\release\com.google.firebase-firebase-database-connection-9.4.0_4a578b20b66c0757cf5293c15de276f27af8bb2e.jar" />
-    </item>
-    <item
-        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="84bf369090a8f7e293817efbd6ccf31ada1be32b">
-        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\release\com.google.firebase-firebase-database-9.4.0_569253d58236d9275ede98e4c35b251206c372a7.jar" />
-    </item>
-    <item
-        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\firebase-client-android-2.5.2\firebase-client-android-2.5.2.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="b54cf0400e2248d6c133c7b0a77dea1be09978cc">
-        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\release\firebase-client-android-2.5.2_a50ef52ac4840fade32cac6da2596c19d51af16e.jar" />
-    </item>
-    <item
-        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
-        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\release\com.android.support-support-media-compat-24.2.0_9929a5e20dac0a4be37c69507f109303a0df7fbe.jar" />
+        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\internal_impl-24.2.0_89fb3f239b8739db97eb9234dbc59cbb1463f4a0.jar" />
     </item>
     <item
         jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\libs\internal_impl-24.2.0.jar"
-        jumboMode="false"
+        jumboMode="true"
         revision="24.0.2"
         sha1="6e02e34594ebe9c0501ffda8dd48497f81b82977">
-        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\release\internal_impl-24.2.0_4bc771b904a6289e0d9e235e27894c58c375b726.jar" />
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\internal_impl-24.2.0_4bc771b904a6289e0d9e235e27894c58c375b726.jar" />
+    </item>
+    <item
+        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="18b5697c65c4fe5b7381613b8b8ae9ac52e26fa7">
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-common-9.4.0_b8c87bb98ff315f6bb4cdeb4e79ae9300dc42e94.jar" />
+    </item>
+    <item
+        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.0_e25242edb5a1108308035e4ebd62a1b900f3a426.jar" />
+    </item>
+    <item
+        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\internal_impl-24.2.0_913ae6ab131e120d2f6a6a0f20d28fcd3d1dc83b.jar" />
+    </item>
+    <item
+        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="34762013d39dbe6c656050589c44e8b61b9a2c5d">
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-auth-common-9.4.0_200e43dbec6e513b8e4cd109b202059da788c776.jar" />
+    </item>
+    <item
+        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="4b630471536351be7c3c3100735c75b7ad2cbd84">
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-auth-9.4.0_e810f0f91b4afc4aa470a53cf26682c1fd837b40.jar" />
+    </item>
+    <item
+        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="6046789f830d25ae45154ad1e691e036e0c7170a">
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\instant-run_b7eadf7ae1b0a0de4c8242a2087216dd56d4a6ba.jar" />
+    </item>
+    <item
+        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="3b7173b3df4c7029699919414400041f64519e34">
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-iid-9.4.0_368a16389616796436ab64db807de0e5e03bff86.jar" />
+    </item>
+    <item
+        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.0_aa331a7599883f7d727fd6388c61083159156279.jar" />
+    </item>
+    <item
+        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="8a36d229011e75f0caef408e1adf0d3fd4d94e02">
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-9.4.0_12f434b412f9a0374fcb9e6ab0cae9b6fc8f6ca5.jar" />
+    </item>
+    <item
+        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\internal_impl-24.2.0_2502d2cfb9a321d69b420fcdd65e6ce2adc0cd28.jar" />
+    </item>
+    <item
+        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="6bc41d9d6fd12d2ef23c785a259011001f4a1a5b">
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-auth-module-9.4.0_bd7b8cf12fbc98bd1e79f4bdf64c960eda735de9.jar" />
+    </item>
+    <item
+        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.0_9ef3c0fbfa7c9c2772d3aa403006449ee4d5ef2d.jar" />
+    </item>
+    <item
+        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="3dee4ce5844d39d843d503fb8fe04e51e5bfffac">
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-9.4.0_c8d07ae618cbd1012be9df7250bdf0ce52696626.jar" />
+    </item>
+    <item
+        jar="C:\Users\christine.m.v.olalo\android-sdks\extras\android\m2repository\com\android\support\support-annotations\24.2.0\support-annotations-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\support-annotations-24.2.0_56031e76e25fb9e475b5dd9a8c400631b5868ba9.jar" />
+    </item>
+    <item
+        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.0_a457dab05b3733fa2510120b6f668b87e2336c38.jar" />
+    </item>
+    <item
+        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-9.4.0_4bedf95d5e90a4682de76f7e9d836fb0631166f0.jar" />
+    </item>
+    <item
+        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="0e4d53465cc141bec58f18a894e4c4e80633fa32">
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-connection-9.4.0_4a578b20b66c0757cf5293c15de276f27af8bb2e.jar" />
+    </item>
+    <item
+        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="84bf369090a8f7e293817efbd6ccf31ada1be32b">
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-9.4.0_569253d58236d9275ede98e4c35b251206c372a7.jar" />
+    </item>
+    <item
+        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.0_9929a5e20dac0a4be37c69507f109303a0df7fbe.jar" />
+    </item>
+    <item
+        jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="696e22f95c6d3ecc97b8670bc594bde3c47176f3">
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\instant-run-bootstrap_675cf7cc685814e94ff13bf0c230ad0c46db1206.jar" />
     </item>
     <item
         jar="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\libs\internal_impl-24.2.0.jar"
-        jumboMode="false"
+        jumboMode="true"
         revision="24.0.2"
         sha1="60d7b23621d31e6f42f4f76f16af467e57a20cda">
-        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\release\internal_impl-24.2.0_8909a76735167767e78603f70c8596df69434688.jar" />
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\internal_impl-24.2.0_8909a76735167767e78603f70c8596df69434688.jar" />
     </item>
 
 </items>

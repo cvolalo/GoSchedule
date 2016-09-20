@@ -65,7 +65,7 @@ public class LoginActivity extends Activity{
 					// User is signed out
 					//Log.d(TAG, "onAuthStateChanged:signed_out");
 				}
-				// ...
+				// ........
 			}
 		};
 	}

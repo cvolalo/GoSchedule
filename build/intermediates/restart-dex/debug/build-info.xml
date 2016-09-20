@@ -3,27 +3,27 @@
     abi="x86,armeabi-v7a"
     api-level="19"
     format="7"
-    timestamp="778414013341765"
+    timestamp="1198750100106444"
     token="-6759926061676127798" >
 
     <task
         name="javac"
-        duration="487" />
+        duration="3138" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="9631" />
+        duration="29167" />
     <task
         name="verifier"
-        duration="8649" />
+        duration="19026" />
 
     <artifact
         location="C:\Users\christine.m.v.olalo\workspace\goschedule\build\outputs\apk\goschedule-debug.apk"
         type="MAIN" />
 
-    <build timestamp="778414013341765" >
+    <build timestamp="1198750100106444" >
         <artifact
             location="C:\Users\christine.m.v.olalo\workspace\goschedule\build\outputs\apk\goschedule-debug.apk"
             type="MAIN" />
