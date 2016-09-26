@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\christine.m.v.olalo\workspace\goschedule\src\main\shaders"/></dataSet><dataSet config="debug"><source path="C:\Users\christine.m.v.olalo\workspace\goschedule\build-types\debug\shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="C:\Users\christine.m.v.olalo\Documents\goschedule\src\main\shaders"/></dataSet><dataSet config="debug"><source path="C:\Users\christine.m.v.olalo\Documents\goschedule\build-types\debug\shaders"/></dataSet></merger>

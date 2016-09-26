@@ -6,7 +6,9 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
-import com.firebase.client.Firebase;
+//import com.firebase.client.Firebase;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import android.app.Activity;
 import android.app.DatePickerDialog;
@@ -150,9 +152,12 @@ public class LeaveActivity extends Activity implements OnItemSelectedListener {
 		date = dateArr[0] + "-" + dateArr[1] + "-" + dateArr[2];
 		name = name.replace(".","-");
 
-		Firebase.setAndroidContext(this);
-		Firebase ref = new Firebase("https://goschedule-50998.firebaseio.com/");
-		Firebase dateRef = ref.child("dates");
+		//Firebase.setAndroidContext(this);
+		//Firebase ref = new Firebase("https://goschedule-4ffe9.firebaseio.com/");
+		FirebaseDatabase database = FirebaseDatabase.getInstance();
+		DatabaseReference dateRef = database.getReference("dates");
+		//Firebase dateRef = ref.child("dates");
+		//DatabaseReference dateRef = ref.child("dates");
 		
 		Map<String, Object> dataput = new HashMap<String, Object>();
 		dataput.put("name", name);
