@@ -81,7 +81,8 @@
             android:layout_weight="0.75"
             android:ems="10"
 			android:inputType="date"
-			android:hint="mm/dd/yyyy" />
+			android:hint="mm/dd/yyyy"
+			android:focusableInTouchMode="false"/>
     </LinearLayout>
 
     <LinearLayout

@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\res\\merged\\debug\\values-uk\\values-uk.xml",
+        "outputFile": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\res\\merged\\debug\\values-uk\\values-uk.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,368 @@
                     "endOffset": 210
                 },
                 "from": {
-                    "file": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-uk\\values-uk.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 109,
+                        "endOffset": 160
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 215,
+                    "endColumn": 107,
+                    "endOffset": 318
+                },
+                "from": {
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-uk\\values-uk.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 165,
+                        "endColumn": 107,
+                        "endOffset": 268
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 323,
+                    "endColumn": 122,
+                    "endOffset": 441
+                },
+                "from": {
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-uk\\values-uk.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 273,
+                        "endColumn": 122,
+                        "endOffset": 391
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 446,
+                    "endColumn": 101,
+                    "endOffset": 543
+                },
+                "from": {
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-uk\\values-uk.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 396,
+                        "endColumn": 101,
+                        "endOffset": 493
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 548,
+                    "endColumn": 105,
+                    "endOffset": 649
+                },
+                "from": {
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-uk\\values-uk.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 498,
+                        "endColumn": 105,
+                        "endOffset": 599
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 654,
+                    "endColumn": 85,
+                    "endOffset": 735
+                },
+                "from": {
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-uk\\values-uk.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 604,
+                        "endColumn": 85,
+                        "endOffset": 685
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 740,
+                    "endColumn": 107,
+                    "endOffset": 843
+                },
+                "from": {
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-uk\\values-uk.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 690,
+                        "endColumn": 107,
+                        "endOffset": 793
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 848,
+                    "endColumn": 117,
+                    "endOffset": 961
+                },
+                "from": {
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-uk\\values-uk.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 798,
+                        "endColumn": 117,
+                        "endOffset": 911
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 966,
+                    "endColumn": 78,
+                    "endOffset": 1040
+                },
+                "from": {
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-uk\\values-uk.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 916,
+                        "endColumn": 78,
+                        "endOffset": 990
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 1045,
+                    "endColumn": 79,
+                    "endOffset": 1120
+                },
+                "from": {
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-uk\\values-uk.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 995,
+                        "endColumn": 79,
+                        "endOffset": 1070
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1125,
+                    "endColumn": 80,
+                    "endOffset": 1201
+                },
+                "from": {
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-uk\\values-uk.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1075,
+                        "endColumn": 80,
+                        "endOffset": 1151
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 1206,
+                    "endColumn": 105,
+                    "endOffset": 1307
+                },
+                "from": {
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-uk\\values-uk.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1156,
+                        "endColumn": 105,
+                        "endOffset": 1257
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 1312,
+                    "endColumn": 106,
+                    "endOffset": 1414
+                },
+                "from": {
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-uk\\values-uk.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1262,
+                        "endColumn": 106,
+                        "endOffset": 1364
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1419,
+                    "endColumn": 97,
+                    "endOffset": 1512
+                },
+                "from": {
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-uk\\values-uk.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1369,
+                        "endColumn": 97,
+                        "endOffset": 1462
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1517,
+                    "endColumn": 107,
+                    "endOffset": 1620
+                },
+                "from": {
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-uk\\values-uk.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1467,
+                        "endColumn": 107,
+                        "endOffset": 1570
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1625,
+                    "endColumn": 105,
+                    "endOffset": 1726
+                },
+                "from": {
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-uk\\values-uk.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1575,
+                        "endColumn": 105,
+                        "endOffset": 1676
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1731,
+                    "endColumn": 108,
+                    "endOffset": 1835
+                },
+                "from": {
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-uk\\values-uk.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1681,
+                        "endColumn": 108,
+                        "endOffset": 1785
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1840,
+                    "endColumn": 123,
+                    "endOffset": 1959
+                },
+                "from": {
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-uk\\values-uk.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1790,
+                        "endColumn": 123,
+                        "endOffset": 1909
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1964,
+                    "endColumn": 99,
+                    "endOffset": 2059
+                },
+                "from": {
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-uk\\values-uk.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1914,
+                        "endColumn": 99,
+                        "endOffset": 2009
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 2064,
+                    "endColumn": 109,
+                    "endOffset": 2169
+                },
+                "from": {
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -23,14 +384,14 @@
             },
             {
                 "to": {
-                    "startLine": 3,
+                    "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 215,
+                    "startOffset": 2174,
                     "endColumn": 194,
-                    "endOffset": 405
+                    "endOffset": 2364
                 },
                 "from": {
-                    "file": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -42,14 +403,14 @@
             },
             {
                 "to": {
-                    "startLine": 4,
+                    "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 410,
+                    "startOffset": 2369,
                     "endColumn": 128,
-                    "endOffset": 534
+                    "endOffset": 2493
                 },
                 "from": {
-                    "file": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -61,14 +422,14 @@
             },
             {
                 "to": {
-                    "startLine": 5,
+                    "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 539,
+                    "startOffset": 2498,
                     "endColumn": 131,
-                    "endOffset": 666
+                    "endOffset": 2625
                 },
                 "from": {
-                    "file": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -80,14 +441,14 @@
             },
             {
                 "to": {
-                    "startLine": 6,
+                    "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 671,
+                    "startOffset": 2630,
                     "endColumn": 218,
-                    "endOffset": 885
+                    "endOffset": 2844
                 },
                 "from": {
-                    "file": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -99,14 +460,14 @@
             },
             {
                 "to": {
-                    "startLine": 7,
+                    "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 890,
+                    "startOffset": 2849,
                     "endColumn": 219,
-                    "endOffset": 1105
+                    "endOffset": 3064
                 },
                 "from": {
-                    "file": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -118,14 +479,14 @@
             },
             {
                 "to": {
-                    "startLine": 8,
+                    "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 1110,
+                    "startOffset": 3069,
                     "endColumn": 130,
-                    "endOffset": 1236
+                    "endOffset": 3195
                 },
                 "from": {
-                    "file": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -137,14 +498,14 @@
             },
             {
                 "to": {
-                    "startLine": 9,
+                    "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 1241,
+                    "startOffset": 3200,
                     "endColumn": 133,
-                    "endOffset": 1370
+                    "endOffset": 3329
                 },
                 "from": {
-                    "file": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -156,14 +517,14 @@
             },
             {
                 "to": {
-                    "startLine": 10,
+                    "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 1375,
+                    "startOffset": 3334,
                     "endColumn": 249,
-                    "endOffset": 1620
+                    "endOffset": 3579
                 },
                 "from": {
-                    "file": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\9.4.0\\res\\values-uk\\values.xml",
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\9.4.0\\res\\values-uk\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -175,14 +536,14 @@
             },
             {
                 "to": {
-                    "startLine": 11,
+                    "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 1625,
+                    "startOffset": 3584,
                     "endColumn": 259,
-                    "endOffset": 1880
+                    "endOffset": 3839
                 },
                 "from": {
-                    "file": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -194,14 +555,14 @@
             },
             {
                 "to": {
-                    "startLine": 12,
+                    "startLine": 31,
                     "startColumn": 4,
-                    "startOffset": 1885,
+                    "startOffset": 3844,
                     "endColumn": 122,
-                    "endOffset": 2003
+                    "endOffset": 3962
                 },
                 "from": {
-                    "file": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -213,14 +574,14 @@
             },
             {
                 "to": {
-                    "startLine": 13,
+                    "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 2008,
+                    "startOffset": 3967,
                     "endColumn": 107,
-                    "endOffset": 2111
+                    "endOffset": 4070
                 },
                 "from": {
-                    "file": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -232,14 +593,14 @@
             },
             {
                 "to": {
-                    "startLine": 14,
+                    "startLine": 33,
                     "startColumn": 4,
-                    "startOffset": 2116,
+                    "startOffset": 4075,
                     "endColumn": 192,
-                    "endOffset": 2304
+                    "endOffset": 4263
                 },
                 "from": {
-                    "file": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -251,14 +612,14 @@
             },
             {
                 "to": {
-                    "startLine": 15,
+                    "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 2309,
+                    "startOffset": 4268,
                     "endColumn": 126,
-                    "endOffset": 2431
+                    "endOffset": 4390
                 },
                 "from": {
-                    "file": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -270,14 +631,14 @@
             },
             {
                 "to": {
-                    "startLine": 16,
+                    "startLine": 35,
                     "startColumn": 4,
-                    "startOffset": 2436,
+                    "startOffset": 4395,
                     "endColumn": 205,
-                    "endOffset": 2637
+                    "endOffset": 4596
                 },
                 "from": {
-                    "file": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -289,14 +650,14 @@
             },
             {
                 "to": {
-                    "startLine": 17,
+                    "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 2642,
+                    "startOffset": 4601,
                     "endColumn": 132,
-                    "endOffset": 2770
+                    "endOffset": 4729
                 },
                 "from": {
-                    "file": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -308,14 +669,14 @@
             },
             {
                 "to": {
-                    "startLine": 18,
+                    "startLine": 37,
                     "startColumn": 4,
-                    "startOffset": 2775,
+                    "startOffset": 4734,
                     "endColumn": 171,
-                    "endOffset": 2942
+                    "endOffset": 4901
                 },
                 "from": {
-                    "file": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -327,14 +688,14 @@
             },
             {
                 "to": {
-                    "startLine": 19,
+                    "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 2947,
+                    "startOffset": 4906,
                     "endColumn": 99,
-                    "endOffset": 3042
+                    "endOffset": 5001
                 },
                 "from": {
-                    "file": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -346,14 +707,14 @@
             },
             {
                 "to": {
-                    "startLine": 20,
+                    "startLine": 39,
                     "startColumn": 4,
-                    "startOffset": 3047,
+                    "startOffset": 5006,
                     "endColumn": 90,
-                    "endOffset": 3133
+                    "endOffset": 5092
                 },
                 "from": {
-                    "file": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -365,20 +726,58 @@
             },
             {
                 "to": {
-                    "startLine": 21,
+                    "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 3138,
+                    "startOffset": 5097,
                     "endColumn": 116,
-                    "endOffset": 3250
+                    "endOffset": 5209
                 },
                 "from": {
-                    "file": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-uk\\values.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
                         "startOffset": 3112,
                         "endColumn": 116,
                         "endOffset": 3224
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 5214,
+                    "endColumn": 80,
+                    "endOffset": 5290
+                },
+                "from": {
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-uk\\values-uk.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 2014,
+                        "endColumn": 80,
+                        "endOffset": 2090
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 5295,
+                    "endColumn": 100,
+                    "endOffset": 5391
+                },
+                "from": {
+                    "file": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-uk\\values-uk.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 2095,
+                        "endColumn": 100,
+                        "endOffset": 2191
                     }
                 }
             }

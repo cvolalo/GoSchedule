@@ -3,10 +3,16 @@ package com.projectprototype;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-import com.firebase.client.DataSnapshot;
-import com.firebase.client.Firebase;
-import com.firebase.client.FirebaseError;
-import com.firebase.client.ValueEventListener;
+//import com.firebase.client.DataSnapshot;
+//import com.firebase.client.Firebase;
+//import com.firebase.client.FirebaseError;
+//import com.firebase.client.ValueEventListener;
+//import com.firebase.client.FirebaseError;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 //import com.examples.android.calendar.CalendarAdapter;
 //import com.examples.android.calendar.R;
@@ -74,8 +80,10 @@ public class MainActivity extends Activity {
 		gridview.setAdapter(adapter);
 		
 		//Get Firebase Data
-		Firebase.setAndroidContext(this);
-		Firebase ref = new Firebase("https://goschedule-50998.firebaseio.com/dates");
+		//Firebase.setAndroidContext(this);
+		//Firebase ref = new Firebase("https://goschedule-4ffe9.firebaseio.com/dates");
+		FirebaseDatabase database = FirebaseDatabase.getInstance();
+		DatabaseReference ref = database.getReference("dates");
 		
 		ref.addValueEventListener(new ValueEventListener() {
 		    @Override
@@ -90,10 +98,16 @@ public class MainActivity extends Activity {
 		          //System.out.println(post.getAuthor() + " - " + post.getTitle());
 		        }
 		    }
-		    @Override
-		    public void onCancelled(FirebaseError firebaseError) {
-		          System.out.println("The read failed: " + firebaseError.getMessage());
-		    }
+
+			@Override
+			public void onCancelled(DatabaseError databaseError) {
+				//System.out.println("The read failed: " + firebaseError.getMessage());
+			}
+
+			//@Override
+		    //public void onCancelled(FirebaseError firebaseError) {
+		    //      System.out.println("The read failed: " + firebaseError.getMessage());
+		    //}
 		});
 		
 		   

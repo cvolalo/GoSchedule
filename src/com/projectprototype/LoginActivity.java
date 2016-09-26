@@ -8,6 +8,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -21,8 +22,8 @@ import android.widget.Toast;
 public class LoginActivity extends Activity{
 	
 	TextView loginE;
-	String email;
-	String password;
+	String email = "";
+	String password = "";
 	TextView loginPass;
 	Button loginButt;
 
@@ -85,12 +86,33 @@ public class LoginActivity extends Activity{
 	}
 	
 	public void login(View view) {
-		
-		//Toast.makeText(getApplicationContext(), "Log-in Success!", Toast.LENGTH_LONG).show();
-		email = loginE.getText().toString();
-		password = loginPass.getText().toString();
-		email = email + "@accenture.com";
-		
+
+
+
+
+            email = loginE.getText().toString();
+            password = loginPass.getText().toString();
+            if (email.equals("") || password.equals("")){
+                Toast.makeText(LoginActivity.this, "Please provide necessary information!",
+                        Toast.LENGTH_SHORT).show();
+                email = "error@accenture.com";
+                password = "errorpass";
+                return;
+            }
+
+            email = email + "@accenture.com";
+
+            final ProgressDialog progressDialog = new ProgressDialog(LoginActivity.this);
+            progressDialog.setIndeterminate(true);
+            progressDialog.setMessage("Authenticating...");
+            progressDialog.show();
+
+
+
+
+
+
+
 		//Firebase.setAndroidContext(this);
 		//Firebase ref = new Firebase("https://goschedule-12ee6.firebaseio.com/");
 		
@@ -109,26 +131,27 @@ public class LoginActivity extends Activity{
 		    }
 		});			**/
 
-		mAuth.signInWithEmailAndPassword(email, password)
-				.addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-					@Override
-					public void onComplete(@NonNull Task<AuthResult> task) {
-						//Log.d(TAG, "signInWithEmail:onComplete:" + task.isSuccessful());
+        mAuth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        //Log.d(TAG, "signInWithEmail:onComplete:" + task.isSuccessful());
 
-						// If sign in fails, display a message to the user. If sign in succeeds
-						// the auth state listener will be notified and logic to handle the
-						// signed in user can be handled in the listener.
-						if (!task.isSuccessful()) {
-							//Log.w(TAG, "signInWithEmail:failed", task.getException());
-							Toast.makeText(LoginActivity.this, "Log-in Failed!",
-									Toast.LENGTH_SHORT).show();
-						}
+                        // If sign in fails, display a message to the user. If sign in succeeds
+                        // the auth state listener will be notified and logic to handle the
+                        // signed in user can be handled in the listener.
+                        if (!task.isSuccessful()) {
+                            //Log.w(TAG, "signInWithEmail:failed", task.getException());
+                            Toast.makeText(LoginActivity.this, "Log-in Failed!",
+                                    Toast.LENGTH_SHORT).show();
 
-						// ...
-					}
-				});
+                        }
+                        progressDialog.cancel();
+                        // ...
+                    }
+                });
 
 	}
-	
-	
+
+
 }
