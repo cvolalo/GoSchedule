@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:orientation="vertical" >
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#3f9dd1">
 
     <RelativeLayout
         android:id="@+id/authenticationHeaderContainer"
@@ -36,15 +37,12 @@
         android:paddingBottom="56dp"
         android:paddingLeft="24dp"
         android:paddingRight="24dp"
-        android:paddingTop="56dp" >
+        android:paddingTop="45dp" >
 
         <ImageView
-            android:layout_width="249dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="24dp"
-            android:layout_weight="0.26"
-            android:src="@drawable/splash" />
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_icon"/>
 
         <EditText
             android:id="@+id/loginEmail"
@@ -52,8 +50,9 @@
             android:layout_height="wrap_content"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:textColor="#0097a7"
-            android:textColorHint="#0097a7" />
+            android:paddingTop="40dp"
+            android:textColor="@color/white"
+            android:textColorHint="#FF404040" />
 
         <EditText
             android:id="@+id/loginPassword"
@@ -62,18 +61,18 @@
             android:layout_marginTop="15dp"
             android:hint="Password"
             android:inputType="textPassword"
-            android:textColor="#0097a7"
-            android:textColorHint="#0097a7" />
+            android:textColor="@color/white"
+            android:textColorHint="#FF404040" />
 
         <Button
             android:id="@+id/loginButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="220dp"
+            android:layout_height="45dp"
             android:layout_marginTop="20dp"
-            android:background="#0097a7"
+            android:background="@drawable/login_button"
             android:onClick="login"
-            android:text="LOG IN"
-            android:textColor="@color/white" />
+            android:longClickable="true" />
+
     </LinearLayout>
 
 </LinearLayout>
