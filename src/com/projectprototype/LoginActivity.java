@@ -15,6 +15,7 @@ import android.support.annotation.NonNull;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
+import android.view.animation.AlphaAnimation;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -86,9 +87,8 @@ public class LoginActivity extends Activity{
 	}
 	
 	public void login(View view) {
-
-
-
+		final AlphaAnimation buttonClick = new AlphaAnimation(1F, 0.2F);
+		view.startAnimation(buttonClick);
 
             email = loginE.getText().toString();
             password = loginPass.getText().toString();
