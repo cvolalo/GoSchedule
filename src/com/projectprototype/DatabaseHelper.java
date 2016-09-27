@@ -111,6 +111,39 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 		}
 		return output;
 	}
+
+	public List<String> getAllInName(String name) {
+		List<String> output = new ArrayList<String>();
+		Integer id;
+		String date;
+		String type;
+
+		//Log.i("myApp", date);
+		// select book query
+		//String query = "SELECT  * FROM " + table_LEAVES;
+		String query = "SELECT  * FROM Leaves WHERE name = '" + name + "'";
+
+		// get reference of the BookDB database
+		SQLiteDatabase db = this.getWritableDatabase();
+		Cursor cursor = db.rawQuery(query, null);
+
+		// parse all results
+		if (cursor.moveToFirst()) {
+			do {
+				id = Integer.parseInt(cursor.getString(0));
+				date = cursor.getString(2);
+				type = cursor.getString(3);
+
+				// Add book to books
+				//Log.i("myApp", Integer.toString(id));
+				//Log.i("myApp", name + " ( " + type + " ) ");
+				output.add(date + " ( " + type + " ) ");
+				//Log.i("myApp", cursor.getString(2));
+				//Log.i("myapp", output.get(id-1));
+			} while (cursor.moveToNext());
+		}
+		return output;
+	}
 	
 	public boolean dateHit(String day, String monthyear){
 		String date;

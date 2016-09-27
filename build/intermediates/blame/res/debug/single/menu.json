@@ -1,10 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\res\\merged\\debug\\menu\\global.xml",
-        "source": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\res\\menu\\global.xml"
+        "merged": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\res\\menu\\main.xml"
     },
     {
-        "merged": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
-        "source": "C:\\Users\\christine.m.v.olalo\\Documents\\goschedule\\res\\menu\\main.xml"
+        "merged": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\res\\merged\\debug\\menu\\global.xml",
+        "source": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\res\\menu\\global.xml"
     }
 ]
