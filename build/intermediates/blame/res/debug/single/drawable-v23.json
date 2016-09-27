@@ -1,6 +1,11 @@
 [
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\res\\merged\\debug\\drawable-v23\\abc_control_background_material.xml",
         "source": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-v23\\abc_control_background_material.xml"
+=======
+        "merged": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\res\\merged\\debug\\drawable-v23\\abc_control_background_material.xml",
+        "source": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-v23\\abc_control_background_material.xml"
+>>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
     }
 ]

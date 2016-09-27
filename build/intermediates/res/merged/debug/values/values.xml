@@ -296,6 +296,7 @@
     <string name="leavebutton">File Leave</string>
     <string name="logstring">Log Leave</string>
     <string name="search_menu_title">Search</string>
+    <string name="searchbutton">Search by EID</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="title_activity_leave">LeaveActivity</string>
     <string name="title_activity_login">LoginActivity</string>

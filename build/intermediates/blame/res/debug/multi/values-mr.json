@@ -1,6 +1,10 @@
 [
     {
+<<<<<<< HEAD
         "outputFile": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\res\\merged\\debug\\values-mr\\values-mr.xml",
+=======
+        "outputFile": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\res\\merged\\debug\\values-mr\\values-mr.xml",
+>>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
         "map": [
             {
                 "to": {
@@ -11,7 +15,11 @@
                     "endOffset": 210
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+=======
+                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+>>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -30,7 +38,11 @@
                     "endOffset": 406
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+=======
+                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+>>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -49,7 +61,11 @@
                     "endOffset": 532
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+=======
+                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+>>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -68,7 +84,11 @@
                     "endOffset": 656
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+=======
+                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+>>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -87,7 +107,11 @@
                     "endOffset": 861
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+=======
+                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+>>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -106,7 +130,11 @@
                     "endOffset": 1070
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+=======
+                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+>>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -125,7 +153,11 @@
                     "endOffset": 1193
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+=======
+                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+>>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -144,7 +176,11 @@
                     "endOffset": 1322
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+=======
+                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+>>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -163,7 +199,11 @@
                     "endOffset": 1559
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\9.4.0\\res\\values-mr\\values.xml",
+=======
+                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\9.4.0\\res\\values-mr\\values.xml",
+>>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -182,7 +222,11 @@
                     "endOffset": 1807
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+=======
+                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+>>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -201,7 +245,11 @@
                     "endOffset": 1927
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+=======
+                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+>>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -220,7 +268,11 @@
                     "endOffset": 2040
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+=======
+                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+>>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -239,7 +291,11 @@
                     "endOffset": 2225
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+=======
+                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+>>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -258,7 +314,11 @@
                     "endOffset": 2354
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+=======
+                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+>>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -277,7 +337,11 @@
                     "endOffset": 2555
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+=======
+                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+>>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -296,7 +360,11 @@
                     "endOffset": 2691
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+=======
+                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+>>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -315,7 +383,11 @@
                     "endOffset": 2877
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+=======
+                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+>>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -334,7 +406,11 @@
                     "endOffset": 2967
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+=======
+                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+>>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -353,7 +429,11 @@
                     "endOffset": 3063
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+=======
+                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+>>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -372,7 +452,11 @@
                     "endOffset": 3173
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+=======
+                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-mr\\values.xml",
+>>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
