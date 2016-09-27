@@ -185,11 +185,22 @@
 	   	android:gravity="center"
 		/>
 
+	<Button
+		android:id="@+id/searchbutton"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/calendar"
+		android:layout_centerHorizontal="true"
+		android:background="#0097a7"
+		android:onClick="searchLeave"
+		android:text="@string/searchbutton"
+		android:textColor="@color/white" />
+
     <Button
         android:id="@+id/leavebutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/calendar"
+        android:layout_below="@+id/searchbutton"
         android:layout_centerHorizontal="true"
         android:background="#0097a7"
         android:onClick="logLeave"

@@ -40,6 +40,7 @@ public class MainActivity extends Activity {
 	public CalendarAdapter adapter;
 	public Handler handler;
 	public ArrayList<String> items;
+	public String nameConverted;
 	
 	//Resource class for Firebase use
 	public static class Resource {
@@ -92,7 +93,9 @@ public class MainActivity extends Activity {
 		    	db.deleteAll();
 		        for (DataSnapshot personSnapshot: snapshot.getChildren()) {
 		          Resource person = personSnapshot.getValue(Resource.class);
-		          db.createLog(person.getName(),person.getDate(),person.getType());
+                    nameConverted = person.getName();
+                    nameConverted = nameConverted.replace("-",".");
+		          db.createLog(nameConverted,person.getDate(),person.getType());
 		          handler = new Handler();
 		  		  handler.post(calendarUpdater);
 		          //System.out.println(post.getAuthor() + " - " + post.getTitle());
@@ -182,11 +185,17 @@ public class MainActivity extends Activity {
 		//String message = intentHome.getStringExtra("message");
 		//Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
 	}
-	
+
 	public void logLeave(View view) {
         Intent intent1 = new Intent(this, LeaveActivity.class);
         intent1.putExtra("message", "Please Log Details");
         startActivity(intent1);
+    }
+
+    public void searchLeave(View view) {
+        Intent intent2 = new Intent(this, SearchEIDActivity.class);
+        intent2.putExtra("message", "Please Log Resource EID");
+        startActivity(intent2);
     }
 
 	public void refreshCalendar()
@@ -263,6 +272,10 @@ public class MainActivity extends Activity {
 		}
 	};
 
-		
+    /**@Override
+    public void onDestroy() {
+        super.onStart();
+        mAuth.addAuthStateListener(mAuthListener);
+    }**/
 	
 }
