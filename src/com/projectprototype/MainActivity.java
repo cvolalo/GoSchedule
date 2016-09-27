@@ -18,6 +18,7 @@ import com.google.firebase.database.ValueEventListener;
 //import com.examples.android.calendar.R;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -69,8 +70,8 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_main);
-		
-		//Initialize Calendar View with Gridview
+
+        //Initialize Calendar View with Gridview
 		month = Calendar.getInstance();
 		setDateToday();
 		
@@ -79,6 +80,11 @@ public class MainActivity extends Activity {
 		   
 		GridView gridview = (GridView) findViewById(R.id.gridview);
 		gridview.setAdapter(adapter);
+
+        final ProgressDialog progressDialog = new ProgressDialog(MainActivity.this);
+        progressDialog.setIndeterminate(true);
+        progressDialog.setMessage("Retrieving Data...");
+        progressDialog.show();
 		
 		//Get Firebase Data
 		//Firebase.setAndroidContext(this);
@@ -90,6 +96,8 @@ public class MainActivity extends Activity {
 		    @Override
 		    public void onDataChange(DataSnapshot snapshot) {
 		        //System.out.println("There are " + snapshot.getChildrenCount() + " blog posts");
+                progressDialog.show();
+
 		    	db.deleteAll();
 		        for (DataSnapshot personSnapshot: snapshot.getChildren()) {
 		          Resource person = personSnapshot.getValue(Resource.class);
@@ -100,6 +108,8 @@ public class MainActivity extends Activity {
 		  		  handler.post(calendarUpdater);
 		          //System.out.println(post.getAuthor() + " - " + post.getTitle());
 		        }
+
+                progressDialog.cancel();
 		    }
 
 			@Override
