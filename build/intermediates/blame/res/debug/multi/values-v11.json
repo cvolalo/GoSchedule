@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "outputFile": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\res\\merged\\debug\\values-v11\\values-v11.xml",
-=======
-        "outputFile": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\res\\merged\\debug\\values-v11\\values-v11.xml",
->>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
         "map": [
             {
                 "to": {
@@ -16,11 +12,7 @@
                     "endOffset": 191
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\res\\values-v11\\styles.xml",
-=======
-                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\res\\values-v11\\styles.xml",
->>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -41,11 +33,7 @@
                     "endOffset": 610
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
-=======
-                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
->>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -66,11 +54,7 @@
                     "endOffset": 1035
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
-=======
-                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
->>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -91,11 +75,7 @@
                     "endOffset": 1463
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
-=======
-                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
->>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -116,11 +96,7 @@
                     "endOffset": 1889
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
-=======
-                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
->>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -141,11 +117,7 @@
                     "endOffset": 2316
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
-=======
-                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
->>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
@@ -166,11 +138,7 @@
                     "endOffset": 2741
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
-=======
-                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
->>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 32,
                         "startColumn": 4,
@@ -190,11 +158,7 @@
                     "endOffset": 2830
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
-=======
-                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
->>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 38,
                         "startColumn": 4,
@@ -213,11 +177,7 @@
                     "endOffset": 2931
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
-=======
-                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
->>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 39,
                         "startColumn": 4,
@@ -236,11 +196,7 @@
                     "endOffset": 3034
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
-=======
-                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
->>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 40,
                         "startColumn": 4,
@@ -260,11 +216,7 @@
                     "endOffset": 3442
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
-=======
-                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
->>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 41,
                         "startColumn": 4,
@@ -285,11 +237,7 @@
                     "endOffset": 3862
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
-=======
-                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
->>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 46,
                         "startColumn": 4,
@@ -310,11 +258,7 @@
                     "endOffset": 4284
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
-=======
-                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
->>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 51,
                         "startColumn": 4,
@@ -335,11 +279,7 @@
                     "endOffset": 4391
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
-=======
-                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
->>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 56,
                         "startColumn": 4,
@@ -360,11 +300,7 @@
                     "endOffset": 4520
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
-=======
-                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
->>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 58,
                         "startColumn": 4,
@@ -384,11 +320,7 @@
                     "endOffset": 4591
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
-=======
-                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
->>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 60,
                         "startColumn": 4,
@@ -407,11 +339,7 @@
                     "endOffset": 4674
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
-=======
-                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
->>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 61,
                         "startColumn": 4,
@@ -431,11 +359,7 @@
                     "endOffset": 8605
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
-=======
-                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
->>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 62,
                         "startColumn": 4,
@@ -456,11 +380,7 @@
                     "endOffset": 12679
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
-=======
-                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
->>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 115,
                         "startColumn": 4,
@@ -480,11 +400,7 @@
                     "endOffset": 12770
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
-=======
-                    "file": "C:\\Users\\allen.v.bautista\\AndroidWorkspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v11\\values-v11.xml",
->>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
                     "position": {
                         "startLine": 169,
                         "startColumn": 4,

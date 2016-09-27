@@ -564,19 +564,13 @@ int drawable icon 0x7f020080
 int drawable item_background 0x7f020081
 int drawable item_background_focused 0x7f020082
 int drawable list_item_background 0x7f020083
-<<<<<<< HEAD
 int drawable login_button 0x7f020084
 int drawable login_icon 0x7f020085
 int drawable login_page_background 0x7f020086
 int drawable notification_template_icon_bg 0x7f020089
 int drawable splash 0x7f020087
 int drawable splash_2 0x7f020088
-int id action0 0x7f0c007f
-=======
-int drawable notification_template_icon_bg 0x7f020085
-int drawable splash 0x7f020084
 int id action0 0x7f0c0084
->>>>>>> 9be5cb5b11aa3c678fa8182e7e300ecf7f06280b
 int id action_bar 0x7f0c004d
 int id action_bar_activity_content 0x7f0c0000
 int id action_bar_container 0x7f0c004c

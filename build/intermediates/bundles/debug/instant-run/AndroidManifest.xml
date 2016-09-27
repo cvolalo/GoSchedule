@@ -9,6 +9,11 @@
         android:targetSdkVersion="22" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
  <!-- Optional permission for App measurement to run. -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -35,20 +40,17 @@
         </activity>
         <activity
             android:name="com.projectprototype.LoginActivity"
-            android:label="@string/title_activity_login" >
-        </activity>
+            android:label="@string/title_activity_login" />
         <activity
             android:name="com.projectprototype.MainActivity"
-            android:label="@string/app_name" >
-        </activity>
+            android:label="@string/app_name" />
         <activity
             android:name="com.projectprototype.LeaveActivity"
-            android:label="@string/title_activity_leave" >
-        </activity>
+            android:label="@string/title_activity_leave" />
         <activity
             android:name="com.projectprototype.ViewLeaveActivity"
-            android:label="@string/title_activity_view_leave" >
-        </activity>
+            android:label="@string/title_activity_view_leave" />
+        <activity android:name="com.projectprototype.SearchEIDActivity" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
