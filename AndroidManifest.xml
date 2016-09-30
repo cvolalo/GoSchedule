@@ -22,23 +22,23 @@
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login"></activity>
+            android:label="@string/title_activity_login" />
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name"></activity>
+            android:label="@string/app_name" />
         <activity
             android:name=".LeaveActivity"
-            android:label="@string/title_activity_leave"></activity>
+            android:label="@string/title_activity_leave" />
         <activity
             android:name=".ViewLeaveActivity"
-            android:label="@string/title_activity_view_leave"></activity>
-        <activity android:name=".SearchEIDActivity"></activity>
+            android:label="@string/title_activity_view_leave" />
+        <activity android:name=".SearchEIDActivity" />
+        <activity android:name=".AdminActivity"></activity>
     </application>
 
 </manifest>

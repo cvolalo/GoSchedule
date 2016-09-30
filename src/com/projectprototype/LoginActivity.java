@@ -5,6 +5,12 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 
 import android.app.Activity;
@@ -27,6 +33,7 @@ public class LoginActivity extends Activity{
 	String password = "";
 	TextView loginPass;
 	Button loginButt;
+
 
 	private FirebaseAuth mAuth;
 	private FirebaseAuth.AuthStateListener mAuthListener;
@@ -54,16 +61,22 @@ public class LoginActivity extends Activity{
 			public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
 				FirebaseUser user = firebaseAuth.getCurrentUser();
 				if (user != null) {
-					Toast.makeText(LoginActivity.this, "Log-in Success!"
-							,Toast.LENGTH_SHORT).show();
-					Intent mainIntent = new Intent(LoginActivity.this,MainActivity.class);
-					LoginActivity.this.startActivity(mainIntent);
-					LoginActivity.this.finish();
+					//Toast.makeText(LoginActivity.this, "Log-in Success!"
+					//		,Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Welcome!", Toast.LENGTH_SHORT).show();
+                    Intent mainIntent = new Intent(LoginActivity.this, MainActivity.class);
+                    mainIntent.putExtra("eid", loginE.getText().toString());
+                    LoginActivity.this.startActivity(mainIntent);
+                    LoginActivity.this.finish();
+
+                    //int count = names[0].length() - names[0].replace(",","").length();
+                    //Toast.makeText(LoginActivity.this, names[0], Toast.LENGTH_SHORT).show();
+
 					// User is signed in
 					//Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
 				} else {
-					Toast.makeText(LoginActivity.this, "Log-in Success but no user found!"
-							,Toast.LENGTH_SHORT).show();
+					//Toast.makeText(LoginActivity.this, "Log-in Success but no user found!"
+					//		,Toast.LENGTH_SHORT).show();
 					// User is signed out
 					//Log.d(TAG, "onAuthStateChanged:signed_out");
 				}
@@ -107,12 +120,6 @@ public class LoginActivity extends Activity{
             progressDialog.setMessage("Authenticating...");
             progressDialog.show();
 
-
-
-
-
-
-
 		//Firebase.setAndroidContext(this);
 		//Firebase ref = new Firebase("https://goschedule-12ee6.firebaseio.com/");
 		
@@ -142,9 +149,7 @@ public class LoginActivity extends Activity{
                         // signed in user can be handled in the listener.
                         if (!task.isSuccessful()) {
                             //Log.w(TAG, "signInWithEmail:failed", task.getException());
-                            Toast.makeText(LoginActivity.this, "Log-in Failed!",
-                                    Toast.LENGTH_SHORT).show();
-
+                            Toast.makeText(LoginActivity.this, "Log-in Failed!", Toast.LENGTH_SHORT).show();
                         }
                         progressDialog.cancel();
                         // ...

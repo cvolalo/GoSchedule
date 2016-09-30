@@ -12,6 +12,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 //import com.examples.android.calendar.CalendarAdapter;
@@ -33,6 +34,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 	DatabaseHelper db = new DatabaseHelper(this);
@@ -42,6 +44,12 @@ public class MainActivity extends Activity {
 	public Handler handler;
 	public ArrayList<String> items;
 	public String nameConverted;
+    boolean adminCheck = false;
+    boolean dbSyncCheck = false;
+    String[] names = new String[1];
+    String EID;
+
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
 	
 	//Resource class for Firebase use
 	public static class Resource {
@@ -71,6 +79,9 @@ public class MainActivity extends Activity {
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_main);
 
+        Intent intentReceived = getIntent();
+        EID = intentReceived.getExtras().getString("eid");
+
         //Initialize Calendar View with Gridview
 		month = Calendar.getInstance();
 		setDateToday();
@@ -81,22 +92,22 @@ public class MainActivity extends Activity {
 		GridView gridview = (GridView) findViewById(R.id.gridview);
 		gridview.setAdapter(adapter);
 
-        final ProgressDialog progressDialog = new ProgressDialog(MainActivity.this);
-        progressDialog.setIndeterminate(true);
-        progressDialog.setMessage("Retrieving Data...");
-        progressDialog.show();
-		
+        //final ProgressDialog progressDialog1 = new ProgressDialog(MainActivity.this);
+        //final ProgressDialog progressDialog = new ProgressDialog(MainActivity.this);
+        //progressDialog1.setIndeterminate(true);
+        //progressDialog1.setMessage("Retrieving Data...");
+        //progressDialog1.show();
+
+        DatabaseReference ref = database.getReference("dates");
+
 		//Get Firebase Data
 		//Firebase.setAndroidContext(this);
 		//Firebase ref = new Firebase("https://goschedule-4ffe9.firebaseio.com/dates");
-		FirebaseDatabase database = FirebaseDatabase.getInstance();
-		DatabaseReference ref = database.getReference("dates");
-		
+
 		ref.addValueEventListener(new ValueEventListener() {
 		    @Override
 		    public void onDataChange(DataSnapshot snapshot) {
 		        //System.out.println("There are " + snapshot.getChildrenCount() + " blog posts");
-                progressDialog.show();
 
 		    	db.deleteAll();
 		        for (DataSnapshot personSnapshot: snapshot.getChildren()) {
@@ -109,8 +120,7 @@ public class MainActivity extends Activity {
 		          //System.out.println(post.getAuthor() + " - " + post.getTitle());
 		        }
 
-                progressDialog.cancel();
-		    }
+            }
 
 			@Override
 			public void onCancelled(DatabaseError databaseError) {
@@ -281,6 +291,78 @@ public class MainActivity extends Activity {
 			adapter.notifyDataSetChanged();
 		}
 	};
+
+    public void onStart() {
+        super.onStart();
+
+        if (adminCheck) {
+            Toast.makeText(MainActivity.this, "Welcome Admin!", Toast.LENGTH_SHORT).show();
+            Intent mainIntent = new Intent(MainActivity.this, AdminActivity.class);
+            MainActivity.this.startActivity(mainIntent);
+            MainActivity.this.finish();
+        }
+
+        final ProgressDialog progressDialog2 = new ProgressDialog(MainActivity.this);
+        progressDialog2.setIndeterminate(true);
+        progressDialog2.setMessage("Checking "+EID+" role...");
+        progressDialog2.show();
+
+        //DatabaseReference mDatabase;
+        //mDatabase = FirebaseDatabase.getInstance().getReference();
+        Query adminQuery = database.getReference().child("admin").limitToFirst(20);
+
+        //adminQuery.addValueEventListener(new ValueEventListener() {
+        adminQuery.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                for (DataSnapshot adminSnapshot: dataSnapshot.getChildren()) {
+                    String value = (String) adminSnapshot.getValue();
+                    names[0] = value;
+                    names[0] = names[0].replaceAll("\\s","");
+                    //Toast.makeText(LoginActivity.this, names[0], Toast.LENGTH_SHORT).show();
+
+                    String[] admins = names[0].split(",");
+
+                    for (int i = 0; i < admins.length ; i++){
+                        if (admins[i].equals(EID)){
+                            //Toast.makeText(LoginActivity.this, "admin", Toast.LENGTH_SHORT).show();
+                            adminCheck = true;
+                        }
+                    }
+
+                    if (names[0].length() > 1) {
+                        dbSyncCheck = true;
+                    }
+
+                    if (adminCheck) {
+                        Toast.makeText(MainActivity.this, "Welcome Admin!", Toast.LENGTH_SHORT).show();
+                        progressDialog2.cancel();
+                        Intent mainIntent = new Intent(MainActivity.this, AdminActivity.class);
+                        MainActivity.this.startActivity(mainIntent);
+                        MainActivity.this.finish();
+                    }
+                    else{
+                        progressDialog2.cancel();
+                    }
+                    // do your stuff here with value
+                }
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        //if (mAuthListener != null) {
+        //    mAuth.removeAuthStateListener(mAuthListener);
+        //}
+    }
 
     /**@Override
     public void onDestroy() {

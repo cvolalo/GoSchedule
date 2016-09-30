@@ -2,209 +2,6 @@
 <items version="2" >
 
     <item
-<<<<<<< HEAD
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="0e4d53465cc141bec58f18a894e4c4e80633fa32">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-connection-9.4.0_23ee228197f559b8d710579ebaa3f68d77d4e9b7.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\support-annotations-24.2.1_59942bd2d52c0c511034a862972349e3fc52cbb1.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="88848548ab56d4fbf3d2d1b0c85bf1ff9b4c1f4b">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-9.4.0_b7513cf8234c9e8cb3e985bcf08f0d227edb3c73.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="34762013d39dbe6c656050589c44e8b61b9a2c5d">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-auth-common-9.4.0_db091c8d6aef12fd202b41a30bc829b82478cc91.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_a08c62cea0b052eadf961808237ff1c71ca9cde1.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_3799e4f64e5fda741865a545328d24f8e006987f.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.1_a687d5c27d63dee9747dacab6a96e952136cdb79.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="18b5697c65c4fe5b7381613b8b8ae9ac52e26fa7">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-common-9.4.0_6b7c0170d1b2168a9a8ea86ebc922fa2719e9fff.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="8a36d229011e75f0caef408e1adf0d3fd4d94e02">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-9.4.0_f28efe56464a35ef553b5783bb349e66fd93e018.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_ef01cbab0aed655ecbbba2433fa0c390abdafb69.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.1_6fd667718c11191c1cd2674d27b738537c4d6481.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_d37380829c85f34bf1183198dc5d2286ec2299a6.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_fc1f05eda7994664fef548e18628cd818c3f678a.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_a1e1c9c55df494809133b369bc1157b1de2eb6be.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="3dee4ce5844d39d843d503fb8fe04e51e5bfffac">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-9.4.0_623e7096ea00ddad7dbfc0a1a18149d3827fce99.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.1_d94e79cb35a2bc206ed031589c093436b2bd62b1.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_cc9d7c592ed9734b459a6b25730ae3bc25dae86c.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_812d7a495780f7b90421fa5e073b1682072b6d85.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-9.4.0_6eb58e2dcf7f7a6b82852e17dbd000c3dcc6f00d.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_e130c35db9cee46a78a159cf067b4a60f4ba6f54.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="4b630471536351be7c3c3100735c75b7ad2cbd84">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-auth-9.4.0_62099d500a860fb38b9269e6ae769a5204aa04ed.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="6bc41d9d6fd12d2ef23c785a259011001f4a1a5b">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-auth-module-9.4.0_913994e5670b435ba6cdd141ff89701e624f01f9.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="84bf369090a8f7e293817efbd6ccf31ada1be32b">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-9.4.0_aadd449805e7b85d921bcc7f949fefa5c3686c28.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="a440fb3fec30ff925e9f601cc458fb6671834cb2">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-impl-9.4.0_16fa293473f0b609b977eae0e16ad989bf7627f6.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.1_da052af7b78cceab432b3819d49a6009982fa027.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_ffc765083e13a0c090f66fc7fa6c71c3adc40b12.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="2a0b44d4ac9f12fa502e55810206c6dc55d96ea3">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\instant-run-bootstrap_c9fd4cdd59d534c638a230b54b665db56e693404.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="3b7173b3df4c7029699919414400041f64519e34">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-iid-9.4.0_d3671d40e29589d1d1affcefddb88a0e069409f7.jar" />
-    </item>
-    <item
-        jar="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="ed9134fde14167dc27735d7a97b5cadc88c94a6b">
-        <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\instant-run_787c56c937a6d5719e5c756dd115809e6e78bc41.jar" />
-=======
         jar="C:\Users\allen.v.bautista\AndroidWorkspace\goschedule\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
         jumboMode="true"
         revision="24.0.2"
@@ -285,7 +82,7 @@
         jar="C:\Users\allen.v.bautista\AndroidWorkspace\goschedule\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="24.0.2"
-        sha1="769bca2b76af032fe4f417b3665b1eccf9f8dcfe">
+        sha1="ddc59aa3aaf1ab5a06c3d11ddedd53159da2fd76">
         <dex dex="C:\Users\allen.v.bautista\AndroidWorkspace\goschedule\build\intermediates\pre-dexed\debug\instant-run_1279474ec2f9e7f6fd2e08f5c62a8d8c5555c7a1.jar" />
     </item>
     <item
@@ -404,9 +201,8 @@
         jar="C:\Users\allen.v.bautista\AndroidWorkspace\goschedule\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="24.0.2"
-        sha1="cf0bed018628bb55bd407157a2bd231a999b272d">
+        sha1="8789884bd197903dd7b42d4fdcfad32cd5929b40">
         <dex dex="C:\Users\allen.v.bautista\AndroidWorkspace\goschedule\build\intermediates\pre-dexed\debug\instant-run-bootstrap_6c2d3b745e2a3408ea35a8982f2b9d9788e72bf1.jar" />
->>>>>>> SearchFunction
     </item>
 
 </items>

@@ -4,53 +4,29 @@
     api-level="19"
     density="hdpi"
     format="7"
-<<<<<<< HEAD
-    timestamp="119804182749286"
-    token="5379212512138768799" >
-
-    <task
-        name="javac"
-        duration="1527" />
-=======
-    timestamp="81085308614127"
+    timestamp="357783386320324"
     token="-252499115188520815" >
 
     <task
         name="javac"
-        duration="611" />
->>>>>>> SearchFunction
+        duration="577" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-<<<<<<< HEAD
-        duration="1013" />
+        duration="830" />
     <task
         name="verifier"
-        duration="2262" />
-
-    <artifact
-        location="C:\Users\arvin.o.tupil\Workspace\goschedule\build\outputs\apk\goschedule-debug.apk"
-        type="MAIN" />
-
-    <build timestamp="119804182749286" >
-        <artifact
-            location="C:\Users\arvin.o.tupil\Workspace\goschedule\build\outputs\apk\goschedule-debug.apk"
-=======
-        duration="409" />
-    <task
-        name="verifier"
-        duration="842" />
+        duration="218" />
 
     <artifact
         location="C:\Users\allen.v.bautista\AndroidWorkspace\goschedule\build\outputs\apk\goschedule-debug.apk"
         type="MAIN" />
 
-    <build timestamp="81085308614127" >
+    <build timestamp="357783386320324" >
         <artifact
             location="C:\Users\allen.v.bautista\AndroidWorkspace\goschedule\build\outputs\apk\goschedule-debug.apk"
->>>>>>> SearchFunction
             type="MAIN" />
     </build>
 
