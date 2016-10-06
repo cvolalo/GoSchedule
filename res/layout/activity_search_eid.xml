@@ -43,28 +43,24 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal" >
 
-            <TextView
-                android:id="@+id/textViewEID1"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.25"
-                android:text="EID:"
-                android:textAppearance="?android:attr/textAppearanceLarge"			/>
 
             <EditText
                 android:id="@+id/searchName"
+                android:background="@drawable/search_background"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:layout_weight="0.75"
                 android:ems="10"
-                android:hint="Enter name"
+                android:hint="Enter EID"
+                android:paddingLeft="60dp"
                 android:inputType="text|textPersonName"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="60dp"
-            android:orientation="horizontal" >
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp" >
 
             <View
                 android:layout_width="0dp"

@@ -4,6 +4,8 @@
     <string name="app_name">GoSchedule</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="signout">Sign Out</string>
+    <string name="weekview">Week View</string>
     <string name="title_activity_leave">LeaveActivity</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="searchbutton">Search by EID</string>
@@ -16,7 +18,7 @@
         <item>Emergency Leave</item>
         <item>Holiday</item>
         <item>Maternity Leave</item>
-        <item>Offset</item>
+        <item>Offset</item>.
         <item>Sick Leave</item>
         <item>Training</item>
         <item>Vacation Leave</item>
