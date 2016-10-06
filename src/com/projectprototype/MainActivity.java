@@ -8,12 +8,14 @@ import java.util.Calendar;
 //import com.firebase.client.FirebaseError;
 //import com.firebase.client.ValueEventListener;
 //import com.firebase.client.FirebaseError;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+import com.projectprototype.lib.WeekView;
 
 //import com.examples.android.calendar.CalendarAdapter;
 //import com.examples.android.calendar.R;
@@ -48,6 +50,7 @@ public class MainActivity extends Activity {
     boolean dbSyncCheck = false;
     String[] names = new String[1];
     String EID;
+    private FirebaseAuth mAuth;
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
 	
@@ -255,11 +258,29 @@ public class MainActivity extends Activity {
 	// as you specify a parent activity in AndroidManifest.xml.
 	int id = item.getItemId();
 
-	if (id == R.id.action_settings) {
+	/*if (id == R.id.action_settings) {
 	    return true;
+	}*/
+    if (id == R.id.weekview){
+		Intent intent = new Intent(this, WeekViewActivity.class);
+
+		startActivity(intent);
+    }
+
+    if (id == R.id.signout) {
+
+        mAuth = FirebaseAuth.getInstance();
+        mAuth.signOut();
+        Intent intent = new Intent(this, LoginActivity.class);
+        final ProgressDialog progressDialog = new ProgressDialog(MainActivity.this);
+        progressDialog.setIndeterminate(true);
+        progressDialog.setMessage("Signing out...");
+        progressDialog.show();
+        startActivity(intent);
+        intent.putExtra("message", "You are signed out.");
 	}
 
-    //if (id == R.id.signout)
+
 
 	return super.onOptionsItemSelected(item);
 	}
@@ -373,5 +394,7 @@ public class MainActivity extends Activity {
         super.onStart();
         mAuth.addAuthStateListener(mAuthListener);
     }**/
+
+
 	
 }
