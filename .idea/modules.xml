@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/android-support-v4/android-support-v4.iml" filepath="$PROJECT_DIR$/android-support-v4/android-support-v4.iml" />
       <module fileurl="file://$PROJECT_DIR$/firebase-client-android-2.5.2/firebase-client-android-2.5.2.iml" filepath="$PROJECT_DIR$/firebase-client-android-2.5.2/firebase-client-android-2.5.2.iml" />
       <module fileurl="file://$PROJECT_DIR$/goschedule.iml" filepath="$PROJECT_DIR$/goschedule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
     </modules>
   </component>
 </project>

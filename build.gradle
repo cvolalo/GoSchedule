@@ -18,6 +18,10 @@ dependencies {
     //compile 'com.android.support:support-v4:24.2.0'
     //compile project(':firebase-client-android-2.5.2')
     //compile project(':android-support-v4')
+    compile project(path: ':library')
+    compile project(path: ':library')
+    compile project(path: ':library')
+    compile project(path: ':library')
 }
 
 android {
