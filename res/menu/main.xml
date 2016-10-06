@@ -4,9 +4,15 @@
     tools:context="com.devopssit.goschedule.MainActivity" >
 
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/weekview"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="@string/weekview"
+        android:showAsAction="never"/>
+
+    <item
+        android:id="@+id/signout"
+        android:orderInCategory="100"
+        android:title="@string/signout"
         android:showAsAction="never"/>
 
 </menu>
