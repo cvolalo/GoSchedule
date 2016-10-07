@@ -343,6 +343,7 @@
     <item name="home" type="id"/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
+    <item name="searchmenu" type="id"/>
     <item name="signout" type="id"/>
     <item name="split_action_bar" type="id"/>
     <item name="up" type="id"/>
@@ -417,6 +418,7 @@
     <string name="logstring">Log Leave</string>
     <string name="search_menu_title">Search</string>
     <string name="searchbutton">Search by EID</string>
+    <string name="searchmenu">Search</string>
     <string name="signout">Sign Out</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="title_activity_leave">LeaveActivity</string>
