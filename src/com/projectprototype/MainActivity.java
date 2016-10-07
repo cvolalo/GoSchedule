@@ -25,6 +25,8 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -38,7 +40,7 @@ import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
 	DatabaseHelper db = new DatabaseHelper(this);
 	Button logLeaveButton;
 	public Calendar month;
@@ -81,6 +83,8 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		//this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_main);
+		Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+		setSupportActionBar(myToolbar);
 
         Intent intentReceived = getIntent();
         EID = intentReceived.getExtras().getString("eid");
@@ -277,7 +281,7 @@ public class MainActivity extends Activity {
         progressDialog.setMessage("Signing out...");
         progressDialog.show();
         startActivity(intent);
-        intent.putExtra("message", "You are signed out.");
+
 	}
 
 

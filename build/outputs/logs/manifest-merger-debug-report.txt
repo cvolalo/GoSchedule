@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\christine.m.v.olalo\workspace\goschedule\AndroidManifest.xml:2:1-45:12
+ADDED from C:\Users\christine.m.v.olalo\workspace\goschedule\AndroidManifest.xml:2:1-48:12
 	package
 		ADDED from C:\Users\christine.m.v.olalo\workspace\goschedule\AndroidManifest.xml:3:5-35
 		INJECTED from C:\Users\christine.m.v.olalo\workspace\goschedule\AndroidManifest.xml
@@ -70,7 +70,7 @@ ADDED from C:\Users\christine.m.v.olalo\workspace\goschedule\AndroidManifest.xml
 	android:name
 		ADDED from C:\Users\christine.m.v.olalo\workspace\goschedule\AndroidManifest.xml:15:30-85
 application
-ADDED from C:\Users\christine.m.v.olalo\workspace\goschedule\AndroidManifest.xml:17:5-43:19
+ADDED from C:\Users\christine.m.v.olalo\workspace\goschedule\AndroidManifest.xml:17:5-46:19
 MERGED from [com.google.firebase:firebase-core:9.4.0] C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-core\9.4.0\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-analytics:9.4.0] C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.4.0\AndroidManifest.xml:26:5-41:19
 MERGED from [com.google.android.gms:play-services-basement:9.4.0] C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.4.0\AndroidManifest.xml:20:5-24:19
@@ -96,6 +96,8 @@ MERGED from [com.android.support:animated-vector-drawable:24.2.1] C:\Users\chris
 		ADDED from C:\Users\christine.m.v.olalo\workspace\goschedule\AndroidManifest.xml:18:9-35
 	android:icon
 		ADDED from C:\Users\christine.m.v.olalo\workspace\goschedule\AndroidManifest.xml:19:9-43
+	android:theme
+		ADDED from C:\Users\christine.m.v.olalo\workspace\goschedule\AndroidManifest.xml:21:9-65
 activity#com.projectprototype.SplashActivity
 ADDED from C:\Users\christine.m.v.olalo\workspace\goschedule\AndroidManifest.xml:22:9-27:20
 	android:name
@@ -139,9 +141,13 @@ ADDED from C:\Users\christine.m.v.olalo\workspace\goschedule\AndroidManifest.xml
 	android:name
 		ADDED from C:\Users\christine.m.v.olalo\workspace\goschedule\AndroidManifest.xml:41:13-46
 activity#com.projectprototype.AdminActivity
-ADDED from C:\Users\christine.m.v.olalo\workspace\goschedule\AndroidManifest.xml:42:9-60
+ADDED from C:\Users\christine.m.v.olalo\workspace\goschedule\AndroidManifest.xml:42:9-43:45
 	android:name
-		ADDED from C:\Users\christine.m.v.olalo\workspace\goschedule\AndroidManifest.xml:42:19-48
+		ADDED from C:\Users\christine.m.v.olalo\workspace\goschedule\AndroidManifest.xml:43:13-42
+activity#com.projectprototype.WeekViewActivity
+ADDED from C:\Users\christine.m.v.olalo\workspace\goschedule\AndroidManifest.xml:44:9-45:48
+	android:name
+		ADDED from C:\Users\christine.m.v.olalo\workspace\goschedule\AndroidManifest.xml:45:13-45
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-analytics:9.4.0] C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.4.0\AndroidManifest.xml:22:5-79
 MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.4.0\AndroidManifest.xml:22:5-79
