@@ -1,6 +1,7 @@
 package com.projectprototype;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import android.content.ContentValues;
@@ -9,6 +10,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
+
+import com.projectprototype.lib.WeekViewEvent;
 
 public class DatabaseHelper extends SQLiteOpenHelper{
 	// database version
@@ -163,5 +166,70 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 			} while (cursor.moveToNext());
 		}
 		return false;
+	}
+
+	public List<? extends WeekViewEvent> getAll() {
+
+		List<WeekViewEvent> events = new ArrayList<WeekViewEvent>();
+
+		Integer id;
+		String name;
+		String type;
+		String date;
+		int hour = 1;
+		Integer tempDay = 0;
+		Integer tempMonth = 0;
+
+
+
+
+		String query = "SELECT  * FROM Leaves ORDER BY date";
+		SQLiteDatabase db = this.getWritableDatabase();
+		Cursor cursor = db.rawQuery(query, null);
+
+		// parse all results
+		if (cursor.moveToFirst()) {
+			do {
+
+				id = Integer.parseInt(cursor.getString(0));
+				name = cursor.getString(1);
+				type = cursor.getString(3);
+				date = cursor.getString(2);
+				//Context context = null;
+				String[] dateParts = date.split("-");
+				int dateMonth = Integer.parseInt(dateParts[0]);
+				int dateDay = Integer.parseInt(dateParts[1]);
+				int dateYear = Integer.parseInt(dateParts[2]);
+
+				dateMonth = dateMonth + 1;
+
+
+				if(dateDay != tempDay || dateMonth != tempMonth){
+					hour = 1;
+
+				}
+
+				Calendar startTime = Calendar.getInstance();
+				startTime.set(Calendar.HOUR_OF_DAY, hour - 1);
+				startTime.set(Calendar.MINUTE, 0);
+				startTime.set(Calendar.MONTH, dateMonth - 2);
+				startTime.set(Calendar.DAY_OF_MONTH, dateDay);
+				startTime.set(Calendar.YEAR, dateYear);
+				Calendar endTime = (Calendar) startTime.clone();
+				endTime.set(Calendar.HOUR_OF_DAY, hour);
+				endTime.set(Calendar.MINUTE, 0);
+				WeekViewEvent event = new WeekViewEvent(id, name + " (" + type + ")", startTime, endTime);
+				//event.setColor(000000);
+				//event.getColor();
+				events.add(event);
+
+
+				hour = hour + 1;
+				tempDay = dateDay;
+				tempMonth = dateMonth;
+
+			} while (cursor.moveToNext());
+		}
+		return events;
 	}
 }
