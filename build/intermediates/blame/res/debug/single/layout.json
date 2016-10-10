@@ -92,12 +92,12 @@
         "source": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_media.xml"
     },
     {
-        "merged": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
-        "source": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_lines.xml"
-    },
-    {
         "merged": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\res\\merged\\debug\\layout\\activity_view_leave.xml",
         "source": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\res\\layout\\activity_view_leave.xml"
+    },
+    {
+        "merged": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
+        "source": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_lines.xml"
     },
     {
         "merged": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",

@@ -112,12 +112,12 @@
         "source": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\drawable-xhdpi-v4\\common_plus_signin_btn_text_dark_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\common_plus_signin_btn_text_light_focused.9.png",
-        "source": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\drawable-xhdpi-v4\\common_plus_signin_btn_text_light_focused.9.png"
-    },
-    {
         "merged": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png",
         "source": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\common_plus_signin_btn_text_light_focused.9.png",
+        "source": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\drawable-xhdpi-v4\\common_plus_signin_btn_text_light_focused.9.png"
     },
     {
         "merged": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\common_google_signin_btn_icon_light_normal.9.png",

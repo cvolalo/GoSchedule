@@ -1,5 +1,6 @@
 package com.projectprototype.lib;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -32,6 +33,7 @@ import android.view.SoundEffectConstants;
 import android.view.View;
 import android.view.ViewConfiguration;
 import android.widget.OverScroller;
+import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -114,10 +116,10 @@ public class WeekView extends View {
     private int mHeaderRowPadding = 10;
     private int mHeaderRowBackgroundColor = Color.WHITE;
     private int mDayBackgroundColor = Color.rgb(245, 245, 245);
-    private int mPastBackgroundColor = Color.rgb(227, 227, 227);
+    private int mPastBackgroundColor = Color.rgb(245, 245, 245);
     private int mFutureBackgroundColor = Color.rgb(245, 245, 245);
-    private int mPastWeekendBackgroundColor = 0;
-    private int mFutureWeekendBackgroundColor = 0;
+    private int mPastWeekendBackgroundColor = Color.rgb(227, 227, 227);
+    private int mFutureWeekendBackgroundColor = Color.rgb(227, 227, 227);
     private int mNowLineColor = Color.rgb(102, 102, 102);
     private int mNowLineThickness = 5;
     private int mHourSeparatorColor = Color.rgb(230, 230, 230);
@@ -137,9 +139,9 @@ public class WeekView extends View {
     private Calendar mScrollToDay = null;
     private double mScrollToHour = -1;
     private int mEventCornerRadius = 0;
-    private boolean mShowDistinctWeekendColor = false;
+    private boolean mShowDistinctWeekendColor = true;
     private boolean mShowNowLine = false;
-    private boolean mShowDistinctPastFutureColor = false;
+    private boolean mShowDistinctPastFutureColor = true;
     private boolean mHorizontalFlingEnabled = true;
     private boolean mVerticalFlingEnabled = true;
     private int mAllDayEventHeight = 100;
@@ -658,10 +660,14 @@ public class WeekView extends View {
             // Draw background color for each day.
             float start =  (startPixel < mHeaderColumnWidth ? mHeaderColumnWidth : startPixel);
             if (mWidthPerDay + startPixel - start > 0){
+
+
                 if (mShowDistinctPastFutureColor){
                     boolean isWeekend = day.get(Calendar.DAY_OF_WEEK) == Calendar.SATURDAY || day.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY;
                     Paint pastPaint = isWeekend && mShowDistinctWeekendColor ? mPastWeekendBackgroundPaint : mPastBackgroundPaint;
                     Paint futurePaint = isWeekend && mShowDistinctWeekendColor ? mFutureWeekendBackgroundPaint : mFutureBackgroundPaint;
+
+
                     float startY = mHeaderHeight + mHeaderRowPadding * 2 + mTimeTextHeight/2 + mHeaderMarginBottom + mCurrentOrigin.y;
 
                     if (sameDay){

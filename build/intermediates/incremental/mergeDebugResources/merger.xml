@@ -1556,9 +1556,9 @@
         <item>Sick Leave</item>
         <item>Training</item>
         <item>Vacation Leave</item>
-    </string-array><string name="signout">Sign Out</string><string name="title_activity_login">LoginActivity</string><string name="app_name">GoSchedule</string><string name="weekview">Week View</string><item name="searchmenu" type="id"/><string name="searchmenu">Search</string><item name="weekview" type="id"/><string name="leavebutton">File Leave</string><string name="leave_prompt">Choose a Leave Type</string><string name="logstring">Log Leave</string><item name="signout" type="id"/><string name="title_activity_leave">LeaveActivity</string><string name="searchbutton">Search by EID</string><string name="title_activity_view_leave">GoSchedule</string></file><file path="C:\Users\christine.m.v.olalo\workspace\goschedule\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="AppBaseTheme">
+    </string-array><string name="signout">Sign Out</string><string name="title_activity_login">LoginActivity</string><string name="app_name">GoSchedule</string><string name="weekview">Week View</string><item name="searchmenu" type="id"/><string name="searchmenu">Search</string><item name="weekview" type="id"/><string name="leavebutton">File Leave</string><string name="leave_prompt">Choose a Leave Type</string><string name="logstring">Log Leave</string><item name="signout" type="id"/><string name="title_activity_leave">GoSchedule</string><string name="searchbutton">Search by EID</string><string name="title_activity_view_leave">GoSchedule</string></file><file path="C:\Users\christine.m.v.olalo\workspace\goschedule\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="AppBaseTheme">
         
-    </style><style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light">
+    </style><style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
         
     </style></file><file path="C:\Users\christine.m.v.olalo\workspace\goschedule\res\values-v11\styles.xml" qualifiers="v11"><style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light">
         

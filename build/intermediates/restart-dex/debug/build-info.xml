@@ -3,33 +3,60 @@
     api-level="19"
     format="8"
     plugin-version="2.2.0"
-    timestamp="716963399287765"
+    timestamp="973286914428545"
     token="-6759926061676127798"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="1495" />
-    <task
-        name="instant-run-dex"
         duration="0" />
     <task
+        name="instant-run-dex"
+        duration="1739" />
+    <task
         name="instant-run-transform"
-        duration="1493" />
+        duration="48" />
     <task
         name="verifier"
-        duration="1581" />
+        duration="6" />
 
     <artifact
-        location="C:\Users\christine.m.v.olalo\workspace\goschedule\build\outputs\apk\goschedule-debug.apk"
-        type="MAIN" />
+        location="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+        type="RESOURCES" />
+    <artifact
+        location="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\reload-dex\debug\classes.dex"
+        type="RELOAD_DEX" />
 
     <build
-        timestamp="716963399287765"
+        timestamp="972140198011954"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\christine.m.v.olalo\workspace\goschedule\build\outputs\apk\goschedule-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="972252763270717"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\builds\debug\972252763270717\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="972821762179453"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\builds\debug\972821762179453\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="973286914428545"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\reload-dex\debug\classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

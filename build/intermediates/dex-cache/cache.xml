@@ -106,7 +106,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="e5dda933e3b4aff3b345f72963d14f526bc5b790">
+        sha1="070f01c4340be24fa9248c85124d21ae823e9a63">
         <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\instant-run_b7eadf7ae1b0a0de4c8242a2087216dd56d4a6ba.jar" />
     </item>
     <item
@@ -115,7 +115,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="78286b9831c4857c27484d11b0436a0c284d73e8">
+        sha1="2943b453858e0a3eb00531671870b4a326aae979">
         <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\instant-run-bootstrap_675cf7cc685814e94ff13bf0c230ad0c46db1206.jar" />
     </item>
     <item
