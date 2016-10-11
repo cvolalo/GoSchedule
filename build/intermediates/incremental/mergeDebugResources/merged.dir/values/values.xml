@@ -415,7 +415,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="leave_prompt">Choose a Leave Type</string>
     <string name="leavebutton">File Leave</string>
+    <string name="left">◄</string>
     <string name="logstring">Log Leave</string>
+    <string name="right">►</string>
     <string name="search_menu_title">Search</string>
     <string name="searchbutton">Search by EID</string>
     <string name="searchmenu">Search</string>

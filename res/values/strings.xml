@@ -13,6 +13,8 @@
     <string name="leavebutton">File Leave</string>
     <string name="logstring">Log Leave</string>
     <string name="leave_prompt">Choose a Leave Type</string>
+    <string name="left">◄</string>
+    <string name="right">►</string>
 
     <string-array name="leave_arrays">
         <item>Elective Holiday</item>
