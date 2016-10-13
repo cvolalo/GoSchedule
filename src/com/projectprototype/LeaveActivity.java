@@ -14,6 +14,9 @@ import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
@@ -25,7 +28,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class LeaveActivity extends Activity implements OnItemSelectedListener {
+public class LeaveActivity extends AppCompatActivity implements OnItemSelectedListener {
 	DatabaseHelper db = new DatabaseHelper(this);
 	Button submitButton;
 	Button cancelButton;
@@ -50,17 +53,18 @@ public class LeaveActivity extends Activity implements OnItemSelectedListener {
 		
 		
 	};
-	
-	
+
+
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		//this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_leave);
-		
+		Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+		setSupportActionBar(myToolbar);
 		Intent intentReceived = getIntent();
-		
+
 		//Firebase.setAndroidContext(this);
 		//Firebase f = new Firebase("https://goschedule-50998.firebaseio.com/");
 		//f.setValue("Hello World! version 2.0");		
@@ -179,6 +183,12 @@ public class LeaveActivity extends Activity implements OnItemSelectedListener {
 	public void onNothingSelected(AdapterView<?> parent) {
 		// TODO Auto-generated method stub
 		
+	}
+
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
 	}
 }
 

@@ -106,8 +106,13 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
+<<<<<<< HEAD
+        sha1="070f01c4340be24fa9248c85124d21ae823e9a63">
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\instant-run_b7eadf7ae1b0a0de4c8242a2087216dd56d4a6ba.jar" />
+=======
         sha1="4b630471536351be7c3c3100735c75b7ad2cbd84">
         <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-auth-9.4.0_62099d500a860fb38b9269e6ae769a5204aa04ed.jar" />
+>>>>>>> DesignBranch
     </item>
     <item
         is-multidex="false"
@@ -115,8 +120,13 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
+<<<<<<< HEAD
+        sha1="2943b453858e0a3eb00531671870b4a326aae979">
+        <dex dex="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\pre-dexed\debug\instant-run-bootstrap_675cf7cc685814e94ff13bf0c230ad0c46db1206.jar" />
+=======
         sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
         <dex dex="C:\Users\arvin.o.tupil\Workspace\goschedule\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_d37380829c85f34bf1183198dc5d2286ec2299a6.jar" />
+>>>>>>> DesignBranch
     </item>
     <item
         is-multidex="false"
