@@ -21,6 +21,6 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:textSize="20sp"
-        android:paddingTop="30dp"/>
+        android:paddingTop="15dp"/>
 
 </LinearLayout>

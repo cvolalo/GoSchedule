@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 #Mon Oct 10 16:37:51 CST 2016
 base.0=C\:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+=======
+#Tue Oct 11 15:30:32 CST 2016
+base.0=C\:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+>>>>>>> DesignBranch
 renamed.0=classes.dex
-file.0=C\:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+file.0=C\:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

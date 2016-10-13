@@ -154,6 +154,7 @@
     <orderEntry type="library" exported="" name="firebase-analytics-9.4.0" level="project" />
     <orderEntry type="library" exported="" name="firebase-iid-9.4.0" level="project" />
     <orderEntry type="module" module-name="library" exported="" />
+    <orderEntry type="library" exported="" name="android-android-24" level="project" />
     <orderEntry type="library" exported="" name="support-v4-23.1.1" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-23.1.1" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-23.1.1" level="project" />

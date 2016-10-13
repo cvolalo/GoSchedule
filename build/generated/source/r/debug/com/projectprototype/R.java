@@ -2291,16 +2291,19 @@ containing a value of this type.
         public static final int item_background=0x7f020086;
         public static final int item_background_focused=0x7f020087;
         public static final int leave_icon=0x7f020088;
-        public static final int list_item_background=0x7f020089;
-        public static final int login_button=0x7f02008a;
-        public static final int login_icon=0x7f02008b;
-        public static final int login_page_background=0x7f02008c;
-        public static final int notification_template_icon_bg=0x7f020092;
-        public static final int password_background=0x7f02008d;
-        public static final int search_background=0x7f02008e;
-        public static final int splash=0x7f02008f;
-        public static final int splash_2=0x7f020090;
-        public static final int textfield_background=0x7f020091;
+        public static final int left=0x7f020089;
+        public static final int list_item_background=0x7f02008a;
+        public static final int login_button=0x7f02008b;
+        public static final int login_icon=0x7f02008c;
+        public static final int login_page_background=0x7f02008d;
+        public static final int month_background=0x7f02008e;
+        public static final int notification_template_icon_bg=0x7f020095;
+        public static final int password_background=0x7f02008f;
+        public static final int right=0x7f020090;
+        public static final int search_background=0x7f020091;
+        public static final int splash=0x7f020092;
+        public static final int splash_2=0x7f020093;
+        public static final int textfield_background=0x7f020094;
     }
     public static final class id {
         public static final int ListLeave=0x7f0c0091;
@@ -2590,16 +2593,18 @@ containing a value of this type.
         public static final int hello_world=0x7f06003d;
         public static final int leave_prompt=0x7f06003e;
         public static final int leavebutton=0x7f06003f;
-        public static final int logstring=0x7f060040;
+        public static final int left=0x7f060040;
+        public static final int logstring=0x7f060041;
+        public static final int right=0x7f060042;
         public static final int search_menu_title=0x7f060027;
-        public static final int searchbutton=0x7f060041;
-        public static final int searchmenu=0x7f060042;
-        public static final int signout=0x7f060043;
+        public static final int searchbutton=0x7f060043;
+        public static final int searchmenu=0x7f060044;
+        public static final int signout=0x7f060045;
         public static final int status_bar_notification_info_overflow=0x7f060028;
-        public static final int title_activity_leave=0x7f060044;
-        public static final int title_activity_login=0x7f060045;
-        public static final int title_activity_view_leave=0x7f060046;
-        public static final int weekview=0x7f060047;
+        public static final int title_activity_leave=0x7f060046;
+        public static final int title_activity_login=0x7f060047;
+        public static final int title_activity_view_leave=0x7f060048;
+        public static final int weekview=0x7f060049;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f08008b;
