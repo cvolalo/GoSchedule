@@ -20,7 +20,11 @@
         android:id="@+id/signout"
         android:orderInCategory="100"
         android:title="@string/signout"
+<<<<<<< HEAD
         android:showAsAction="ifRoom"/-->
+=======
+        android:showAsAction="ifRoom"/>
+>>>>>>> DesignBranch
 
 
 
