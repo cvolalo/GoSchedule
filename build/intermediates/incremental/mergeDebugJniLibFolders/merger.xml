@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\arvin.o.tupil\Workspace\goschedule\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="C:\Users\arvin.o.tupil\Workspace\goschedule\build-types\debug\jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="C:\Users\christine\workspace\goschedule\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="C:\Users\christine\workspace\goschedule\build-types\debug\jniLibs"/></dataSet></merger>

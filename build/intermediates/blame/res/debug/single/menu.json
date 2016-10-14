@@ -1,10 +1,14 @@
 [
     {
-        "merged": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\res\\merged\\debug\\menu\\global.xml",
-        "source": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\res\\menu\\global.xml"
+        "merged": "C:\\Users\\christine\\workspace\\goschedule\\build\\intermediates\\res\\merged\\debug\\menu\\global.xml",
+        "source": "C:\\Users\\christine\\workspace\\goschedule\\res\\menu\\global.xml"
     },
     {
-        "merged": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
-        "source": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\res\\menu\\main.xml"
+        "merged": "C:\\Users\\christine\\workspace\\goschedule\\build\\intermediates\\res\\merged\\debug\\menu\\calendar.xml",
+        "source": "C:\\Users\\christine\\workspace\\goschedule\\res\\menu\\calendar.xml"
+    },
+    {
+        "merged": "C:\\Users\\christine\\workspace\\goschedule\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "C:\\Users\\christine\\workspace\\goschedule\\res\\menu\\main.xml"
     }
 ]

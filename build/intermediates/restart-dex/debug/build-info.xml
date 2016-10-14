@@ -1,87 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    api-level="19"
-    density="hdpi"
-    format="8"
-    plugin-version="2.2.0"
-<<<<<<< HEAD
-    timestamp="973286914428545"
-    token="-6759926061676127798"
-    verifier="COMPATIBLE" >
+    abi="armeabi-v7a,armeabi"
+    api-level="22"
+    density="xhdpi"
+    format="7"
+    timestamp="26638983006895" >
 
     <task
         name="javac"
-        duration="0" />
-=======
-    timestamp="42761263623872"
-    token="5379212512138768799"
-    verifier="FULL_BUILD_REQUESTED" >
-
-    <task
-        name="javac"
-        duration="2007" />
->>>>>>> DesignBranch
+        duration="2413" />
     <task
         name="instant-run-dex"
-        duration="1739" />
+        duration="0" />
     <task
         name="instant-run-transform"
-<<<<<<< HEAD
-        duration="48" />
+        duration="1874" />
     <task
         name="verifier"
-        duration="6" />
+        duration="1113" />
 
     <artifact
-        location="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-        type="RESOURCES" />
-    <artifact
-        location="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\reload-dex\debug\classes.dex"
-        type="RELOAD_DEX" />
-
-    <build
-        timestamp="972140198011954"
-=======
-        duration="1033" />
-    <task
-        name="verifier"
-        duration="1472" />
-
-    <artifact
-        location="C:\Users\arvin.o.tupil\Workspace\goschedule\build\outputs\apk\goschedule-debug.apk"
+        location="C:\Users\christine\workspace\goschedule\build\outputs\apk\goschedule-debug.apk"
         type="MAIN" />
 
-    <build
-        timestamp="42761263623872"
->>>>>>> DesignBranch
-        verifier="FULL_BUILD_REQUESTED" >
+    <build timestamp="26638983006895" >
         <artifact
-            location="C:\Users\arvin.o.tupil\Workspace\goschedule\build\outputs\apk\goschedule-debug.apk"
+            location="C:\Users\christine\workspace\goschedule\build\outputs\apk\goschedule-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="972252763270717"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\builds\debug\972252763270717\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="972821762179453"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\builds\debug\972821762179453\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="973286914428545"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-            type="RESOURCES" />
-        <artifact
-            location="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\reload-dex\debug\classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>
