@@ -7,6 +7,8 @@ import java.util.Locale;
 import java.util.Map;
 
 //import com.firebase.client.Firebase;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -37,7 +39,7 @@ public class LeaveActivity extends AppCompatActivity implements OnItemSelectedLi
 	Spinner type;
 	String item;
 	Calendar myCalendar = Calendar.getInstance();
-	
+	private FirebaseAuth mAuth;
 	
 	
 	DatePickerDialog.OnDateSetListener date2 = new DatePickerDialog.OnDateSetListener() {
@@ -61,6 +63,10 @@ public class LeaveActivity extends AppCompatActivity implements OnItemSelectedLi
 		super.onCreate(savedInstanceState);
 		//this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_leave);
+
+		mAuth = FirebaseAuth.getInstance();
+		FirebaseUser user = mAuth.getCurrentUser();
+
 		Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
 		setSupportActionBar(myToolbar);
 		Intent intentReceived = getIntent();

@@ -4,29 +4,37 @@
     api-level="22"
     density="xhdpi"
     format="7"
-    timestamp="26638983006895" >
+    timestamp="41776159210115"
+    verifier="CLASS_ADDED" >
 
     <task
         name="javac"
-        duration="2413" />
+        duration="778" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1874" />
+        duration="76" />
     <task
         name="verifier"
-        duration="1113" />
+        duration="64" />
 
     <artifact
-        location="C:\Users\christine\workspace\goschedule\build\outputs\apk\goschedule-debug.apk"
-        type="MAIN" />
+        location="C:\Users\christine\workspace\goschedule\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
+        type="DEX" />
 
-    <build timestamp="26638983006895" >
+    <build timestamp="41593519925283" >
         <artifact
             location="C:\Users\christine\workspace\goschedule\build\outputs\apk\goschedule-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="41776159210115"
+        verifier="CLASS_ADDED" >
+        <artifact
+            location="C:\Users\christine\workspace\goschedule\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

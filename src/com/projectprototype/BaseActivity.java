@@ -12,6 +12,9 @@ import android.view.Window;
 import android.widget.Toast;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.projectprototype.lib.DateTimeInterpreter;
 import com.projectprototype.lib.MonthLoader;
 import com.projectprototype.lib.WeekView;
@@ -33,7 +36,7 @@ public abstract class BaseActivity extends AppCompatActivity implements WeekView
     private static final int TYPE_WEEK_VIEW = 3;
     private int mWeekViewType = TYPE_WEEK_VIEW;
     private WeekView mWeekView;
-
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +44,18 @@ public abstract class BaseActivity extends AppCompatActivity implements WeekView
         //this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         setContentView(R.layout.activity_base);
+
+        mAuth = FirebaseAuth.getInstance();
+        FirebaseUser user = mAuth.getCurrentUser();
+
+
+
+        /*if (user != null) {
+            // User is not logged in
+
+            Toast.makeText(BaseActivity.this, "Welcome " + user.getEmail() + "!", Toast.LENGTH_SHORT).show();
+        }*/
+
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
 

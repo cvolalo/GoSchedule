@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/calendar"
+        android:id="@+id/weekview"
         android:orderInCategory="100"
         android:title="@string/weekview"
         android:icon="@drawable/ic_weekview"

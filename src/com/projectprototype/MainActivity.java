@@ -9,6 +9,7 @@ import java.util.Calendar;
 //import com.firebase.client.ValueEventListener;
 //import com.firebase.client.FirebaseError;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -25,6 +26,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -51,8 +53,9 @@ public class MainActivity extends AppCompatActivity {
     boolean adminCheck = false;
     boolean dbSyncCheck = false;
     String[] names = new String[1];
-    String EID;
+    //String EID;
     private FirebaseAuth mAuth;
+	private FirebaseAuth.AuthStateListener mAuthListener;
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
 	
@@ -83,11 +86,22 @@ public class MainActivity extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		//this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_main);
+
+		mAuth = FirebaseAuth.getInstance();
+		FirebaseUser user = mAuth.getCurrentUser();
+
+
+
+			if (user != null) {
+			// User is not logged in
+
+				Toast.makeText(MainActivity.this, "Welcome " + user.getEmail() + "!", Toast.LENGTH_SHORT).show();
+		}
+
 		Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
 		setSupportActionBar(myToolbar);
 
-        Intent intentReceived = getIntent();
-        EID = intentReceived.getExtras().getString("eid");
+
 
         //Initialize Calendar View with Gridview
 		month = Calendar.getInstance();
@@ -273,14 +287,48 @@ public class MainActivity extends AppCompatActivity {
 
     if (id == R.id.signout) {
 
-        mAuth = FirebaseAuth.getInstance();
-        mAuth.signOut();
-        Intent intent = new Intent(this, LoginActivity.class);
-        final ProgressDialog progressDialog = new ProgressDialog(MainActivity.this);
-        progressDialog.setIndeterminate(true);
-        progressDialog.setMessage("Signing out...");
-        progressDialog.show();
-        startActivity(intent);
+        //mAuth = FirebaseAuth.getInstance();
+		final ProgressDialog progressDialog2 = new ProgressDialog(MainActivity.this);
+		progressDialog2.setIndeterminate(true);
+		progressDialog2.setMessage("Signing out...");
+		progressDialog2.show();
+		Runnable progressRunnable = new Runnable() {
+
+			@Override
+			public void run() {
+				progressDialog2.cancel();
+			}
+		};
+
+		Handler pdCanceller = new Handler();
+		pdCanceller.postDelayed(progressRunnable, 3000);
+
+		/*Intent intent = new Intent(this, LoginActivity.class);
+
+		MainActivity.this.finish();
+		MainActivity.this.startActivity(intent);*/
+		FirebaseAuth.getInstance().signOut();
+
+// this listener will be called when there is change in firebase user session
+		//auth.signOut();
+
+// this listener will be called when there is change in firebase user session
+		mAuthListener = new FirebaseAuth.AuthStateListener() {
+			@Override
+			public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+				FirebaseUser user = firebaseAuth.getCurrentUser();
+				if (user == null) {
+					// user auth state is changed - user is null
+					// launch login activity
+					Intent mainIntent = new Intent(MainActivity.this, LoginActivity.class);
+					//mainIntent.putExtra("eid", loginE.getText().toString());
+					MainActivity.this.startActivity(mainIntent);
+					MainActivity.this.finish();
+				}
+			}
+		};
+		mAuth.addAuthStateListener(mAuthListener);
+		MainActivity.this.finish();
 
 	}
 
@@ -322,9 +370,10 @@ public class MainActivity extends AppCompatActivity {
 	};
 
     public void onStart() {
-        super.onStart();
+		super.onStart();
 
-        if (adminCheck) {
+		//mAuth.addAuthStateListener(mAuthListener);
+        /*if (adminCheck) {
             Toast.makeText(MainActivity.this, "Welcome Admin!", Toast.LENGTH_SHORT).show();
             Intent mainIntent = new Intent(MainActivity.this, AdminActivity.class);
             MainActivity.this.startActivity(mainIntent);
@@ -382,16 +431,16 @@ public class MainActivity extends AppCompatActivity {
             public void onCancelled(DatabaseError databaseError) {
 
             }
-        });
+        });*/
     }
 
     @Override
-    public void onStop() {
-        super.onStop();
-        //if (mAuthListener != null) {
-        //    mAuth.removeAuthStateListener(mAuthListener);
-        //}
-    }
+	public void onStop() {
+		super.onStop();
+		/*if (mAuthListener != null) {
+			mAuth.removeAuthStateListener(mAuthListener);
+		}*/
+	}
 
     /**@Override
     public void onDestroy() {

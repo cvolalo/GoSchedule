@@ -13,6 +13,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 import java.util.List;
 
 public class SearchEIDActivity extends ListActivity implements AdapterView.OnItemClickListener {
@@ -24,12 +27,15 @@ public class SearchEIDActivity extends ListActivity implements AdapterView.OnIte
     EditText EID;
     Button searchEIDButton;
     Button cancelEIDButton;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_eid);
 
+        mAuth = FirebaseAuth.getInstance();
+        FirebaseUser user = mAuth.getCurrentUser();
         Intent intentReceived = getIntent();
 
         searchEIDButton = (Button) findViewById(R.id.searchSubmit);

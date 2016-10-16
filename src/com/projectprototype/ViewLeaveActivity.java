@@ -14,6 +14,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class ViewLeaveActivity extends ListActivity implements OnItemClickListener{
 	DatabaseHelper db = new DatabaseHelper(this);
 	List<String> listLeave;
@@ -22,13 +25,15 @@ public class ViewLeaveActivity extends ListActivity implements OnItemClickListen
 	String monthString;
 	String dayString;
 	String dateString;
+	private FirebaseAuth mAuth;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_view_leave);
-
+		mAuth = FirebaseAuth.getInstance();
+		FirebaseUser user = mAuth.getCurrentUser();
 		Intent intentDateReceived = getIntent();
 		String year = intentDateReceived.getExtras().getString("year");
 		String month = intentDateReceived.getExtras().getString("month");

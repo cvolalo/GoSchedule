@@ -45,6 +45,11 @@ public class LoginActivity extends Activity{
 
 		mAuth = FirebaseAuth.getInstance();
 
+		if (mAuth.getCurrentUser() != null) {
+			startActivity(new Intent(LoginActivity.this, MainActivity.class));
+			finish();
+		}
+
 		loginE = (TextView) findViewById(R.id.loginEmail);
 		loginPass = (TextView) findViewById(R.id.loginPassword);
 		loginButt = (Button) findViewById(R.id.loginButton);
@@ -63,9 +68,9 @@ public class LoginActivity extends Activity{
 				if (user != null) {
 					//Toast.makeText(LoginActivity.this, "Log-in Success!"
 					//		,Toast.LENGTH_SHORT).show();
-                    Toast.makeText(LoginActivity.this, "Welcome!", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(LoginActivity.this, "Welcome!", Toast.LENGTH_SHORT).show();
                     Intent mainIntent = new Intent(LoginActivity.this, MainActivity.class);
-                    mainIntent.putExtra("eid", loginE.getText().toString());
+                    //mainIntent.putExtra("eid", loginE.getText().toString());
                     LoginActivity.this.startActivity(mainIntent);
                     LoginActivity.this.finish();
 
@@ -74,11 +79,6 @@ public class LoginActivity extends Activity{
 
 					// User is signed in
 					//Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
-				} else {
-					//Toast.makeText(LoginActivity.this, "Log-in Success but no user found!"
-					//		,Toast.LENGTH_SHORT).show();
-					// User is signed out
-					//Log.d(TAG, "onAuthStateChanged:signed_out");
 				}
 				// ........
 			}

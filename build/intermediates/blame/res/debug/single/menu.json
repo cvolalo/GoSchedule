@@ -10,5 +10,9 @@
     {
         "merged": "C:\\Users\\christine\\workspace\\goschedule\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
         "source": "C:\\Users\\christine\\workspace\\goschedule\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\christine\\workspace\\goschedule\\build\\intermediates\\res\\merged\\debug\\menu\\admin.xml",
+        "source": "C:\\Users\\christine\\workspace\\goschedule\\res\\menu\\admin.xml"
     }
 ]

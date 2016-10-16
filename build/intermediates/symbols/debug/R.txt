@@ -843,9 +843,10 @@ int layout select_dialog_item_material 0x7f04002c
 int layout select_dialog_multichoice_material 0x7f04002d
 int layout select_dialog_singlechoice_material 0x7f04002e
 int layout support_simple_spinner_dropdown_item 0x7f04002f
-int menu calendar 0x7f0e0000
-int menu global 0x7f0e0001
-int menu main 0x7f0e0002
+int menu admin 0x7f0e0000
+int menu calendar 0x7f0e0001
+int menu global 0x7f0e0002
+int menu main 0x7f0e0003
 int mipmap ic_launcher 0x7f030000
 int string abc_action_bar_home_description 0x7f060000
 int string abc_action_bar_home_description_format 0x7f060001
