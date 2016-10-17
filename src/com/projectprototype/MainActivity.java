@@ -377,9 +377,9 @@ public class MainActivity extends AppCompatActivity {
 
 	if (id == R.id.admin) {
 
-	/*Intent mainIntent = new Intent(MainActivity.this, AdminActivity.class);
+	Intent mainIntent = new Intent(MainActivity.this, AdminActivity.class);
 	MainActivity.this.startActivity(mainIntent);
-	*/
+
 
 
 	}
