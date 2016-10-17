@@ -1,40 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="armeabi-v7a,armeabi"
-    api-level="22"
-    density="xhdpi"
+    abi="x86,armeabi-v7a"
+    api-level="19"
+    density="hdpi"
     format="7"
-    timestamp="41776159210115"
-    verifier="CLASS_ADDED" >
+    timestamp="9037978722730"
+    token="-6759926061676127798" >
 
     <task
         name="javac"
-        duration="778" />
+        duration="12582" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="76" />
+        duration="1785" />
     <task
         name="verifier"
-        duration="64" />
+        duration="785" />
 
     <artifact
-        location="C:\Users\christine\workspace\goschedule\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
-        type="DEX" />
+        location="C:\Users\christine.m.v.olalo\workspace\goschedule\build\outputs\apk\goschedule-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="41593519925283" >
+    <build timestamp="9037978722730" >
         <artifact
-            location="C:\Users\christine\workspace\goschedule\build\outputs\apk\goschedule-debug.apk"
+            location="C:\Users\christine.m.v.olalo\workspace\goschedule\build\outputs\apk\goschedule-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="41776159210115"
-        verifier="CLASS_ADDED" >
-        <artifact
-            location="C:\Users\christine\workspace\goschedule\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
-            type="DEX" />
     </build>
 
 </instant-run>

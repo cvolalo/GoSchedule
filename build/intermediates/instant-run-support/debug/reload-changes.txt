@@ -1,4 +1,0 @@
-CHANGED,C:\Users\christine\workspace\goschedule\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\projectprototype\MainActivity$override.class
-CHANGED,C:\Users\christine\workspace\goschedule\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
-CHANGED,C:\Users\christine\workspace\goschedule\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\projectprototype\MainActivity$6$override.class
-CHANGED,C:\Users\christine\workspace\goschedule\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\projectprototype\MainActivity$7$override.class

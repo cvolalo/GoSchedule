@@ -7,6 +7,7 @@
     <string name="signout">Sign Out</string>
     <string name="weekview">Week View</string>
     <string name="searchmenu">Search</string>
+    <string name="admin">Administrator</string>
     <string name="title_activity_leave">GoSchedule</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="searchbutton">Search by EID</string>

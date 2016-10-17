@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 	private FirebaseAuth.AuthStateListener mAuthListener;
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
-	
+
 	//Resource class for Firebase use
 	public static class Resource {
 		  String date;
@@ -86,8 +86,8 @@ public class MainActivity extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		//this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_main);
-
 		mAuth = FirebaseAuth.getInstance();
+
 		FirebaseUser user = mAuth.getCurrentUser();
 
 
@@ -263,9 +263,52 @@ public class MainActivity extends AppCompatActivity {
 	} 
 	
 	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
+	public boolean onCreateOptionsMenu(final Menu menu) {
 	// Inflate the menu; this adds items to the action bar if it is present.
-	getMenuInflater().inflate(R.menu.main, menu);
+		final FirebaseUser user = mAuth.getCurrentUser();
+
+		if (user != null) {
+			if (adminCheck) {
+				getMenuInflater().inflate(R.menu.admin, menu);
+
+			}
+			Query adminQuery = database.getReference().child("admin").limitToFirst(20);
+
+			//adminQuery.addValueEventListener(new ValueEventListener() {
+			adminQuery.addListenerForSingleValueEvent(new ValueEventListener() {
+				@Override
+				public void onDataChange(DataSnapshot dataSnapshot) {
+					for (DataSnapshot adminSnapshot: dataSnapshot.getChildren()) {
+						String value = (String) adminSnapshot.getValue();
+						names[0] = value;
+						names[0] = names[0].replaceAll("\\s","");
+						//Toast.makeText(LoginActivity.this, names[0], Toast.LENGTH_SHORT).show();
+
+						String[] admins = names[0].split(",");
+
+						for (int i = 0; i < admins.length ; i++){
+							if (admins[i].equals(user.getEmail())){
+								//Toast.makeText(LoginActivity.this, "admin", Toast.LENGTH_SHORT).show();
+								adminCheck = true;
+							}
+						}
+
+						if (adminCheck) {
+							getMenuInflater().inflate(R.menu.admin, menu);
+						}
+						else{
+							getMenuInflater().inflate(R.menu.main, menu);
+						}
+						// do your stuff here with value
+					}
+				}
+				@Override
+				public void onCancelled(DatabaseError databaseError) {
+				}
+			});
+		}
+
+
 	return true;
 	}
 
@@ -332,7 +375,14 @@ public class MainActivity extends AppCompatActivity {
 
 	}
 
+	if (id == R.id.admin) {
 
+	/*Intent mainIntent = new Intent(MainActivity.this, AdminActivity.class);
+	MainActivity.this.startActivity(mainIntent);
+	*/
+
+
+	}
 
 	return super.onOptionsItemSelected(item);
 	}
