@@ -1,0 +1,1523 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Login feature",
+    "line": 1,
+    "description": "",
+    "id": "login-feature",
+    "uri": "features\\file_leave.feature",
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "",
+        "line": 3,
+        "description": "",
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Then ",
+            "name": "I should see \"Account LogIn\"",
+            "line": 4,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "Account LogIn"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/assert_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14735000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I enter text \"louie.d.p.mandigal\" into field with id \"loginEmail\"",
+            "line": 5,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "louie.d.p.mandigal"
+                },
+                {
+                  "offset": 54,
+                  "val": "loginEmail"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/enter_text_steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3974000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I enter text \"Qwerty3!\" into field with id \"loginPassword\"",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "Qwerty3!"
+                },
+                {
+                  "offset": 44,
+                  "val": "loginPassword"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/enter_text_steps.rb:13"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Failed to perform gesture. java.lang.SecurityException: Injecting to another application requires INJECT_EVENTS permission (RuntimeError)\nfeatures\\file_leave.feature:6:in `Then I enter text \"Qwerty3!\" into field with id \"loginPassword\"'",
+              "duration": 3821000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I press view with id \"loginButton\"",
+            "line": 7,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 22,
+                  "val": "loginButton"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/press_button_steps.rb:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 2000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I wait for the \"File Leave\" button to appear",
+            "line": 8,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 16,
+                  "val": "File Leave"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/progress_steps.rb:38"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 2000000
+            },
+            "embeddings": [
+              {
+                "mime_type": "image/png",
+                "data": "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"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "Premature Submit",
+        "line": 10,
+        "description": "",
+        "id": "login-feature;premature-submit",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Then ",
+            "name": "I should see \"Account LogIn\"",
+            "line": 4,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "Account LogIn"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/assert_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I enter text \"louie.d.p.mandigal\" into field with id \"loginEmail\"",
+            "line": 5,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "louie.d.p.mandigal"
+                },
+                {
+                  "offset": 54,
+                  "val": "loginEmail"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/enter_text_steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I enter text \"Qwerty3!\" into field with id \"loginPassword\"",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "Qwerty3!"
+                },
+                {
+                  "offset": 44,
+                  "val": "loginPassword"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/enter_text_steps.rb:13"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Failed to perform gesture. java.lang.SecurityException: Injecting to another application requires INJECT_EVENTS permission (RuntimeError)\nfeatures\\file_leave.feature:6:in `Then I enter text \"Qwerty3!\" into field with id \"loginPassword\"'",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I press view with id \"loginButton\"",
+            "line": 7,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 22,
+                  "val": "loginButton"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/press_button_steps.rb:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I wait for the \"File Leave\" button to appear",
+            "line": 8,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 16,
+                  "val": "File Leave"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/progress_steps.rb:38"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Given ",
+            "name": "I press the \"File Leave\" button",
+            "line": 11,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 13,
+                  "val": "File Leave"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/press_button_steps.rb:1"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see \"File Leave\"",
+            "line": 12,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "File Leave"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/assert_steps.rb:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I press view with id \"leaveSubmit\"",
+            "line": 13,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 22,
+                  "val": "leaveSubmit"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/press_button_steps.rb:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see \"File Leave\"",
+            "line": 14,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "File Leave"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/assert_steps.rb:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "Successful Filing",
+        "line": 16,
+        "description": "",
+        "id": "login-feature;successful-filing",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Then ",
+            "name": "I should see \"Account LogIn\"",
+            "line": 4,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "Account LogIn"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/assert_steps.rb:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I enter text \"louie.d.p.mandigal\" into field with id \"loginEmail\"",
+            "line": 5,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "louie.d.p.mandigal"
+                },
+                {
+                  "offset": 54,
+                  "val": "loginEmail"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/enter_text_steps.rb:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I enter text \"Qwerty3!\" into field with id \"loginPassword\"",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "Qwerty3!"
+                },
+                {
+                  "offset": 44,
+                  "val": "loginPassword"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/enter_text_steps.rb:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I press view with id \"loginButton\"",
+            "line": 7,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 22,
+                  "val": "loginButton"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/press_button_steps.rb:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I wait for the \"File Leave\" button to appear",
+            "line": 8,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 16,
+                  "val": "File Leave"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/progress_steps.rb:38"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Given ",
+            "name": "I press the \"File Leave\" button",
+            "line": 17,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 13,
+                  "val": "File Leave"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/press_button_steps.rb:1"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see \"File Leave\"",
+            "line": 18,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "File Leave"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/assert_steps.rb:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I enter text \"louie.d.p.mandigal\" into field with id \"leaveName\"",
+            "line": 19,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "louie.d.p.mandigal"
+                },
+                {
+                  "offset": 54,
+                  "val": "leaveName"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/enter_text_steps.rb:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 2000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I press view with id \"leaveDate\"",
+            "line": 20,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 22,
+                  "val": "leaveDate"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/press_button_steps.rb:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I press view with id \"leaveDate\"",
+            "line": 21,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 22,
+                  "val": "leaveDate"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/press_button_steps.rb:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Given ",
+            "name": "I press the \"OK\" button",
+            "line": 22,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 13,
+                  "val": "OK"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/press_button_steps.rb:1"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I select \"Vacation Leave\" from \"leaveType\"",
+            "line": 23,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 10,
+                  "val": "Vacation Leave"
+                },
+                {
+                  "offset": 32,
+                  "val": "leaveType"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/spinner_steps.rb:1"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I press view with id \"radio0\"",
+            "line": 24,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 22,
+                  "val": "radio0"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/press_button_steps.rb:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I press \"Submit\"",
+            "line": 25,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 9,
+                  "val": "Submit"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/press_button_steps.rb:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see \"File Leave\"",
+            "line": 26,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "File Leave"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/assert_steps.rb:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "User Cancels",
+        "line": 28,
+        "description": "",
+        "id": "login-feature;user-cancels",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Then ",
+            "name": "I should see \"Account LogIn\"",
+            "line": 4,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "Account LogIn"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/assert_steps.rb:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I enter text \"louie.d.p.mandigal\" into field with id \"loginEmail\"",
+            "line": 5,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "louie.d.p.mandigal"
+                },
+                {
+                  "offset": 54,
+                  "val": "loginEmail"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/enter_text_steps.rb:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I enter text \"Qwerty3!\" into field with id \"loginPassword\"",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "Qwerty3!"
+                },
+                {
+                  "offset": 44,
+                  "val": "loginPassword"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/enter_text_steps.rb:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I press view with id \"loginButton\"",
+            "line": 7,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 22,
+                  "val": "loginButton"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/press_button_steps.rb:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I wait for the \"File Leave\" button to appear",
+            "line": 8,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 16,
+                  "val": "File Leave"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/progress_steps.rb:38"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Given ",
+            "name": "I press the \"File Leave\" button",
+            "line": 29,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 13,
+                  "val": "File Leave"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/press_button_steps.rb:1"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see \"File Leave\"",
+            "line": 30,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "File Leave"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/assert_steps.rb:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I press view with id \"leaveCancel\"",
+            "line": 31,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 22,
+                  "val": "leaveCancel"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/press_button_steps.rb:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 2000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see \"File Leave\"",
+            "line": 32,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "File Leave"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/assert_steps.rb:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "Search Leave",
+    "line": 1,
+    "description": "",
+    "id": "search-leave",
+    "uri": "features\\search_leave.feature",
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "",
+        "line": 3,
+        "description": "",
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Then ",
+            "name": "I should see \"Account LogIn\"",
+            "line": 4,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "Account LogIn"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/assert_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12938000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I enter text \"louie.d.p.mandigal\" into field with id \"loginEmail\"",
+            "line": 5,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "louie.d.p.mandigal"
+                },
+                {
+                  "offset": 54,
+                  "val": "loginEmail"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/enter_text_steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5376000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I enter text \"Qwerty3!\" into field with id \"loginPassword\"",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "Qwerty3!"
+                },
+                {
+                  "offset": 44,
+                  "val": "loginPassword"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/enter_text_steps.rb:13"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Failed to perform gesture. java.lang.SecurityException: Injecting to another application requires INJECT_EVENTS permission (RuntimeError)\nfeatures\\search_leave.feature:6:in `Then I enter text \"Qwerty3!\" into field with id \"loginPassword\"'",
+              "duration": 3081000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I press view with id \"loginButton\"",
+            "line": 7,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 22,
+                  "val": "loginButton"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/press_button_steps.rb:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I wait for the \"SEARCH BY EID\" button to appear",
+            "line": 8,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 16,
+                  "val": "SEARCH BY EID"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/progress_steps.rb:38"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            },
+            "embeddings": [
+              {
+                "mime_type": "image/png",
+                "data": "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"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "Search Leave",
+        "line": 10,
+        "description": "",
+        "id": "search-leave;search-leave",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Then ",
+            "name": "I should see \"Account LogIn\"",
+            "line": 4,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "Account LogIn"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/assert_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I enter text \"louie.d.p.mandigal\" into field with id \"loginEmail\"",
+            "line": 5,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "louie.d.p.mandigal"
+                },
+                {
+                  "offset": 54,
+                  "val": "loginEmail"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/enter_text_steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I enter text \"Qwerty3!\" into field with id \"loginPassword\"",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "Qwerty3!"
+                },
+                {
+                  "offset": 44,
+                  "val": "loginPassword"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/enter_text_steps.rb:13"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Failed to perform gesture. java.lang.SecurityException: Injecting to another application requires INJECT_EVENTS permission (RuntimeError)\nfeatures\\search_leave.feature:6:in `Then I enter text \"Qwerty3!\" into field with id \"loginPassword\"'",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I press view with id \"loginButton\"",
+            "line": 7,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 22,
+                  "val": "loginButton"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/press_button_steps.rb:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I wait for the \"SEARCH BY EID\" button to appear",
+            "line": 8,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 16,
+                  "val": "SEARCH BY EID"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/progress_steps.rb:38"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Given ",
+            "name": "I press the \"SEARCH BY EID\" button",
+            "line": 11,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 13,
+                  "val": "SEARCH BY EID"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/press_button_steps.rb:1"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 2000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see \"Search Leave\"",
+            "line": 12,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "Search Leave"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/assert_steps.rb:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I enter text \"louie.d.p.mandigal\" into field with id \"searchName\"",
+            "line": 13,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "louie.d.p.mandigal"
+                },
+                {
+                  "offset": 54,
+                  "val": "searchName"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/enter_text_steps.rb:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I press \"SEARCH\"",
+            "line": 14,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 9,
+                  "val": "SEARCH"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/press_button_steps.rb:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "User Cancels",
+        "line": 16,
+        "description": "",
+        "id": "search-leave;user-cancels",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Then ",
+            "name": "I should see \"Account LogIn\"",
+            "line": 4,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "Account LogIn"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/assert_steps.rb:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I enter text \"louie.d.p.mandigal\" into field with id \"loginEmail\"",
+            "line": 5,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "louie.d.p.mandigal"
+                },
+                {
+                  "offset": 54,
+                  "val": "loginEmail"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/enter_text_steps.rb:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I enter text \"Qwerty3!\" into field with id \"loginPassword\"",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "Qwerty3!"
+                },
+                {
+                  "offset": 44,
+                  "val": "loginPassword"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/enter_text_steps.rb:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I press view with id \"loginButton\"",
+            "line": 7,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 22,
+                  "val": "loginButton"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/press_button_steps.rb:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I wait for the \"SEARCH BY EID\" button to appear",
+            "line": 8,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 16,
+                  "val": "SEARCH BY EID"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/progress_steps.rb:38"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Given ",
+            "name": "I press the \"SEARCH BY EID\" button",
+            "line": 17,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 13,
+                  "val": "SEARCH BY EID"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/press_button_steps.rb:1"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see \"Search Leave\"",
+            "line": 18,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "Search Leave"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/assert_steps.rb:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I press view with id \"searchCancel\"",
+            "line": 19,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 22,
+                  "val": "searchCancel"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/press_button_steps.rb:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "View Leave",
+    "line": 1,
+    "description": "",
+    "id": "view-leave",
+    "uri": "features\\view_leave.feature",
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "",
+        "line": 3,
+        "description": "",
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Then ",
+            "name": "I should see \"Account LogIn\"",
+            "line": 4,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "Account LogIn"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/assert_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13459345000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I enter text \"louie.d.p.mandigal\" into field with id \"loginEmail\"",
+            "line": 5,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "louie.d.p.mandigal"
+                },
+                {
+                  "offset": 54,
+                  "val": "loginEmail"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/enter_text_steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5474548000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I enter text \"Qwerty3!\" into field with id \"loginPassword\"",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "Qwerty3!"
+                },
+                {
+                  "offset": 44,
+                  "val": "loginPassword"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/enter_text_steps.rb:13"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Failed to perform gesture. java.lang.SecurityException: Injecting to another application requires INJECT_EVENTS permission (RuntimeError)\nfeatures\\view_leave.feature:6:in `Then I enter text \"Qwerty3!\" into field with id \"loginPassword\"'",
+              "duration": 2994299000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I press view with id \"loginButton\"",
+            "line": 7,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 22,
+                  "val": "loginButton"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/press_button_steps.rb:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I wait for the \"File Leave\" button to appear",
+            "line": 8,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 16,
+                  "val": "File Leave"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/progress_steps.rb:38"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            },
+            "embeddings": [
+              {
+                "mime_type": "image/png",
+                "data": "iVBORw0KGgoAAAANSUhEUgAAAUAAAAHgCAIAAABb7iMTAAA4SUlEQVR4nO2dL5jaShfGEVesuGLFJ1ZcseIKxCcQFSuuQFQgPoG4AnEFogJRgahAVCAqEBWIiogVESsQFREViIqICsQKxIqICkQFogKxAnHF904mDCH/SCDZydD3PO+zhTCcmUzmN+fMJLttNGg0Go1Go9FoNBqNRivXfguJRqNVZ1e/X93d3bVft29ubuSRmz9u8BaGjxK/cnt7e3WV/FHg8K+7wP66S3NCo9FKsGaz2X/TH7wdDN8N5dvxeCyODAYANV4eeAPLxNB66xs8tEOGt/J4tadBo/3K1nrVGo1GwBLo9v7ppRW7/s81mERkTQD4t4aI5CmW/JW93+vr172b3hA/G+mxvfH71XWnd/PPED/Til01W9evuxlnSqNdmnU6HURd/MRrYAyYwRtIRvA8KPeb4PwowCJ/DqXQRwG+at01Z8vmp/ntyGrai+bDovGfm4RyNzfi0/uFKHYvXiQU+89Na+a1vqwavzFvp/0yhmUqGAO6CLDD4RCvkSeP3o/wQpVptVqgsfnfJpbHySm0AvjuDq6cLw7MfrBl+VSAf2uA2Ju3k11TrkDp7XAaLyi4/TQPAi+KWe7tu2ix2/d26zMBpv1KhtUpuAWfCMJ40e12sRhGSos1MNiTZXB8+mkqFrT5AJ59nq19G38Yq4OJAF/dNluOh7x3357htDmdB/V2eiJb9g1k3vw9UMXwGsE27Or6rw5c3bwZE2DaL2QyYMIkrkAXyTPeAmPg2vDjM6IxYunxCOzn3sDVdd3VamXbtozbbUTgV62ct5RuJzME0uD1hxkkXv1+DSyv2/vFLV4LUNUW9+/XzYfl9d8DAE+Aab+WXfkWOaJ4Q0y2LAs0HonAV1etwaj1dtz7MF2uVovvK9uZ244zsuzWcIyPsnanlI/WHfDDz+gHWNwC4L866oCItwD1+lq+vRlOmh+dhh+0CTCNFhgiKgC2fTsC8O9Xrcms9Wnevp93bbc/c1fPW/fHBm9xEB81jt4QvrlBFL0ZjBM+ygRYYP/Zu/rjtkGAaTRl3b+7w+Gw879OLoARgT/Yd1OnNXWQBk/cpfdz072fNz/OxMEP9pEIjBzYckXCnJhpX6cD/NtV895Vy2MCTKMJa71qAdrB20FegH8XALd8gO8+OYvVevRlgbRWIi0AzojAV1coKXLgNMgxOwDgzv4GtQIV6168aH6aN6e+7IV8e/PP8Ow+oNEMtd/EDeHZbFYUYKALDofOwlp4gt5PTisHwLdjG+EXQTijRc37RTi7xmsE3oa/j41orHTzdiK3u8I72zTaL2TiWcjXbaB7CsA+rlgDt625CMXT4wDfDCetmXfVal/90VSSoTh8G0ncN8JC91Vb7LC9akfuKiljCk37pe3q96vJx0m32x0MfIAHAcDWvbUHOPGmbiiFbn3ccXsUYD83jgs8N8K3kXxD1G05fgFnlbzXRYBpv7KJW74jccsX0IoI/LlQBL4Wu9ByDRyOvVJiFzorQ87dxKvGzW2eO1I02i9nCK0gFtZqtQCqeKzydRuvB74htb754wYM3/55m/Dl3xo37e5Np5esdpe/G0yj0Wg0Go1Go9FoNBqNRqPlsrcjiqJMVePDlKIoU9WYWBRFmarGR4uiKFPVmNoURZmqxieboihTpb8FFEWdLP0toCjqZOlvAUVRJ0t/CyiKOln6W0BR1MnS3wKjdPd5DrU+z7W3pArdPjjyBK+sWUVV3NhBFdf3VVXxa0l/C8xR25lv/91KNWeO9vYU0tX9rPngQBnkzL6v5Nm1Kju78WIpq+h9dbX3ySVIfwvMkfXkKYDHj0vt7Smk3twNWr5IbTkBNk/6W2CKrNn6easA9jYb/U0qIgJ8mdLfAkPU+RIAYHnebpRHV8JYOg7cBTCY/1jjZ//rohFaTGZ/2vAZs73g0+G3xVUo150sl9OlNwqx1527OAJh4SoKPIoC8I9aUMxZreAKDmVheMMR2ezFeo2SiUuAnABntLPhr3LR2vlqhU+x6EBFsp043kgCOLvl1BHpb4Ehsn1u19st1pByCE4Os2gcX/7cqBAt5f5Yyw2h7E/xEzxEPl09b5oPAUjBkVDYV/n8nb+jttmK16jCPfQjU31AG3He/eLGz/EowEfbidkknKdA893EIXf+4gBnt5w6Iv0tMELWTI4zYIy3chCvDrPombdSQxaRRDEjw2b2pwhBKjyKKLQDCcNaOs8JsP+VNYa+vasOx0FdV8RMTzUAYfP24ZQIfLSd6ggKgFVF71GA01qu/9LXXPpbYIK6u/y566d2yPfC8EDX9kyNQnkEiaUcmhjK2Z9imG78TxG71JBVJHT8UJkT4LAHFdAkjeevgY+2U+UmosB9rBmZAGe0nMqS/haYIBk/MXzlIMNyTo4wRCRZQK2QsfxT38JBYIOf2Z+qu1OW56lP97z5mWROgJHNJhRw5o0yAD7aTlXADhXY+8wEOKPlVJb0t6D2utrlz0gUJY0QBlx42PW/BjF5+C0Bj+xPu4esSt0pWp4EDOcA3C4J4KPtTCxwDsBtAnxU+ltQe6mhn6g8eGR/quKziufxg5saAHy0nQrgCQF+MelvQe2llnkYZGGFIyRG5y57XKkvIhDhU/zM/vT2IUjIsfZTn452Ax3rbbxdb4N9HVWgKMDdswE+2k51ms5qleCTAFch/S2ot652GzPhUSvlbQTD6+etvJ278t9iOCIoIetWEU+O5uxP1aa0uB16P0Neqm7GyNunqgCycRTAyFYzSE6A1QIV85F4mjJpg1fBBtrBcFg39ux4O0PPuuAEUQtOdr3bZCbAlUh/C+qt0PJ1EflosrunIjeK1U51RHLgZn96t4tdEaknN1B75CN19yUnwMBpE878vySwoQCOSy5rT2hn5EwJcMnS34J6S93JjN84vYttuoJSGZalEK/uQr+3lP0pXocft8CAlslzIGsWfhIbqbiaWXIC3PAnI4V94pOMRwE+3k5/aaBqQX4xX6l7QgS4AulvwcUJyWRzl3MW/fTanuHTxKcsGn4Uxafn/CIesvfmgyPT8nOU3U5Ry8yJJP/nV0olSH8LqMsS1s+KVYRZSa9xv/thjPS3gLok7e6Z46dKpLe7J9io8qW/BdQFCel9ZCGN2Et6K5T+FlAXJ7kGvnPmaYtkqjTpbwFFUSdLfwsoijpZ+ltAUdTJ0t8CiqJOlv4WUBR1svS3gKKok3V3v6Qoqo6yjpchwBRlsAgwRdVe6aGYAFOUwSLAFGWwCDBFGSwCTFEGiwBTlMEiwBRlsAgwRRksAkxRBosAU5TBIsAUZbAIMEUZLAJMUQaLAFOUwSLAFGWwCDBFGSwCTFEGiwBTlMEiwBRlsAgwRRksAkxRBosAU5TBIsAUZbAIMEUZLAJMUQaLAFOUwSLAFGWwCDBFGSwCTFEGiwBTlMEiwBRlsAgwRRksAkxRBosAU5TBIsAUZbAIMEUZLAJMUQaLAFOUwSLAFGWwCDBFGSwCTFEGiwBTlMEiwBRlsAgwRRksAkxRBosAU5TBIsAUZbAIMEUZLAJMUQaLAFOUwSLAFGWwCDBFGSwCTFEGiwBTlMEiwBRlsAgwRRksAkxRBosAU5TBIsAUZbAIMEUZLAJcd7Xvl52HZfdB/Dxexs7lqp1eDGW6sozuE6fyiADXWgBy+m01/75e/NjgZ/+zl1hs4HiOt16sNnNv3XeSy0Cjued+X7urDXymlZm4K/gRZRar7OmAqoMIcG21uLMWY3e1ft5u/w1kPa5wMF5stlxvt0GZ5XojyiQVw0eyjPczqYx/ZPUzKIMXwy9ezA9VLxHgOqodaAGgFL3QbLnCQV8iDRbCC2uBwKvKbLZbUHdQRhTz4dwEZfDi7lPMj19ms92XGc+9oIzuDqHSRIDrpbafDyPwAjcIGW8YYOdpZT+uEG/DmroeEuwwwP3ZIlIGiXFHALyLrptNx3LHX71Isf5DGODNxPUmXz3UiJQb6Xd3RpJrJwJcIwHd2dMa+a2kaL3ZqIRWav60UoApLVZrb30A8OjLMl4GxIYB7lru/GkdKTZyDgC2vnlyBsFBZPKYAMREkL6XRr28CHAthMiGKLfeHOCUF+DvMYA/LxIAns7D69vO1IG3KMAzdw/wz43lLiMpAD7FNMDNrfqIAOuXpHfzHCUzAeCllwTwylsfrIHBYRzyzkfnAODJbL6MAjy05wcAf126XrSM3APrzZbc36qDCLBmte8Xwy+eSm4POPmxXq4O18ALb7WOlpx9W4LhMMDD+3mEc7Da/jALA4y3zqN3EF2fN93JTM0jKDP9ssCUEW+YcOitxabXPRnWLAKsVdai+7B0V9G1qJT75DmL5TaEov11MbScdSgsg/Dex5kotudw2xnbB+Rvt+PPbmtkhQG+e29P5weZNiaHu3dTYKzKjB7m+OL6OWFywZJ4/FXeZCLDOkWA9cm/7zqae5E8OZwwTx03/Cnett5OwlER4RfUAWwVcl2fQzdUBgT2Lac5tFSgRmxvDS3wGZkv7oZTfBSUWa/709nw3klr3uLHpnMfv+FMvagIsCbJ5yg+LeTd2URClt9XQGhgzYAWKJo/eiBTMBaKrmCyO7Hb7y18iuxa8Dyy8DaSacsIjAxZLpiBLophOohk7O3RFDWiAIoB3dZwOn6Yb5IisFwJDz4vkx4aoV5OBFiT5LifurPHhF0itZoFkJ2x1RxMmm8m+IncGEfia+DOB7v5diqKDSYg05pHd6HXm81oJhhuDqco2XpnDe25Crb7CP/FxdelH9A7sJzl99TmiUe1nCXmIAKsUQRYk/zwe/dx7sS2gg+0FUtThMqh7Uw+u4sknMStHW81QZl7B5EWoTi+oS15s78tgTHCr+0ukxPj7dZ59FBgZM+tr4s44QcOMSl8WWIOYhDWKAKsSQJg9zjAO0SRx6Zl2qrM+liZrb/FlYh3QpljrgTADgHWLAKsQ7v8uTXJBXA9JbapHSQRLrNojSLAOrQH2DEf4DkB1igCrEMEmCpJBFiHLgbgzwRYswiwDuUDWOxd1UMEuLYiwDp0DGBvsx4u56251YS+atXc6n5znB8Jv0RBgOsgAqxDmQCvnzegVzO3hwx3vs0WP6P3hAlwHUSAdSgTYITf1ldbP7eHDM/X0XYS4DqIAOuQcQB/JcA1FQHWIQJMlSQCrEMEmCpJBFiHCDBVkgiwDhFgqiQRYB0iwFRJIsA6RICpkkSAdagMgDvfZsMnd+ItILxof5vlRPHOtYfL+fT7wl4t8XP4NM/zXQJcTxFgHToP4MFyvtwk/K2Mxc9V/3Ge8cXuYjb74cW/KP52zw8PYBNg40SAdehUgLsLB5TGCdxD9bxxfniJEXX85AL7jD/ZMfZcKA1jAlxPEWAdOglgoOXFAu96i0Ohvzv7feH+XCE3RpKsUESyDTKdtQcIEyOwDMIo4z2vZz+WBNggEWAdKg4wIGy7toqfgBYoIpdGTIaA63wtfmFo9OTKXwBEKAbMLdfGp+56pX4xEAtmfBeE47u9R2fgL4Yh0Iuf+Nbm3631fUGATREB1qHiAAM5wInoik8RJDuLhCQZNILDfVD1V8WR1TKWwe1YkoxY7Yb4BOe9hUOAjRAB1qGCAMvkGShiHQtEW+m7Tf3HeeL/hKJ2udJW15FfGJzGgjABrqcIsA4VBBgZslroAuOMvWIZh7GUjdOLHDv7dhGgVSk6FswE2AgRYB0qCDAWrgot5NLZAEuGN4c+gX03KesOS66fVawmwEaIAOtQQYCRNqsI7PyIxsaI8N3ErWbMAtm3l8chgIErATZCBFiHCgLcXTir3cp2gU/T18BYLfcfHURpcL4IbV+Bf+95M8j8Sz1h7ONxngDXUwRYh4rvQiN+uusVOMQL0JW4mkWSrDBDSaTNwN5Hd+3+XOHroHqQ8qjW8Gn//wAj/Y6jToDrKQKsQ8UBxgIVERL0yiex8HPkP//c8nNm+ajG8jDkypu98otgWNwH9h/VslbiLpSsAj+BfW/huKEHvMBqvAEEuJ4iwDpUHOC2fycp/CCkfFoDBwEncI3sWuFg79FRebV7+ACmDMvqu7MfSwW/l5KiE+B6igDr0EmPUiJUZj8IHd5z7j8ePIkxfHITf/9hu7tpNP2+QGS2vi/ij3AQ4DqLAOvQqb/MgDiMxNhLf1QDMRkJc+IdI5Dp59IJ30UQXvxcZ29TE+B6igDr0Hm/TggUx0/ufO2pe0tIpwEYDiJtzvgucmN8F9EYs4C7XiGvlrF36D9TnV0pAa6nCLAOlfQXOVAMTAqd9Bc8WkUKE+B6igDrEP+kDlWSCLAOEWCqJBFgHSLAVEkiwDpEgKmSRIB1iABTJYkA61AI4NmjFwf4zhCAhwRYtwiwDoUAttxl5C9Frreb0ZOrndiw/L/XEcsU1pu+7RJgvSLAOhQCGFkoQln8garxkysS6Xkt6J2torMMtFyt2x8dAqxXBFiHQgB3p47rJT/hLP5k7LNubTeJf0p687yZOIvWeEaA9YoA65AE+BMAnrfezwb3c2+d+psG9dRssWy9t1sfHExDwelo79VfUgRYk3yAEb4QxFrvrJE9jyfSNdV2O3/0OmO7NSLA+kWANUkA7GfRHxyQ0Hw77by3vB8GxGGk/K3htDm0kDsggxDTEAHWJwKsSeEsejwDD83B5O7dFHgsv6/Wm+SVp66Qu3nertbr+WLZ/2ijnZhu9uE3WAATYD0iwPqkgvDEwXpSMtx8M269nfQ+WOOHufXFnbkLvbK/LjCnDK1Z+91UNM+ntwl6g+0rhl/NIsD6FARhxfCs+c4SePgYN/vj29pItOeNT+/Qj72gF8kzV781EAHWqgOG/Q0trIeBMRaZb3cRT7ve+o1BgjDy170fHMbe+ogA69Viz7DclEYoBsbg5L3Y5m1KnvVJxFvovYi6Abpi3bujlwDrFgGugw4xnkqSfZihD1rlt0Fwq9D9pNAlvfpFgOshFdDCJIc1fVl9iuuwhdp7jPJFgOukCMa1lfaOonYiwBRlsAgwRRksAkxRBosAU5TBIsAUZbAIMEUZLAJMUQaLAFOUwSLAFGWwCDBFGSwCTFEGiwBTlMEiwBRlsAgwRRksAkxRBosAU5TBIsAUZbAIMEUZLAJMUQaLAFOUwSLAFGWwCDBFGSwCTFEGiwBTlMEiwBRlsAgwRRksAkxRBosAU5TBIsAUZbAIMEUZLAJMUQaLAFOUwSLAFGWwCDBFGSwCTFEGiwBTlMEiwBRlsAgwRRksAkxRBosAU5TBIsAUZbAIMEUZLAJMUQaLAFOUwSLAFGWwCDBFGSwCTFEGiwBTlMEiwBRlsAgwRRksAkxRBosAU5TBIsAUZbBeGuDJt9Xix6Zt18XPbLl2vLX2y1DiWdSth6lK9dIAz57W23+3nfPBK8nPcr1ZbbbaL0OJZ1G3HqYqlakAt6EyxtblAVxWzxBgI2QqwGXp8gAuS3W7UlSiNAPc9tdac289/76eLlbh4YLjOBL+7thdWbsjo7lnL9ft+5AfdwUnEL6YEYI6D0v7URTDurE3yxr6qA7ald+I8p+9NLcoiQag/WihcP4UFEYVaKc8u3akJfZy+m2FtSsUabPw9k2Un+689R0v51lEekY06XHfpMEXzwr1akYbCLAR0gkwfmLk4e3yx2bxY7PZbtfP2+4sKBlHC2VQIO4Hww4f4e3C9yMcrjftpNox7uFBlZQ1pgGMAvgIgjfpFuX7KQzLwt7PzfLHvvBw7uEn3ganGWoVWELV+NT9HpTHdxU/0ht+4qBsJwqAzDxnEelhHA/3MNqAn3naQICNkE6AET3C4xJsyOEu3+YH2JZ+vgaBZfx1hbeIh/HaZcnhrsaB4+FtBsCR5uGtu9pkFB5+CQojhOJtuK6g6l0BMIOTVbOVLI8YGPY23p0CioV7Jvsswj1jPcqeOehhBXB2GwiwEdIJsAwI8U/lkMoP8OY56gfFkDTGa8dx77BkRgodrk4Kqb6o9OF4YURaGdDUkb6PmVoUdB+E1Kc4EXyKGS2tarRTHck+i3DPyKQgXBITkAI4uw0E2AhpAxhDJzxcpGQQkLElJ8DSD0piaCrFp4a7HVTO00GNhQBGdIKHyHI0rbBITUPhGrMSvouQuG+P7a/qH8XqVJ7O7CkVYAXe0bNQPROUPLzLHQY4uw0E2AhpA7jnD2j78WB4IV9VyXBegGdBrJM7MUrWYzSFlqjby9MBHn3dzy9HC2cDjFxaZrNyeyk/wEfPQvVMJ6lkGODsNhBgI6QNYJmwReLD1A9xA3+hGB/EiQBLP/McT1MlRqRCAMvmJe5jFQUYlaK8ysaD9DV/BE4/i/wROLsNBNgI6VwDix3R52341oXcI5VHEBYiN5zkgEv2s8011FY/RbIdvvkk95kTC8tt2/bhkbQxXRRgsR/2ff+p3IjKA/DRswj3DBIT+AmfAo4oP9ltIMBGSCfASOHkvRC8wOiRW0Rqm0fmq8AYH6GAHMGJAEs/wBjJbe+zhy9imMowPvUf6FWjcOKvseFK1Oj7DO/fRgoHt6ZWGzQA617nMMOMFy4EsJx0sP5ES5Dty9tCKlpmA5x9FuGekRvyoofnouT8e3B/K08bCLAR0vwgB2CT40YOrMiTG/IuiBReA6FEgO/8xbO84SmFMS33V4Niob1WeQ9GCg4xa0SH/q6wpMgOtQEARG+THhYONz4bYOThqsGYbiK30LIBznUWdkIfYjYUacXOc3YbCLARqsWvE2Jw92bLxEcv2v7DTDkf7gW0eQq3/S20o0NTUZSz/Ckn/rBUt2GLKn+rwiXja/5z2kBpVy0ArqfiYdBEhadF+SxK4h1yylAR4FRdAMCIvfJJSdv/hWF506jHeHtBIsCpsharyPMSxqnt72Nh6Y7MGcKyltnyhYkAU5TBKh/ghrWAtJ8YRdVKFXFBgCnqJUSAKcpgGQYwRVFxEWCKMlgGAExR1IuJAFOUwSLAFGWwCDBFGSwCTFEGiwBTlMFqNGk0mrFGgGk0g40A02gGW+P2z1uKogxVQ71qv26PSrLhu2G73Y7URP/0T/+l+98D3H/TP996sH960lXkBM733/272/lfBz8N9Q9D56AK0UUV+IdnKVyEKvzLxkPybbn+ZedLdbvdKtpf9fVFtwedX6X/SPtDAJ/tvfWqBUu9wOcZLir8YxpDFckX+DxDsyv1Lw0TJ/wnA3aegS54RvuhKtov/KN/2sJ/8gR0nqH/ZePvYH/dle4f4172jxqi1fkXjJXe/73g+uIqhK9vaQBLg/eKAFZzP64uTqN0/z3fqvPf968xBmdFAIsB9KoVZEC+ld7/aLzqpdL9S5NhoIr+kRN0v7LrK6Yef95p+1a6/06nE/h/feDfGIClyXmoihlOOkcfiQFUQYSBAQA5T1cCcFd4lhNEFRFYxhbRP4hgnfIjWFCLH+Hl69IzCNE5SBKrub4yd+j7p1BFBrGfIF4f+DcJYDk9y9FTif9/ejJIVjFAxQwKz4gD1QCAxst5oeoBJE+kdP/93Sqgoggvl2DVXV81QVS0BDAe4GANtpueS/ff8a1fXQok13j+GrgK/xig0m117ZcpaGQAlTh+ZBKh3poVIZWhlipSdLmE6YeSFMMAlimctCoigFxDCntVVYrePwwylUQAv/1V+O/7q8dK+0eNUWkl94/cZH1VYfulc/RSFSl62vXdAXx7bgXx+oRTdQKG+Fc7QGy/Fv/hioxrv1jFvHj/E2D6p3+D/RNg+qd/g/0TYPq/HP/L5VL+d8fT6bQK//mNANM//Z8O8OTjpAr/+Y0A03/UxuPxyrf513kV/gtZPf2P3o8mvg0Ggyr85zcCTP9Rw7iU4QVxpgr/hYz+a+K/CMBv+uMPY0j+MsTg7UAoZarLcwLiy76TcBURnwllcvuP2/DdEBjgFKqYoYMO8ZuKnyIOxJp9sn80ePppGgD8tMzo+aL+w80OV3f+9T1SRXn+480++qs/546f9Ct7gv+DkTMQIwfZVk7/jdudZX/Btu3tdisH0PrnWkWDxWKRVUHI4mXm87l0IiYF32azmfC/XqsyyBhxZPO8OcF/2Eajkffdk9VJiUQ0/TIX9S+a+kM0FSY6x+8rIFeWf887aDzkfnMzyuf3j+lAOrQf7PhBXJHz27/ZbKQ3hasaPziv8/3vm110DZx//LyPjp/F42I4HJbiX40cMUfvKEOnZZyF8t/IU8F0Oo2MHlXNOQCjfZGho4YpeBPv3/TTksZCHYSOVmMoJwOnA+x3fWRiOt9/dQBb95YK7PIIMFPXN22M/lIAYzQihMTHDyLNkQwin381cuKUBSCk+2/kqmAVVOC6LgI9Egl15ByAxUAJjUX1ViGNRCIeHE7oIDRbVYRa0ClIIoIB+q6EASotDDCSC+eLk5HlnuD/lDVwDv97XLdbmZKoXD2NrqLtNx1g5VaMH3/8q/kUF/p8/2rkwD9mzLD/tGm6AMBosZoPVM6prvE5AMNkWoITCPtU0UDk7TIgv4/OQ8UG0HN0AM0+z+QRxJ9z2h82dRkyAu85/isCGIZscBu6fYpBE8ybtl2Kf6MBVuNfrON24x8xQE3W57dfjRwVTjDg95Vm+m+oCuSTnHFhOKq+VgfDAKd9MXICiWUQpqQfdI2Mk8Hqa7s/Is/hNP8QOkVNQBiaUmo9A5LPaX9Y+8swHB4tfIL/MMDl+ldLJHmDKsxbKf7jDtWgwuUuq3+gMMBl9U/i+BcnpaLC2+Reyt/+xJGT03/jaAVqpYp5en/JSwJYDUp0k0xrcQRLCxkN5ImF6z2hg9RklijHccoaQOYC3N8lKbgEarymdfsJ/o0GOHH8Q3KUyrB5ZvsTR05O/43jJ6DGTaivywJYbVOFg63cnd4ncg/2OR2kIjCco9kRIRcqawCZCzCktgn26fSnaVn+jQZYWwTedVracJJuGwUA2OxT2bIAhsL7q9KbGqlSaYzl9N8PrYEzcD1/ABkNsBqmarLD3FqWfxVMVP8bBPB+b9Vf1smDag2MnOX89sdHDl7sK01aP/byAxyuAGskNB297+3WkOcDjCRWjRvLsnqHyGHWOL+D0GzpDScCDNA7yKux+s3In08YQFUDvN/Y2GzG4/HRWgr5R5+rnXmZ/pTYfsUVRgvGDy6BGj/1BxhSWYlo//sROl+1v5QlmBo5qAj+IXUfPmMhI9028lQQ3h+OKAPgmz9u8pxAeO5XKRbcluW/50+iKggcxJn02aGQ/8hlyAlwUf/heU1OpuX6VxuKOQHI7z/+HIHKDzMALtr+Xoi0ctuf9hyBuHuSnqfk9591H/j9KNt/LoAh695S5wAY1MU+HzCMS3kfMnGX27aTF8BFLzAYFovq7UHvZzg/YQBVDXDP31BRVyGj50/zH47waWnbyf7FM3a7zve+eyIF3RoDcM9fSCrnEi3xTETmLv0JANsPtpqjQRlSlaP+8wLc80nDacg9sTxr4BMuQCGd4F+eAkZPdtfXtv2Rq1Cuf/XYzHw+r6L98vZpztmtnv2PeCv/Z5NyJ7jw1B/0Uu7rGwCMN4VO/jjAvYMTKOr/uOi/VP/90FMQINm49hvtv2juFvZPgOlf7DiozC1ys8SI9pvunwDT/1n+97sbP9d5x1Cd2m+6fw0Ay993haXeWa1TB9F/tn/LsuwHW/zy47F7v/Vsv+n+sWaRNOVZWkf8N/CPVBUnEBb90z/9l+6fANM//RvsnwDTP/0b7J8A0z/9G+w/BHCv4hOgf/qn/7L97wHudrul1dHrwVvkBOif/um/dP97gG//vO10Ot0yDH7k1nlY9E//9F+6/z3AsOv/XJdj/7kW7g5PgP7pn/5L99+IVkNRlDkiwBRlsAgwRRksAkxRBosAU5TBIsAUZbAaNzQazVgjwDSawUaAaTSDjQDTaAYbAabRDLYTAb67uxuWZIO3g9ar1gv7v4BToP/L9p/TTgRY/k5TifbC/i/gFOj/sv3ntFMBLtW6f3df2P8FnAL9X7b/nFYXgIPfkHop/xdwCvR/2f5zGgGuqgr6p/9z/Oc0AlxVFfRP/+f4z2mnAIyaKm191f4v4BTo/7L95zcCXEkV9E//5/jPbwS4kiron/7P8Z/fCHAlVdA//Z/jP781xF/KKy7UV65e2H+tTgHXb/B2IP9T9vp0Ef3r9Z9TBDiXJpOJ+v+QSzwFoDv7PNtut9K567r16aKMkur/E+6/6Vd6idHbsiL0f4n+1f/Hi3mz2vY/nt5+Anykdwp9vSKABb3/bpXwtj5dlFGSABPgEnrnHP81AViRYD/Yw+Ewm4f6XIIXAxh9Mno/gvr94xURYAKcqioARv6sYm8Nuyij5B7gHFzVsP0E+HjrMTqH74bjD+OjezOn9Q58Cv/jMa6B3MQr2jt5qpDTP/yXDjCGPloeALwVoexoNDun/bJGUUs6cqcBDOeoAhfi6FU+AQD4lD1zwiXOKBkHWFVUSv8omQqwbdvqGssB6jhO9jXI719s/Mxmm+e9f9Rl3VtFeye7PByqvaX1z7VarJYFsFrdhYWMsZQuEu239u1H/4CxoP2PJbRfXVyMS3SOusqotKz2S7muK51PP02PFj4ZYIyo9Xp9dBviVwEYy7kwWur1/Ou8lN53vjjKuffdU8MU9RbqnYzCKt7GZQTASHyizne9VC7Ayu3+FN6lnkJtAUY8kG8xnDLCzK8CsIqNo9EIb9XcDyuld+SgwRiSOZvyj1BQqHcyCot5YTfpDAbiDq06UuYa+J+e6pk8o+GE9gMA0f5hqP2lAozECv6BgfKPI2X1T/dFAIYF09C2zAxIykiAR76FZ2KVn2TsGeT0LzZ+dgCrReN4Z4V6J60k3O5nnN26rpJNrGoAPtL+UgFWK8bpdFp6/3RfBGDFGNZ9ZflXMhJgOTTRYuS0jm/qemfMcPn9u99cNUDRQej37IkzrXfSSmIikP6XT0t10CCAVfs9z0tofzUAJ3bamf3TrR5glS1mNPuc9tcV4Ous1uNaHuxghZQagbtd+d8W5/GPca+u635p+rjIuqUR8Z9ZRSKrxwEucgrqRNQwOj4acvtPZFWtilMBLtL+OMBqIZNKQvH+gbCEyQtwEf8KYKXwZFdi+xXA6P9i/nUBjEGpZjXr3pJ/ce94Cl28dzB0kLbhAqvqMmJjIYD3wWS5H4sGAZwYDAlwWApgpG/q9ZEbGb8IwImj5/h989y9g9X17PMMwoiRR7DkCxjOSESLAKxuz4p9sl7uNXBtAD7SfgJ8OCDViMVVGAzSn+uoL8AnWVo7hu+G292eMLoDYzR8Vyl1sSpbn8M/AFY5j9yhUbuIWRjE/Oe8wBhAOCOMTnXkCMD5/EudAvBJ7ccYXa1WuQDO5/90gIv0T/cEgAv2j4woalclY4PgtPYXBri4lQxw+J64kspyUzeKi/TO/g7qdivq2t2KnM3SfxOgIMCTj9H7wMcT9ToBHG+/EgHuxgDeJ3H/btF1JbbfPIC7fhBWdwXRL5ZlqceYUh9zKdI78lfwwvtkwDj7GaCiAHf9J5lUFQhfKrMwAmAII37f/h8r9axCKe2/MIC78sG73bojeTf01wFYCrMaEuY8j7Ce3DvyEYVcz9MXBzio4u0g7/PuJ51CAZ3WRbv2qwGa+jxcLdu/v400nZrY/+f4z2mnAtxNbUcuO9o7Ffu/gFPI9j+Sv4LnG16omCNCmQnth2H2V80Wi6+y/Vfd/jP95zQCbOopZPuXQx+Li/Dj4jgociIT2o9mq3VpsJ1uVP+f7z+nEWBTTyHDP4a72oZQWj4txcOnJrQftqf3eSMWkGX7r7r95/vPaWcAXKq9sP8LOIWj5bH6nXyc2LaNtFncwCvbf1Er5N+yLPvBxtJXLQTK9X+CvfwQzWMEuKoq6J/+z/Gf0whwVVXQP/2f4z+nEeCqqqB/+j/Hf06rC8BXv1+9pP8LOAX6v2z/OY0AV1UF/dP/Of5z2ikAo6ZOp1Ni09uv2+HWV+3/Ak6B/i/bf347EeCbP27u/rrrlGHwc3NzE+mdSv1fwCnQ/2X7z28NfO1ElWha/F/AKdD/ZfvPoTMApihKtwgwRRksAkxRBosAU5TBIsAUZbAIMEUZLAJMUQaLAFOUwSLAFGWwCDBFGSwCTFEGaw+wfDi7/YImnuH+4yaxWc3/Nvtv+oMyDH6azebLV0H/l+2/JuDsAL66QhNvX9xEv8Sf5L666na7nf91SpF0Fa2l6iro/7L9hyrSC84+Ar98I6Ql9ktZXa8Ur6XqKuj/sv3XBBwCbOoAon+9/msCTkP9QqLOdsSskt5/2Sro/7L9K9MLDgE2dQDRv17/yvSCQ4BNHUD0r9e/Mr3gEGBTBxD96/WvTC84BNjUAUT/ev0r0wtOGQD/WUI7Xr73TR9A9K/Xv7KzRv/Z4JwHsI+ubdvWvaXentaOl+990wcQ/ev1r+yUQV+GydrPANjH1bKsrW/TT1N18IR2VNv7nYTer7qKC/Yv//dwqN/vm9j+UvwrKzziSzJZ+6kAh+jdPG/Ef8d8KsOJnfICvW/6ANLonwCHLec4b7VadydZ61UrkSlZ+0kAH8beyccJJDGeTgsznNgpL9D7pg8gjf4JcNjywIKOWv9cC0ZChiMHChl6WMnzPGCcBk5xgCOZsyT29hYvTmM4sVNeoPdNH0Aa/RPgsOWhV6Sofo/t5aeuEiIJThreq9WqPIAT6f0zOC4Y9q0Qw43fGvFOyejK3j+9ZPV6Gb0fryWtcPfvrnSIF/tKe0Etqb/jEqsiz7AYDAaj96Phu2G4rjP9JzY18aRObj+GlAIYDkcj/xSyf/uniP/gFHYXdDgcogocOdN/stvQsOm/6eNy4GfOIXQEHH/8o8aA3u0eXZi87gG9G0EvIi0603GcPb0yGqcALNtTBOA0ekOfnsBwIYBxhtGZbCfvu5f/6mZUMZlMpEP0oByUuNKq65OvbnGAMXRUHJOeceWyGMjtf/51Ln1a95Y6uHhcyINY7JQIMKpQsQUXffxhXArA6Hnh8HkzeDsI99JsNjvHf9Ds7RYXFGConseQxrhSXQS539zotSgKsKJ3kxB7JcAogJ8y9oLe9us2jmAYBOiWDHA2vYcMy/kDYyUPw2UBvHxalgJweLhPP03xFpdTvrUf7FIGqJx646cwn8/P9z8ej6U3nIU6qIJAuRE4PjSBXFkAyzk0UgVG/LkA+1NDfPBEjti2ne3/KDiI7VF6dyahxZWSDAf0/nnrfHEii2EYItPZAB/uOQdkphuCWH6Gi6bQw5ABsONDpzjACLMSMHQf3MoqEApKiZAQLokaJSAKPKsrnbqqLOI/8AZcZQbxLsggFotF6rdOAhhTW983eA6OuG6JAGNGQxCD/+VyeWSOKwIwOIFPrF9UeEeN6CUghzk6uNyr1TkA7+ndRukNp83IWUBH87/NVqsVpzfYxCoB4BC9yJrkhnjC7vaftzgoPmq1UF424ijtRQFWwtBXFwBhP6twQYAhdSFVrpU69xccoGJ22HlWB5EcyoOpWWgRADDKgzaPRuFzwcRaLsBqusELFdxKBFite1VaAZLPB1g1GxNogLTjqEGleDsZYAAZzNHbJHRD+1WI/IKj3TY1xnNhgPGPVB56oaCOn2vEfVm3MrxFg0StK1GrbAF+qp3qNIDjygOwymxTZ/3D3i9UBWJXePV1QhVpJdVYRPvznGZR/xDmmm1o0Rjkhxn5c0H/cRISqTvZf9yVSiJSF0o5/MebrTI4RD9VTMXMo0MoAxxM0/sInEKvyJzbbfm3u/AVnGPybaR0gIWOAoxpG1XupwU/yqN6uI74xVv0kVx2y4qFPA+v5ZK9RIBV16OqnFu4RatQget4+C0yQNUm2fxr+or3PAA6uyxabGx2u3JEHpkvzgZ4fzB9F/fXAfhW3j3abA64jdAr173+rlWwpzUaRegtAWCZLYefC8HJyGriEXjlGwpEvpLYgpMBFtvCu+QEK5kTRv/RKva7/77Q3WUBtt9kWiyOt/xUgDEiVdp8JDkvCWBG4AOLPL8Ru82LqIMCYt27S1Qlw2iSzGFLAzhuAFLWmhiBYRGws60owDhztS49svQ9A2DkzGrEbEM70ucDoJaL4TUwnHu+yVXr+QDDj5p65NI0z33akwEGaclLx18W4Nv9nSSRse7oVY9noMbZ59lBvF2t0J7F42IP8CrrSazTARag+lWmReCMeJvajkjvp5ta+mJmGodMZLnpVqiK8OgX24l+KMZPcdM/dxUZJdWkgDWqeHgAidNuyIqxdbZ/YSEMgnT9mOX3r0hAEjF4O4DURRFpxdn+9wDvOvwA4FP9HwDs2x5gx1HFDgBO958LnDDDkWcnUx6cjKuSCCxdd0KpMl4gp5fbVyVE4BTbP1ORpIwxUQDg0KOCmBdwQG0Ri62s3FVklBS3ppLuA4eH0Tn+pcGb8ixPJNsKA7zdxs8CF+h8/5cD8O2eYXARBNVVsMu7V4Z995bLZSJQ50VgtVkVsR8VA/yucoDV3pV4tMs3DCN1UUWKm6+KjMZ0/Jko/PAAhqxlWdlfKQqw6qvg1s4xKwqwzIDUHWyMh+xp4hcFeGcZv40EXtKU8dtIZ0Vgcbvo0NR0kjZhpFkhgE+2l68iz1cwQOX/3FEuYKfZif79J7rFKVTkP7e9/BAqCk65djrA+wc2ikwYR9rxSwJM/+b6NxngKtpBgOnfKP91Aacu7SDA9G+U/7qAU5d2EGD6N8p/XcCpSzsIMP0b5b8u4NSlHQSY/o3yXxdwTmjH9X+uj6pAOxoJnVJu17dft+O1VF0F/V+2f/0AN04C+OaPm0YOQ7Fi7SDA9G+Uf1MBDr55zAq3gwDTv1H+awZw/pi5e4rjhD9FHbcgnkc6pdFot9sl9v7dX3fRWqqugv4v2/9vxcEp1fbgqHZcXV3dwP54Qd3c+H8TJKFTsIrGRNAuw+Dn+vo6DnC1VdD/Zfv/rTbghJuix5LSkpeopeoq6P+y/dcEHBqNRqPRaDQajUaj0Wg0Go1Go9FoNBqNRqPRaDQajUaj0Wg0mnz4+69yHv4u/LD4X3eovaLGxJ1Lu/X/76n+G8p49f7p3cZ+y7XqIXT1x+3t34Pb3lCD/h6g9uiAbjabL/9bUXv787bCxvwZO9uG+H3R9us2dQHqqN/XfcEhdNXuNf7Spiv8jEckvVZpY+IAax92VLmqejxHB5A+egMRYOqSRIA1GwGmzhEB1mwEmDpHBFizEWDqHBFgzUaAqXNEgDUbAabOEQHWbASYOkcEWLMRYOocEWDNRoCpc0SANVv+xjSbzX6/Px6Pp5+mk8lk+G7YbrfzOyfAFykCrNnyNKb1qmU/2FvYv1Etl8ter5fHOQG+SBFgzXa0MZ3/ddbrtWR1NBp1Oh3xvzT9ddf7p2fdW5JqHD/qnABfpAhwqjX/K1LWwWAAWiIfRXJXQIVi3b+74f/cDOAN3g5EeMz8H8+yG4OqN5sNEB1/GCd+HS1Z/VihgKg90zkBvkjVBOCrdr/9dtzqj9SR27+HOHL9v4EegLvdriRHSvKDn+43F8fBjCo5m81UMc/zWi3xfxTO5/P9we+e+I8Lc3RQ/NPF4wIeJh8nGV2MmULE56fl8d4nwBenmgB82xvK0d78J2B4bDsirryfFuJzfD+DSgB4/lUQOBwO0UcyxCEg27btui5eK4D7b/p4C1yB6PTTFK+n0ykCL144XxwcBHt4bVlWng6KfIT4LycFFcPRHkwHOIhJBJVilgla688XIPlI7xPgi1PdAJ4/Ls8BeL3ZQCUA3Pb/n9UADx9mlTZvnvcRGJmz4zgSJCSxKDb7PEMQRs8C+NtdeMTBPB0U+UhiOXw3lG9H70cqpEuMYfIjgC0C9SQaqAnwxatWAG+etwraMMBIrd2lB3CWq5U8MrJmqx/rwUcLr53F0vuxFmUel3KE46PU3LvoCYNAVAxg1JEwwGFDfA7vJ+GLQG6xWACzxAVqvIMOPvjzVubwMv3GT9SreJbzgmpG2jRBgC9etQJ4vlgC1NV6ffW6rwDGaxlXR/ez5Xc/me0Nrzv99c8NSnbeiRTVnrtw0v9gYQqAhlMb3yoBYITW9c81OEFPqYOJACMUox3uN1eluzJ5FgddV0bjox0UPo6ALxBdBRUhuoYXujK7Xi6Dt3d3d6L7vs6P9D4BvjjVDWAEUrFnZDsK4N5YLC0nD85Nd4CQi9eDjza+Io9vfLvZxdvSUmhpAAbxE3iED8YB7v3TQ7FgB+vQ5Hp4NiucQguf/24RwOVbufa27oO1NOJwmFgJMMoc6X0CfHGqG8B4Pf08Bw6zr64EGIE38vDC2A62qVb+/dHJzCl/DSwN+EGRgxGAxX61f0RxDvamn6ZyzYzYGw6V2R10ULUf0hWiciMNObl8KwOymhfQBrFt5jhHep8AX5xqCLBIj3d3cABwf2LJCHz791AKBVAMH4kIvN2i8HVFERgRL76BHAYYPShXqlgAgy6h0UhGXQRPQChvMqnImd1B4eMySVZBVT7LoTa0xCMc/24xTci34/E48V4xAb541RBgsZr1oZUAI3PGshZY4iDSZsuZN9o9LHERfrEM7o782zRfXPlFbyUCFUo20v78ZaETBqtYA8cPKoBlKhsWeMZxoCX3nOTeUsYf+0xrjAyq4h6Sb3LbWc4m8Ibj6v6weItPY6l+Qu8T4IvTCQCLuPJ5BiFIHC18GsDQwh+ics+5PZx4P9YSh8WTB6SnM/8OyyeRS7tPouTdYIzXg6ktiyFQl7MLfbr9KZam2Y9h3aYDDCzljSK5ASZDLsz54qxWK8kzMvPhcCg2uv37z9nOCfBF6oTxLB9YSLzveHwIZSS3x4TM+aqdsrccEoLzdSf9+a2XAzifZTRGkinT5larBVyDe+XzefgtYn7alSDAFy+DAC5HBgEsH89Auq7uQrXb7fBTmfJv82cEeQJ88ap6PBPgAh0U/1Q+C+1+y7qTnNM5Ab5IEWDNlt0YrKLlftX653rycdLtdu98wwu8RYjO75wAX6QIsGY72hgsd8VDmkm/zZ/xiHXcOQG+SBFgzZazMcB48HYw/TS1H4CzPZlMxP8uWWSLmwBfpAiwZnvR3ifAFycCrNkIMHWOCLBmI8DUOSLAmq2UxjSbTSySwz/jzgnwRaqs8Zx3CBHgiJXSmO7fXdu2wz/jzgnwRaqs8Zx3CNUN4Js/bk4+5/MNtVfXmIhzaXd/3Wkfc1RZwtWsdDwnDKFXXZ30vupE23N1dXUD+0OHbm5Qe1WNiTmXdn19Lf+sNGW6cB1xNSscz4lDCDX+ty0wfnmh3t+j50uj0Wg0Go1Go9FoNBqNRqPRaDQajUaj0Wg0Go1G02v/B9sgoRfBI97gAAAAAElFTkSuQmCC"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "View Leave",
+        "line": 10,
+        "description": "",
+        "id": "view-leave;view-leave",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Then ",
+            "name": "I should see \"Account LogIn\"",
+            "line": 4,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "Account LogIn"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/assert_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I enter text \"louie.d.p.mandigal\" into field with id \"loginEmail\"",
+            "line": 5,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "louie.d.p.mandigal"
+                },
+                {
+                  "offset": 54,
+                  "val": "loginEmail"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/enter_text_steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I enter text \"Qwerty3!\" into field with id \"loginPassword\"",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "Qwerty3!"
+                },
+                {
+                  "offset": 44,
+                  "val": "loginPassword"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/enter_text_steps.rb:13"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Failed to perform gesture. java.lang.SecurityException: Injecting to another application requires INJECT_EVENTS permission (RuntimeError)\nfeatures\\view_leave.feature:6:in `Then I enter text \"Qwerty3!\" into field with id \"loginPassword\"'",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I press view with id \"loginButton\"",
+            "line": 7,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 22,
+                  "val": "loginButton"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/press_button_steps.rb:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I wait for the \"File Leave\" button to appear",
+            "line": 8,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 16,
+                  "val": "File Leave"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/progress_steps.rb:38"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I press view with id \"date_icon\"",
+            "line": 11,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 22,
+                  "val": "date_icon"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/press_button_steps.rb:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 2001000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see \"Leaves\"",
+            "line": 12,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "Leaves"
+                }
+              ],
+              "location": "calabash-android-0.5.14/lib/calabash-android/steps/assert_steps.rb:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
