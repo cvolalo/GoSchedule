@@ -47,7 +47,6 @@
 		android:paddingLeft="@dimen/activity_horizontal_margin"
 		android:paddingRight="@dimen/activity_horizontal_margin"
 		android:paddingTop="60dp"
-		android:background="#555555"
 		android:gravity="center">
 
     <LinearLayout
@@ -126,7 +125,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.25"
-            android:textColor="@color/white"
+            android:textColor="#000000"
             android:text="Status:"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -144,13 +143,13 @@
                 android:layout_height="wrap_content"
                 android:checked="true"
                 android:text="For Approval"
-                android:textColor="@color/white" />
+                android:textColor="#000000" />
 
             <RadioButton
                 android:id="@+id/radio1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
+                android:textColor="#000000"
                 android:text="Approved" />
 
         </RadioGroup>
@@ -174,7 +173,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.370"
-                android:background="@color/blue"
+                android:background="#0097a7"
                 android:onClick="submitLeave"
                 android:text="Submit"
                 android:textColor="@color/white" />
@@ -189,7 +188,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.370"
-                android:background="@color/blue"
+                android:background="#0097a7"
                 android:onClick="cancelView"
                 android:text="Cancel"
                 android:textColor="@color/white" />

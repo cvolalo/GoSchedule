@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="armeabi-v7a,armeabi"
+    api-level="22"
+    density="xhdpi"
+    format="7"
+    timestamp="92109099180480"
+    token="-7017598560302559751" >
+
+    <task
+        name="javac"
+        duration="18905" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="1833" />
+    <task
+        name="verifier"
+        duration="621" />
+
+    <artifact
+        location="C:\Users\christine\Downloads\goschedule\build\outputs\apk\goschedule-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="92109099180480" >
+        <artifact
+            location="C:\Users\christine\Downloads\goschedule\build\outputs\apk\goschedule-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

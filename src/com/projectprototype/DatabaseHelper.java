@@ -232,4 +232,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 		}
 		return events;
 	}
+
+
+
 }

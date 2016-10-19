@@ -19,7 +19,7 @@
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="@drawable/month_background"
+        android:background="#000000"
         android:orientation="horizontal" >
 
 		<LinearLayout
@@ -203,8 +203,8 @@
 		android:id="@+id/searchbutton"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:layout_below="@+id/calendar"
-		android:layout_centerHorizontal="true"
+		android:layout_marginLeft="2dp"
+		android:layout_marginRight="2dp"
 		android:background="#0097a7"
 		android:onClick="searchLeave"
 		android:text="@string/searchbutton"
@@ -218,11 +218,16 @@
 		android:id="@+id/leavebutton"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:layout_below="@+id/searchbutton"
-		android:layout_centerHorizontal="true"
+		android:layout_marginLeft="2dp"
+		android:layout_marginRight="2dp"
+
 		android:background="#0097a7"
 		android:onClick="logLeave"
 		android:text="@string/leavebutton"
 		android:textColor="@color/white" />
+
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="2dp" />
 
 </LinearLayout>

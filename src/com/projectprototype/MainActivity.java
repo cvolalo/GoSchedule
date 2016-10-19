@@ -8,6 +8,8 @@ import java.util.Calendar;
 //import com.firebase.client.FirebaseError;
 //import com.firebase.client.ValueEventListener;
 //import com.firebase.client.FirebaseError;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -39,6 +41,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
 import android.widget.GridView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -58,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
 	private FirebaseAuth.AuthStateListener mAuthListener;
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
-
+	private ProgressBar progressBar;
 	//Resource class for Firebase use
 	public static class Resource {
 		  String date;
@@ -325,7 +328,8 @@ public class MainActivity extends AppCompatActivity {
     if (id == R.id.weekview){
 		Intent intent = new Intent(this, WeekViewActivity.class);
 
-		startActivity(intent);
+		this.startActivity(intent);
+		this.finish();
     }
 
     if (id == R.id.signout) {
@@ -335,16 +339,7 @@ public class MainActivity extends AppCompatActivity {
 		progressDialog2.setIndeterminate(true);
 		progressDialog2.setMessage("Signing out...");
 		progressDialog2.show();
-		Runnable progressRunnable = new Runnable() {
 
-			@Override
-			public void run() {
-				progressDialog2.cancel();
-			}
-		};
-
-		Handler pdCanceller = new Handler();
-		pdCanceller.postDelayed(progressRunnable, 3000);
 
 		/*Intent intent = new Intent(this, LoginActivity.class);
 
@@ -363,10 +358,10 @@ public class MainActivity extends AppCompatActivity {
 				if (user == null) {
 					// user auth state is changed - user is null
 					// launch login activity
-					Intent mainIntent = new Intent(MainActivity.this, LoginActivity.class);
-					//mainIntent.putExtra("eid", loginE.getText().toString());
-					MainActivity.this.startActivity(mainIntent);
-					MainActivity.this.finish();
+					Intent i = getBaseContext().getPackageManager()
+							.getLaunchIntentForPackage( getBaseContext().getPackageName() );
+					i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+					startActivity(i);
 				}
 			}
 		};
@@ -375,14 +370,46 @@ public class MainActivity extends AppCompatActivity {
 
 	}
 
-	if (id == R.id.admin) {
+		if (id == R.id.resources) {
 
-	Intent mainIntent = new Intent(MainActivity.this, AdminActivity.class);
-	MainActivity.this.startActivity(mainIntent);
+		Intent mainIntent = new Intent(MainActivity.this, ResourcesActivity.class);
+		MainActivity.this.startActivity(mainIntent);
 
 
 
-	}
+		}
+
+		if (id == R.id.leaves) {
+
+
+
+		}
+
+
+
+		if (id == R.id.reset) {
+
+			FirebaseUser user = mAuth.getCurrentUser();
+
+			final ProgressDialog progressDialog = new ProgressDialog(MainActivity.this);
+			progressDialog.setIndeterminate(true);
+			progressDialog.setMessage("Sending email...");
+			progressDialog.show();
+			mAuth.sendPasswordResetEmail(user.getEmail()).addOnCompleteListener(new OnCompleteListener<Void>() {
+				@Override
+				public void onComplete(@NonNull Task<Void> task) {
+					if (task.isSuccessful()) {
+						Toast.makeText(MainActivity.this, "We have sent you instructions to reset your password!", Toast.LENGTH_SHORT).show();
+					} else {
+						Toast.makeText(MainActivity.this, "Failed to send reset email!", Toast.LENGTH_SHORT).show();
+					}
+
+					progressDialog.cancel();
+				}
+			});
+
+
+		}
 
 	return super.onOptionsItemSelected(item);
 	}

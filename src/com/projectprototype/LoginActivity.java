@@ -11,6 +11,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+import com.projectprototype.lib.WeekView;
 
 
 import android.app.Activity;
@@ -33,6 +34,7 @@ public class LoginActivity extends Activity{
 	String password = "";
 	TextView loginPass;
 	Button loginButt;
+
 
 
 	private FirebaseAuth mAuth;

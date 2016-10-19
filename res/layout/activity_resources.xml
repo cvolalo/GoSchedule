@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:id="@+id/header3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0097a7"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:paddingLeft="5dp"
+            android:text="Resources"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="2dp" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/addresources"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_gravity="bottom"
+            android:padding="12dp"
+            android:background="#0097a7"
+            android:textColor="#ffffff"
+            android:onClick="addResource"
+            android:text="ADD RESOURCE"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="2dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1275,13 +1275,13 @@ public class WeekView extends View {
         this.mWeekViewLoader = loader;
     }
 
-    public EventLongPressListener getEventLongPressListener() {
+    /*public EventLongPressListener getEventLongPressListener() {
         return mEventLongPressListener;
-    }
+    }*/
 
-    public void setEventLongPressListener(EventLongPressListener eventLongPressListener) {
+    /*public void setEventLongPressListener(EventLongPressListener eventLongPressListener) {
         this.mEventLongPressListener = eventLongPressListener;
-    }
+    }*/
 
     public void setEmptyViewClickListener(EmptyViewClickListener emptyViewClickListener){
         this.mEmptyViewClickListener = emptyViewClickListener;
@@ -1291,13 +1291,13 @@ public class WeekView extends View {
         return mEmptyViewClickListener;
     }
 
-    public void setEmptyViewLongPressListener(EmptyViewLongPressListener emptyViewLongPressListener){
+    /*public void setEmptyViewLongPressListener(EmptyViewLongPressListener emptyViewLongPressListener){
         this.mEmptyViewLongPressListener = emptyViewLongPressListener;
     }
 
     public EmptyViewLongPressListener getEmptyViewLongPressListener(){
         return mEmptyViewLongPressListener;
-    }
+    }*/
 
     public void setScrollListener(ScrollListener scrolledListener){
         this.mScrollListener = scrolledListener;

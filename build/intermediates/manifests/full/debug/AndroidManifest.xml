@@ -41,8 +41,9 @@
             android:name="com.projectprototype.LoginActivity"
             android:label="@string/title_activity_login" />
         <activity
-            android:name="com.projectprototype.MainActivity"
+            android:name="com.projectprototype.WeekViewActivity"
             android:label="@string/app_name" />
+        <activity android:name="com.projectprototype.MainActivity" />
         <activity
             android:name="com.projectprototype.LeaveActivity"
             android:label="@string/title_activity_leave" />
@@ -50,8 +51,8 @@
             android:name="com.projectprototype.ViewLeaveActivity"
             android:label="@string/title_activity_view_leave" />
         <activity android:name="com.projectprototype.SearchEIDActivity" />
-        <activity android:name="com.projectprototype.AdminActivity" />
-        <activity android:name="com.projectprototype.WeekViewActivity" />
+        <activity android:name="com.projectprototype.ResourcesActivity" />
+        <activity android:name="com.projectprototype.AddResourceActivity" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"

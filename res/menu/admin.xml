@@ -10,9 +10,21 @@
         app:showAsAction="ifRoom"/>
 
     <item
-        android:id="@+id/admin"
+        android:id="@+id/resources"
         android:orderInCategory="100"
-        android:title="@string/admin"
+        android:title="@string/resources"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/leaves"
+        android:orderInCategory="100"
+        android:title="@string/leaves"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/reset"
+        android:orderInCategory="100"
+        android:title="@string/reset"
         app:showAsAction="never"/>
 
     <item

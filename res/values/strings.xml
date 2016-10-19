@@ -6,8 +6,9 @@
 
     <string name="signout">Sign Out</string>
     <string name="weekview">Week View</string>
-    <string name="searchmenu">Search</string>
-    <string name="admin">Administrator</string>
+    <string name="leaves">Leaves</string>
+    <string name="resources">Resources</string>
+    <string name="reset">Reset Password</string>
     <string name="title_activity_leave">GoSchedule</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="searchbutton">Search by EID</string>
@@ -16,6 +17,8 @@
     <string name="leave_prompt">Choose a Leave Type</string>
     <string name="left">◄</string>
     <string name="right">►</string>
+    <string name="lbl_forgot_password">Reset password?</string>
+    <string name="forgot_password_msg"></string>
 
     <string-array name="leave_arrays">
         <item>Elective Holiday</item>
@@ -28,13 +31,23 @@
         <item>Vacation Leave</item>
     </string-array>
 
+    <string-array name="tower_arrays">
+        <item>Special Initiatives</item>
+        <item>Training</item>
+        <item>Opportunities and Solutioning</item>
+        <item>PMO / BP2B</item>
+        <item>Creative and Marketing</item>
+
+    </string-array>
+
 
     <string name="title_activity_view_leave">GoSchedule</string>
 
     <item name="signout" type="id" />
     <item name="weekview" type="id" />
-    <item name="searchmenu" type="id" />
-
+    <item name="leaves" type="id" />
+    <item name="resources" type="id" />
+    <item name="reset" type="id" />
 
 
     <string name="action_settings">Settings</string>
