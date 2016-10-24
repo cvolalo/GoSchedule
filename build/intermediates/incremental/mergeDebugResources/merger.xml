@@ -1547,6 +1547,7 @@
         <item>Sick Leave</item>
         <item>Training</item>
         <item>Vacation Leave</item>
+<<<<<<< HEAD
     </string-array><string name="title_activity_login">LoginActivity</string><item name="leaves" type="id"/><string name="drawer_close">Close navigation drawer</string><string name="weekview">Week View</string><item name="resources" type="id"/><item name="weekview" type="id"/><string-array name="tower_arrays">
         <item>Special Initiatives</item>
         <item>Training</item>
@@ -1556,6 +1557,14 @@
 
     </string-array><string name="reset">Reset Password</string><string name="leavebutton">File Leave</string><string name="left">◄</string><string name="logstring">Log Leave</string><item name="signout" type="id"/><string name="searchbutton">Search by EID</string><string name="right">►</string><string name="drawer_open">Open navigation drawer</string><string name="hello_world">Hello world!</string><string name="lbl_forgot_password">Reset password?</string><string name="signout">Sign Out</string><string name="myleaves">My Leaves</string><string name="action_settings">Settings</string><string name="app_name">GoSchedule</string><item name="reset" type="id"/><string name="leave_prompt">Choose a Leave Type</string><string name="resources">Resources</string><string name="leaves">Leaves</string><string name="title_activity_leave">GoSchedule</string><string name="title_activity_view_leave">GoSchedule</string></file><file path="C:\Users\christine\Documents\goschedule\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+=======
+<<<<<<< HEAD
+    </string-array><string name="signout">Sign Out</string><string name="title_activity_login">LoginActivity</string><string name="app_name">GoSchedule</string><string name="weekview">Week View</string><item name="searchmenu" type="id"/><string name="searchmenu">Search</string><item name="weekview" type="id"/><string name="leavebutton">File Leave</string><string name="leave_prompt">Choose a Leave Type</string><string name="logstring">Log Leave</string><item name="signout" type="id"/><string name="title_activity_leave">GoSchedule</string><string name="searchbutton">Search by EID</string><string name="title_activity_view_leave">GoSchedule</string></file><file path="C:\Users\christine.m.v.olalo\workspace\goschedule\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="AppBaseTheme">
+=======
+    </string-array><string name="signout">Sign Out</string><string name="title_activity_login">LoginActivity</string><string name="app_name">GoSchedule</string><string name="weekview">Week View</string><item name="searchmenu" type="id"/><string name="searchmenu">Search</string><item name="weekview" type="id"/><string name="leavebutton">File Leave</string><string name="leave_prompt">Choose a Leave Type</string><string name="left">◄</string><string name="logstring">Log Leave</string><item name="signout" type="id"/><string name="title_activity_leave">LeaveActivity</string><string name="searchbutton">Search by EID</string><string name="title_activity_view_leave">GoSchedule</string><string name="right">►</string></file><file path="C:\Users\arvin.o.tupil\Workspace\goschedule\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="AppBaseTheme">
+>>>>>>> DesignBranch
+        
+>>>>>>> 07c888515375df72c70dc862bbf8c1a58caa41e2
     </style><style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
         <!--
             Theme customizations available in newer API levels can go in

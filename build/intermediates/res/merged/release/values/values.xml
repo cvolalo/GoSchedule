@@ -319,12 +319,17 @@
     <string name="lbl_forgot_password">Reset password?</string>
     <string name="leave_prompt">Choose a Leave Type</string>
     <string name="leavebutton">File Leave</string>
+<<<<<<< HEAD:build/intermediates/res/merged/release/values/values.xml
     <string name="leaves">Leaves</string>
     <string name="left">◄</string>
     <string name="logstring">Log Leave</string>
     <string name="myleaves">My Leaves</string>
     <string name="reset">Reset Password</string>
     <string name="resources">Resources</string>
+=======
+    <string name="left">◄</string>
+    <string name="logstring">Log Leave</string>
+>>>>>>> 07c888515375df72c70dc862bbf8c1a58caa41e2:build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml
     <string name="right">►</string>
     <string name="search_menu_title">Search</string>
     <string name="searchbutton">Search by EID</string>

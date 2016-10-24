@@ -260,8 +260,14 @@
         "source": "C:\\Users\\christine\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\christine\\Documents\\goschedule\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
         "source": "C:\\Users\\christine\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-xxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+=======
+<<<<<<< HEAD
+        "merged": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_light_disabled.9.png",
+        "source": "C:\\Users\\christine.m.v.olalo\\workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_light_disabled.9.png"
+>>>>>>> 07c888515375df72c70dc862bbf8c1a58caa41e2
     },
     {
         "merged": "C:\\Users\\christine\\Documents\\goschedule\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\drawer_shadow.9.png",
@@ -276,8 +282,14 @@
         "source": "C:\\Users\\christine\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_dark_focused.9.png"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\christine\\Documents\\goschedule\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_light_focused.9.png",
         "source": "C:\\Users\\christine\\Documents\\goschedule\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_light_focused.9.png"
+=======
+        "merged": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_star_black_16dp.png",
+        "source": "C:\\Users\\arvin.o.tupil\\Workspace\\goschedule\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_16dp.png"
+>>>>>>> DesignBranch
+>>>>>>> 07c888515375df72c70dc862bbf8c1a58caa41e2
     },
     {
         "merged": "C:\\Users\\christine\\Documents\\goschedule\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_ic_googleplayservices.png",
