@@ -30,7 +30,38 @@
     <ListView
         android:id="@android:id/list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
     </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="2dp" />
+
+        <Button
+            android:id="@+id/backhome2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_gravity="bottom"
+            android:padding="12dp"
+            android:background="#0097a7"
+            android:textColor="#ffffff"
+            android:onClick="backHome"
+            android:text="BACK"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="2dp" />
+
+    </LinearLayout>
 
 </LinearLayout>

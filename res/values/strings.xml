@@ -18,7 +18,7 @@
     <string name="left">◄</string>
     <string name="right">►</string>
     <string name="lbl_forgot_password">Reset password?</string>
-    <string name="forgot_password_msg"></string>
+    <string name="myleaves">My Leaves</string>
 
     <string-array name="leave_arrays">
         <item>Elective Holiday</item>

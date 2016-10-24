@@ -40,7 +40,7 @@
         app:headerColumnTextColor="@color/toolbar_text"
         app:headerRowPadding="12dp"
         app:columnGap="8dp"
-        app:noOfVisibleDays="5"
+        app:noOfVisibleDays="3"
         app:headerRowBackgroundColor="@color/toolbar"
         app:dayBackgroundColor="#05000000"
         app:todayBackgroundColor="#1848adff"
@@ -55,6 +55,8 @@
 
 </RelativeLayout>
 
+
+
     <LinearLayout
         android:id="@+id/linearLayout6"
         android:layout_width="fill_parent"
@@ -63,16 +65,7 @@
         android:orientation="vertical">
 
 
-        <Button
-            android:id="@+id/searchbutton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:background="#0097a7"
-            android:onClick="searchLeave"
-            android:text="@string/searchbutton"
-            android:textColor="@color/white"/>
+
 
         <ImageView
             android:layout_width="wrap_content"

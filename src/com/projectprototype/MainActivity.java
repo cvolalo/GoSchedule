@@ -64,14 +64,20 @@ public class MainActivity extends AppCompatActivity {
 	private ProgressBar progressBar;
 	//Resource class for Firebase use
 	public static class Resource {
+ 		  int uid;
 		  String date;
+
 		  String name;
 		  String type;
+		  String backup;
+		  String status;
+		  String checker;
 		  	  
 		  public Resource() {
 		    // empty default constructor, necessary for Firebase to be able to deserialize blog posts
 		  }
-		  
+
+
 		  public String getDate() {
 			    return date;
 		  }
@@ -81,6 +87,15 @@ public class MainActivity extends AppCompatActivity {
 		  public String getType() {
 		    return type;
 		  }
+		  public String getBackup() {
+				return backup;
+			}
+		  public String getStatus() {
+				return status;
+			}
+		public String getChecker() {
+			return checker;
+		}
 		  
 	}
 
@@ -129,22 +144,22 @@ public class MainActivity extends AppCompatActivity {
 		//Firebase ref = new Firebase("https://goschedule-4ffe9.firebaseio.com/dates");
 
 		ref.addValueEventListener(new ValueEventListener() {
-		    @Override
-		    public void onDataChange(DataSnapshot snapshot) {
-		        //System.out.println("There are " + snapshot.getChildrenCount() + " blog posts");
+			@Override
+			public void onDataChange(DataSnapshot snapshot) {
+				//System.out.println("There are " + snapshot.getChildrenCount() + " blog posts");
 
-		    	db.deleteAll();
-		        for (DataSnapshot personSnapshot: snapshot.getChildren()) {
-		          Resource person = personSnapshot.getValue(Resource.class);
-                    nameConverted = person.getName();
-                    nameConverted = nameConverted.replace("-",".");
-		          db.createLog(nameConverted,person.getDate(),person.getType());
-		          handler = new Handler();
-		  		  handler.post(calendarUpdater);
-		          //System.out.println(post.getAuthor() + " - " + post.getTitle());
-		        }
+				db.deleteAll();
+				for (DataSnapshot personSnapshot: snapshot.getChildren()) {
+					Resource person = personSnapshot.getValue(Resource.class);
+					nameConverted = person.getName();
+					nameConverted = nameConverted.replace("-",".");
+					db.createLog(nameConverted,person.getDate(),person.getType(), person.getBackup(), person.getStatus(), person.getChecker());
+					handler = new Handler();
+					handler.post(calendarUpdater);
+					//System.out.println(post.getAuthor() + " - " + post.getTitle());
+				}
 
-            }
+			}
 
 			@Override
 			public void onCancelled(DatabaseError databaseError) {
@@ -309,6 +324,8 @@ public class MainActivity extends AppCompatActivity {
 				public void onCancelled(DatabaseError databaseError) {
 				}
 			});
+		}else {
+			getMenuInflater().inflate(R.menu.main, menu);
 		}
 
 
@@ -370,22 +387,29 @@ public class MainActivity extends AppCompatActivity {
 
 	}
 
-		if (id == R.id.resources) {
+		if (id == R.id.myleaves) {
 
-		Intent mainIntent = new Intent(MainActivity.this, ResourcesActivity.class);
+		Intent mainIntent = new Intent(MainActivity.this, MyLeavesActivity.class);
 		MainActivity.this.startActivity(mainIntent);
 
 
 
 		}
 
+		if (id == R.id.search) {
+
+			Intent mainIntent = new Intent(MainActivity.this, SearchEIDActivity.class);
+			MainActivity.this.startActivity(mainIntent);
+		}
+
 		if (id == R.id.leaves) {
+
+			Intent mainIntent = new Intent(MainActivity.this, ApproveLeaveActivity.class);
+			MainActivity.this.startActivity(mainIntent);
 
 
 
 		}
-
-
 
 		if (id == R.id.reset) {
 

@@ -15,7 +15,9 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.MutableData;
 import com.google.firebase.database.Query;
+import com.google.firebase.database.Transaction;
 import com.google.firebase.database.ValueEventListener;
 
 import android.app.Activity;
@@ -26,6 +28,8 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.util.MutableInt;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -37,6 +41,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class LeaveActivity extends AppCompatActivity implements OnItemSelectedListener {
@@ -45,6 +50,9 @@ public class LeaveActivity extends AppCompatActivity implements OnItemSelectedLi
 	Button cancelButton;
 	EditText name;
 	EditText date;
+	EditText backup;
+	EditText status;
+	String checker;
 	Spinner type;
 	String item;
 	boolean adminCheck = false;
@@ -73,7 +81,7 @@ public class LeaveActivity extends AppCompatActivity implements OnItemSelectedLi
 	};
 
 
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -90,13 +98,68 @@ public class LeaveActivity extends AppCompatActivity implements OnItemSelectedLi
 		//Firebase.setAndroidContext(this);
 		//Firebase f = new Firebase("https://goschedule-50998.firebaseio.com/");
 		//f.setValue("Hello World! version 2.0");		
-		
-		submitButton = (Button) findViewById(R.id.leaveSubmit); 
-		cancelButton = (Button) findViewById(R.id.leaveCancel); 
-		
+
+		submitButton = (Button) findViewById(R.id.leaveSubmit);
+		cancelButton = (Button) findViewById(R.id.leaveCancel);
+
 		name = (EditText) findViewById(R.id.leaveName);
 		date = (EditText) findViewById(R.id.leaveDate);
 		type = (Spinner) findViewById(R.id.leaveType);
+		backup = (EditText) findViewById(R.id.leaveBackUp);
+		status = (EditText) findViewById(R.id.leaveStatus);
+
+		status.setVisibility(View.GONE);
+
+		String c = "[@]";
+		final String[] nameEID = user.getEmail().split(c);
+
+
+		name.setText(nameEID[0]);
+
+
+		if (user != null) {
+			if (adminCheck) {
+
+
+			}
+			Query adminQuery = database.getReference().child("admin").limitToFirst(20);
+
+			//adminQuery.addValueEventListener(new ValueEventListener() {
+			adminQuery.addListenerForSingleValueEvent(new ValueEventListener() {
+				@Override
+				public void onDataChange(DataSnapshot dataSnapshot) {
+					for (DataSnapshot adminSnapshot : dataSnapshot.getChildren()) {
+						String value = (String) adminSnapshot.getValue();
+						names[0] = value;
+						names[0] = names[0].replaceAll("\\s", "");
+						//Toast.makeText(LoginActivity.this, names[0], Toast.LENGTH_SHORT).show();
+
+						String[] admins = names[0].split(",");
+
+						for (int i = 0; i < admins.length; i++) {
+							if (admins[i].equals(nameEID)) {
+								//Toast.makeText(LoginActivity.this, "admin", Toast.LENGTH_SHORT).show();
+								adminCheck = true;
+							}
+						}
+
+						if (adminCheck) {
+
+						} else {
+							name.setKeyListener(null);
+						}
+						// do your stuff here with value
+					}
+				}
+
+				@Override
+				public void onCancelled(DatabaseError databaseError) {
+				}
+			});
+		}
+
+
+
 		
 		type.setOnItemSelectedListener(this);
 		final Calendar myCalendar = Calendar.getInstance();
@@ -128,6 +191,8 @@ public class LeaveActivity extends AppCompatActivity implements OnItemSelectedLi
 		
 				
 	}
+
+
 	
 	private void updateLabel() {
 
@@ -139,15 +204,15 @@ public class LeaveActivity extends AppCompatActivity implements OnItemSelectedLi
 	
 	
 	public void submitLeave(View view) {
-		
 
-		if (name.getText().toString().length() > 0 && date.getText().toString().length() > 0) {
-		
-		boolean logStatus = createLogFB(name.getText().toString(),date.getText().toString(),item);
+
+		if (name.getText().toString().length() > 0 && date.getText().toString().length() > 0 && backup.getText().toString().length() > 0) {
+
+			boolean logStatus = createLogFB(name.getText().toString(),date.getText().toString(),item,backup.getText().toString(),status.getText().toString(),checker);
 		//Intent back = new Intent(this, MainActivity.class);
 			if (logStatus){
 				Toast.makeText(getApplicationContext(), "Added Leave!", Toast.LENGTH_LONG).show();
-				//startActivity(back);
+
 				finish();
 			}
 			else {
@@ -171,26 +236,54 @@ public class LeaveActivity extends AppCompatActivity implements OnItemSelectedLi
 		finish();
     }
 	
-	public boolean createLogFB(String name, String date, String type) {
-		
+	public boolean createLogFB(String name, String date, String type, String backup, String status, String checker) {
+
 		String[] dateArr = date.split("/");
 		String monthyear = dateArr[0] + dateArr[2];
 		date = dateArr[0] + "-" + dateArr[1] + "-" + dateArr[2];
-		name = name.replace(".","-");
+		name = name.replace(".", "-");
+		backup = backup.replace(".", "-");
+
+		checker = name+date+type;
 
 		//Firebase.setAndroidContext(this);
 		//Firebase ref = new Firebase("https://goschedule-4ffe9.firebaseio.com/");
 		FirebaseDatabase database = FirebaseDatabase.getInstance();
 		DatabaseReference dateRef = database.getReference("dates");
+
+
 		//Firebase dateRef = ref.child("dates");
 		//DatabaseReference dateRef = ref.child("dates");
-		
+		/*dateRef.runTransaction(new Transaction.Handler() {
+			@Override
+			public Transaction.Result doTransaction(MutableData uid) {
+				if (uid.getValue() == null){
+					uid.setValue(1);
+				}else{
+					uid.setValue((Long) uid.getValue() + 1);
+				}
+				return Transaction.success(uid);
+			}
+
+
+
+			@Override
+			public void onComplete(DatabaseError databaseError, boolean b, DataSnapshot dataSnapshot) {
+
+			}
+		});*/
+
+
 		Map<String, Object> dataput = new HashMap<String, Object>();
+
 		dataput.put("name", name);
-		dataput.put("type", type);
 		dataput.put("date", date);
+		dataput.put("type", type);
+		dataput.put("backup", backup);
+		dataput.put("status", status);
+		dataput.put("checker", checker);
 		dateRef.push().setValue(dataput);
-			
+
 		return true;
 	}
 
@@ -273,6 +366,12 @@ public class LeaveActivity extends AppCompatActivity implements OnItemSelectedLi
 			this.finish();
 		}
 
+		if (id == R.id.search) {
+
+			Intent mainIntent = new Intent(LeaveActivity.this, SearchEIDActivity.class);
+			LeaveActivity.this.startActivity(mainIntent);
+		}
+
 		if (id == R.id.signout) {
 
 			//mAuth = FirebaseAuth.getInstance();
@@ -311,20 +410,13 @@ public class LeaveActivity extends AppCompatActivity implements OnItemSelectedLi
 
 		}
 
-		if (id == R.id.resources) {
+		if (id == R.id.myleaves) {
 
-			Intent mainIntent = new Intent(LeaveActivity.this, ResourcesActivity.class);
+			Intent mainIntent = new Intent(LeaveActivity.this, MyLeavesActivity.class);
 			LeaveActivity.this.startActivity(mainIntent);
 
-
-
 		}
 
-		if (id == R.id.leaves) {
-
-
-
-		}
 
 
 
