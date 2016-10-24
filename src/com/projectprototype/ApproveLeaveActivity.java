@@ -4,10 +4,12 @@ import android.app.ListActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,7 +27,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ApproveLeaveActivity extends ListActivity implements AdapterView.OnItemClickListener {
+public class ApproveLeaveActivity extends ListActivity implements AdapterView.OnItemClickListener{
 
     DatabaseHelper db = new DatabaseHelper(this);
     private FirebaseAuth mAuth;
@@ -41,12 +43,15 @@ public class ApproveLeaveActivity extends ListActivity implements AdapterView.On
 
 
         Button HomeButton = (Button) findViewById(R.id.faCancel);
-        Button SIT = (Button) findViewById(R.id.faSIT);
-        Button Training = (Button) findViewById(R.id.faTraining);
-        Button PMO = (Button) findViewById(R.id.faPMO);
-        Button Creative = (Button) findViewById(R.id.faCreative);
-        Button Opps = (Button) findViewById(R.id.faOpps);
+        ImageView approvedLeave = (ImageView) findViewById(R.id.editleave);
 
+        List<String> listLeave = db.getForApprovalLeaves();
+
+        //Log.i("Adap", listLeave.get(0));
+
+        //lv = (ListView) findViewById(android.R.id.list);
+        this.setListAdapter(new ArrayAdapter<String>(this, R.layout.leave_viewer, R.id.ListMyLeave, listLeave));
+        getListView().setOnItemClickListener(this);
 
         HomeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,92 +59,15 @@ public class ApproveLeaveActivity extends ListActivity implements AdapterView.On
                 finish();
             }
         });
-        SIT.setOnClickListener(new View.OnClickListener() {
+
+        approvedLeave.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                faSIT(v);
-            }
-        });
-        Training.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                faTraining(v);
-            }
-        });
-        PMO.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                faPMO(v);
-            }
-        });
-        Creative.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                faCreative(v);
-            }
-        });
-        Opps.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                faOpps(v);
+            public void onClick(View view) {
+
             }
         });
 
-    }
 
-    private void faSIT(View v) {
-
-        List<String> listLeave = db.getSIT();
-
-        //Log.i("Adap", listLeave.get(0));
-
-        //lv = (ListView) findViewById(android.R.id.list);
-        this.setListAdapter(new ArrayAdapter<String>(this, R.layout.leave_viewer, R.id.ListMyLeave, listLeave));
-        getListView().setOnItemClickListener(this);
-    }
-
-    private void faOpps(View v) {
-
-        List<String> listLeave = db.getOpps();
-
-        //Log.i("Adap", listLeave.get(0));
-
-        //lv = (ListView) findViewById(android.R.id.list);
-        this.setListAdapter(new ArrayAdapter<String>(this, R.layout.leave_viewer, R.id.ListMyLeave, listLeave));
-        getListView().setOnItemClickListener(this);
-    }
-
-    private void faCreative(View v) {
-
-        List<String> listLeave = db.getCreative();
-
-        //Log.i("Adap", listLeave.get(0));
-
-        //lv = (ListView) findViewById(android.R.id.list);
-        this.setListAdapter(new ArrayAdapter<String>(this, R.layout.leave_viewer, R.id.ListMyLeave, listLeave));
-        getListView().setOnItemClickListener(this);
-    }
-
-    private void faTraining(View v) {
-
-        List<String> listLeave = db.getTraining();
-
-        //Log.i("Adap", listLeave.get(0));
-
-        //lv = (ListView) findViewById(android.R.id.list);
-        this.setListAdapter(new ArrayAdapter<String>(this, R.layout.leave_viewer, R.id.ListMyLeave, listLeave));
-        getListView().setOnItemClickListener(this);
-    }
-
-    private void faPMO(View v) {
-
-        List<String> listLeave = db.getPMO();
-
-        //Log.i("Adap", listLeave.get(0));
-
-        //lv = (ListView) findViewById(android.R.id.list);
-        this.setListAdapter(new ArrayAdapter<String>(this, R.layout.leave_viewer, R.id.ListMyLeave, listLeave));
-        getListView().setOnItemClickListener(this);
     }
 
 
@@ -215,7 +143,6 @@ public class ApproveLeaveActivity extends ListActivity implements AdapterView.On
 
     /*private void updateEntry(String name, String date, String type, String backup) {
         //DatabaseReference ref = database.getReference("dates").;
-
         //ref.orderByChild("name").equalTo(name).orderByChild("date").equalTo(date);
             /*Query getname = ref.orderByChild("name").equalTo(name);
             Query getdate = getname.orderByChild("date").equalTo(date);

@@ -208,25 +208,54 @@ public class LeaveActivity extends AppCompatActivity implements OnItemSelectedLi
 
 		if (name.getText().toString().length() > 0 && date.getText().toString().length() > 0 && backup.getText().toString().length() > 0) {
 
-			boolean logStatus = createLogFB(name.getText().toString(),date.getText().toString(),item,backup.getText().toString(),status.getText().toString(),checker);
-		//Intent back = new Intent(this, MainActivity.class);
-			if (logStatus){
-				Toast.makeText(getApplicationContext(), "Added Leave!", Toast.LENGTH_LONG).show();
+			/*
+			startDate, endDate
 
-				finish();
-			}
-			else {
-				Toast.makeText(getApplicationContext(), "Failed, please try again.", Toast.LENGTH_LONG).show();
-			}
+			String[] startDateArray = startDate.split("/");
+
+			int initialVal = Integer.parse(startDateArray[1]);
+			int initialMonth = startDateArray[0];
+			int initialYear = startDateArray[2];
+
+			String[] endDateArray = endDate.split("/");
+			int finalVal = endDateArray[1];
+			int finalMonth = finalDateArray[0];
+			int finalYear = finalDateArray[2];
+
+			for(int i = initialVal; i <= finalVal; i++){
+
+				date = initialMonth + "/" + i + "/" + initialYear;
+
+				boolean logStatus = createLogFB(name.getText().toString(),date.getText().toString(),item,backup.getText().toString(),status.getText().toString(),checker);
+
+				if (logStatus){
+			Toast.makeText(getApplicationContext(), "Added Leave!", Toast.LENGTH_LONG).show();
+
+			finish();
 		}
-		
+		else {
+			Toast.makeText(getApplicationContext(), "Failed, please try again.", Toast.LENGTH_LONG).show();
+		}
+
+
 		if (name.getText().toString().length() == 0) {
 				Toast.makeText(getApplicationContext(), "EID is required.", Toast.LENGTH_LONG).show();
 		}
-		
+
 		else if (date.getText().toString().length() == 0) {
 			Toast.makeText(getApplicationContext(), "Date is required.", Toast.LENGTH_LONG).show();
 	}
+
+			}
+
+			 */
+
+
+			//boolean logStatus = createLogFB(name.getText().toString(),date.getText().toString(),item,backup.getText().toString(),status.getText().toString(),checker);
+		//Intent back = new Intent(this, MainActivity.class);
+
+		}
+
     }
 	
 	public void cancelView(View view) {
@@ -236,11 +265,15 @@ public class LeaveActivity extends AppCompatActivity implements OnItemSelectedLi
 		finish();
     }
 	
+
+
 	public boolean createLogFB(String name, String date, String type, String backup, String status, String checker) {
 
-		String[] dateArr = date.split("/");
-		String monthyear = dateArr[0] + dateArr[2];
-		date = dateArr[0] + "-" + dateArr[1] + "-" + dateArr[2];
+
+
+		String[] startDate = date.split("/");
+		String monthyear = startDate[0] + startDate[2];
+		date = startDate[0] + "-" + startDate[1] + "-" + startDate[2];
 		name = name.replace(".", "-");
 		backup = backup.replace(".", "-");
 

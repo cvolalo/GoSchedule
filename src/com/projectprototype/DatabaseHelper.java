@@ -20,7 +20,6 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 	// database name
 	private static final String database_NAME = "GoScheduleLeaves";
 	private static final String table_LEAVES = "FiledLeaves";
-	private static final String table_RESOURCES = "FiledResources";
 	private static final String leave_ID = "id";
 	private static final String leave_NAME = "name";
 	private static final String leave_DATE = "date";
@@ -262,7 +261,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 		return events;
 	}
 
-	public List<String> getSIT() {
+	/*public List<String> getSIT() {
 		List<String> output = new ArrayList<String>();
 		Integer id;
 		String date;
@@ -301,9 +300,9 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 			} while (cursor.moveToNext());
 		}
 		return output;
-	}
+	}*/
 
-	public List<String> getOpps() {
+	/*public List<String> getOpps() {
 		List<String> output = new ArrayList<String>();
 		Integer id;
 		String date;
@@ -343,7 +342,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 		return output;
 	}
 
-	public List<String> getCreative() {
+	/*public List<String> getCreative() {
 		List<String> output = new ArrayList<String>();
 		Integer id;
 		String date;
@@ -379,9 +378,9 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 			} while (cursor.moveToNext());
 		}
 		return output;
-	}
+	}*/
 
-	public List<String> getPMO() {
+	/*public List<String> getPMO() {
 		List<String> output = new ArrayList<String>();
 		Integer id;
 		String date;
@@ -417,9 +416,9 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 			} while (cursor.moveToNext());
 		}
 		return output;
-	}
+	}*/
 
-	public List<String> getTraining() {
+	/*public List<String> getTraining() {
 		List<String> output = new ArrayList<String>();
 		Integer id;
 		String date;
@@ -455,7 +454,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 			} while (cursor.moveToNext());
 		}
 		return output;
-	}
+	}*/
 
 	public void updateEntry(String name, String date, String type, String backup) {
 
@@ -492,5 +491,44 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 			} while (cursor.moveToNext());
 		}*/
 		//return output;
+	}
+
+	public List<String> getForApprovalLeaves() {
+		List<String> output = new ArrayList<String>();
+		Integer id;
+		String date;
+		String type;
+		String name;
+		String backup;
+		String checker;
+
+		//Log.i("myApp", date);
+		// select book query
+		//String query = "SELECT  * FROM " + table_LEAVES;
+		String query = "SELECT * FROM FiledLeaves WHERE status = 'For Approval' ORDER BY date DESC";
+
+		// get reference of the BookDB database
+		SQLiteDatabase db = this.getWritableDatabase();
+		Cursor cursor = db.rawQuery(query, null);
+
+		// parse all results
+		if (cursor.moveToFirst()) {
+			do {
+				id = Integer.parseInt(cursor.getString(0));
+				date = cursor.getString(2);
+				type = cursor.getString(3);
+				name = cursor.getString(1);
+				backup = cursor.getString(4);
+				checker = cursor.getString(6);
+
+				// Add book to books
+				//Log.i("myApp", Integer.toString(id));
+				//Log.i("myApp", name + " ( " + type + " ) ");
+				output.add(name.toUpperCase() + "," + type + "," + date + "," + backup + "," + checker);
+				//Log.i("myApp", cursor.getString(2));
+				//Log.i("myapp", output.get(id-1));
+			} while (cursor.moveToNext());
+		}
+		return output;
 	}
 }

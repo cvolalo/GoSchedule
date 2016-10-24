@@ -32,15 +32,7 @@
         android:id="@+id/signout"
         android:orderInCategory="100"
         android:title="@string/signout"
-<<<<<<< HEAD
         app:showAsAction="never"/>
-=======
-<<<<<<< HEAD
-        android:showAsAction="ifRoom"/-->
-=======
-        android:showAsAction="ifRoom"/>
->>>>>>> DesignBranch
->>>>>>> 07c888515375df72c70dc862bbf8c1a58caa41e2
 
 
 
