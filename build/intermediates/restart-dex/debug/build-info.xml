@@ -1,32 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
+<<<<<<< HEAD
     abi="armeabi-v7a,armeabi"
     api-level="22"
     density="xhdpi"
     format="7"
-    timestamp="92109099180480"
-    token="-7017598560302559751" >
+    timestamp="69666686875223"
+    token="-8100034950165749333" >
 
     <task
         name="javac"
-        duration="18905" />
+        duration="6854" />
+=======
+    api-level="19"
+    density="hdpi"
+    format="8"
+    plugin-version="2.2.0"
+<<<<<<< HEAD
+    timestamp="973286914428545"
+    token="-6759926061676127798"
+    verifier="COMPATIBLE" >
+
+    <task
+        name="javac"
+        duration="0" />
+=======
+    timestamp="42761263623872"
+    token="5379212512138768799"
+    verifier="FULL_BUILD_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="2007" />
+>>>>>>> DesignBranch
+>>>>>>> 07c888515375df72c70dc862bbf8c1a58caa41e2
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1833" />
+<<<<<<< HEAD
+        duration="3366" />
+=======
+<<<<<<< HEAD
+        duration="48" />
     <task
         name="verifier"
-        duration="621" />
+        duration="6" />
 
     <artifact
-        location="C:\Users\christine\Downloads\goschedule\build\outputs\apk\goschedule-debug.apk"
+        location="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+        type="RESOURCES" />
+    <artifact
+        location="C:\Users\christine.m.v.olalo\workspace\goschedule\build\intermediates\reload-dex\debug\classes.dex"
+        type="RELOAD_DEX" />
+
+    <build
+        timestamp="972140198011954"
+=======
+        duration="1033" />
+>>>>>>> 07c888515375df72c70dc862bbf8c1a58caa41e2
+    <task
+        name="verifier"
+        duration="620" />
+
+    <artifact
+        location="C:\Users\christine\Documents\goschedule\build\outputs\apk\goschedule-debug.apk"
         type="MAIN" />
 
-    <build timestamp="92109099180480" >
+<<<<<<< HEAD
+    <build timestamp="69666686875223" >
+=======
+    <build
+        timestamp="42761263623872"
+>>>>>>> DesignBranch
+        verifier="FULL_BUILD_REQUESTED" >
+>>>>>>> 07c888515375df72c70dc862bbf8c1a58caa41e2
         <artifact
-            location="C:\Users\christine\Downloads\goschedule\build\outputs\apk\goschedule-debug.apk"
+            location="C:\Users\christine\Documents\goschedule\build\outputs\apk\goschedule-debug.apk"
             type="MAIN" />
     </build>
 

@@ -10,16 +10,20 @@
         app:showAsAction="ifRoom"/>
 
     <item
-        android:id="@+id/resources"
+        android:id="@+id/search"
         android:orderInCategory="100"
-        android:title="@string/resources"
-        app:showAsAction="never"/>
+        android:title="@string/leaves"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="ifRoom"/>
+
 
     <item
         android:id="@+id/leaves"
         android:orderInCategory="100"
         android:title="@string/leaves"
         app:showAsAction="never"/>
+
+
 
     <item
         android:id="@+id/reset"

@@ -310,7 +310,6 @@
     <string name="drawer_close">Close navigation drawer</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="firebase_database_url" translatable="false">https://goschedule-4ffe9.firebaseio.com</string>
-    <string name="forgot_password_msg"/>
     <string name="gcm_defaultSenderId" translatable="false">847519626230</string>
     <string name="google_api_key" translatable="false">AIzaSyAF6dEo0M35X-KSdPdwDgqeM0vCdHNFfrI</string>
     <string name="google_app_id" translatable="false">1:847519626230:android:401889953b54d99c</string>
@@ -323,6 +322,7 @@
     <string name="leaves">Leaves</string>
     <string name="left">◄</string>
     <string name="logstring">Log Leave</string>
+    <string name="myleaves">My Leaves</string>
     <string name="reset">Reset Password</string>
     <string name="resources">Resources</string>
     <string name="right">►</string>

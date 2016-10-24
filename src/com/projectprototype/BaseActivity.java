@@ -97,7 +97,10 @@ public abstract class BaseActivity extends AppCompatActivity implements WeekView
         // the week view. This is optional.
         setupDateTimeInterpreter(false);
 
+
+
         Button logLeaveButton = (Button) findViewById(R.id.leavebutton);
+        logLeaveButton.setVisibility(View.GONE);
         logLeaveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -162,6 +165,8 @@ public abstract class BaseActivity extends AppCompatActivity implements WeekView
                 public void onCancelled(DatabaseError databaseError) {
                 }
             });
+        }else {
+            getMenuInflater().inflate(R.menu.main, menu);
         }
 
 
@@ -222,19 +227,19 @@ public abstract class BaseActivity extends AppCompatActivity implements WeekView
 
         }
 
-        if (id == R.id.resources) {
+        if (id == R.id.myleaves) {
 
-            Intent mainIntent = new Intent(BaseActivity.this, ResourcesActivity.class);
+            Intent mainIntent = new Intent(BaseActivity.this, MyLeavesActivity.class);
             BaseActivity.this.startActivity(mainIntent);
 
 
 
         }
 
-        if (id == R.id.leaves) {
+        if (id == R.id.search) {
 
-
-
+            Intent mainIntent = new Intent(BaseActivity.this, SearchEIDActivity.class);
+            BaseActivity.this.startActivity(mainIntent);
         }
 
 
@@ -298,6 +303,7 @@ public abstract class BaseActivity extends AppCompatActivity implements WeekView
             }
         });
     }
+
 
     protected String getEventTitle(Calendar time) {
         return String.format("Event of %02d:%02d %s/%d", time.get(Calendar.MONTH), time.get(Calendar.DAY_OF_MONTH), time.get(Calendar.YEAR));

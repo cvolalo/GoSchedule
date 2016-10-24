@@ -52,8 +52,9 @@
             android:name="com.projectprototype.ViewLeaveActivity"
             android:label="@string/title_activity_view_leave" />
         <activity android:name="com.projectprototype.SearchEIDActivity" />
-        <activity android:name="com.projectprototype.ResourcesActivity" />
-        <activity android:name="com.projectprototype.AddResourceActivity" />
+        <activity android:name="com.projectprototype.MyLeavesActivity" />
+        <activity android:name="com.projectprototype.EditLeaveActivity" />
+        <activity android:name="com.projectprototype.ApproveLeaveActivity" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"

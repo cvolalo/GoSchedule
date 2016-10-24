@@ -54,7 +54,6 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:layout_marginBottom="15dp"
                 android:paddingLeft="10dp"
                 android:textColor="@color/grey"
                 android:inputType="text|textPersonName"/>
@@ -63,6 +62,81 @@
 
 
 
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+
+
+        <Button
+            android:id="@+id/searchSIT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#0097a7"
+            android:onClick="getSIT"
+            android:text="SIT"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/searchTraining"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#0097a7"
+            android:onClick="getTraining"
+            android:text="TRAINING"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/searchPMO"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#0097a7"
+            android:onClick="getPMO"
+            android:text="PMO"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/searchOpps"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#0097a7"
+            android:onClick="getOpps"
+            android:text="OPPS"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/searchCreative"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#0097a7"
+            android:onClick="getCreative"
+            android:text="Creative"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 

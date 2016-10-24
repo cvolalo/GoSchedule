@@ -11,6 +11,7 @@ import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -39,6 +40,14 @@ public class ViewLeaveActivity extends ListActivity implements OnItemClickListen
 		String month = intentDateReceived.getExtras().getString("month");
 		String day = intentDateReceived.getExtras().getString("day");
 
+		Button backHome = (Button) findViewById(R.id.backhome2);
+
+		backHome.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				backHome(v);
+			}
+		});
 
 		dateString = month + "/" + day + "/" + year;
 
@@ -53,6 +62,10 @@ public class ViewLeaveActivity extends ListActivity implements OnItemClickListen
 		//lv.setAdapter(myAdapter);
 
 		Toast.makeText(getApplicationContext(), dateString, Toast.LENGTH_LONG).show();
+	}
+
+	public void backHome(View view) {
+		finish();
 	}
 
 	@Override

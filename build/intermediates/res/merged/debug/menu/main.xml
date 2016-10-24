@@ -17,6 +17,12 @@
         app:showAsAction="ifRoom"/>
 
     <item
+        android:id="@+id/myleaves"
+        android:orderInCategory="100"
+        android:title="@string/myleaves"
+        app:showAsAction="never"/>
+
+    <item
         android:id="@+id/reset"
         android:orderInCategory="100"
         android:title="@string/reset"
@@ -26,7 +32,15 @@
         android:id="@+id/signout"
         android:orderInCategory="100"
         android:title="@string/signout"
+<<<<<<< HEAD
         app:showAsAction="never"/>
+=======
+<<<<<<< HEAD
+        android:showAsAction="ifRoom"/-->
+=======
+        android:showAsAction="ifRoom"/>
+>>>>>>> DesignBranch
+>>>>>>> 07c888515375df72c70dc862bbf8c1a58caa41e2
 
 
 
