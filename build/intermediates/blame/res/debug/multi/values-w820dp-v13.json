@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\christine\\Documents\\goschedule\\build\\intermediates\\res\\merged\\debug\\values-w820dp-v13\\values-w820dp-v13.xml",
+        "outputFile": "C:\\Users\\christine\\Downloads\\goschedule\\build\\intermediates\\res\\merged\\debug\\values-w820dp-v13\\values-w820dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "C:\\Users\\christine\\Documents\\goschedule\\res\\values-w820dp\\dimens.xml",
+                    "file": "C:\\Users\\christine\\Downloads\\goschedule\\res\\values-w820dp\\dimens.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,

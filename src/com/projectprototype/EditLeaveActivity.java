@@ -1,21 +1,12 @@
 package com.projectprototype;
 
-import android.app.ProgressDialog;
-import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Spinner;
-import android.widget.Toast;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Map;
 
+//import com.firebase.client.Firebase;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -24,26 +15,52 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.MutableData;
 import com.google.firebase.database.Query;
+import com.google.firebase.database.Transaction;
 import com.google.firebase.database.ValueEventListener;
 
-import java.util.Calendar;
-import java.util.HashMap;
-import java.util.Map;
+import android.app.Activity;
+import android.app.DatePickerDialog;
+import android.app.ProgressDialog;
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.text.method.KeyListener;
+import android.util.Log;
+import android.util.MutableInt;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.Window;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
 
-public class EditLeaveActivity extends AppCompatActivity {
-
-    Button editupdateButton;
-    Button editcancelButton;
-    EditText editname;
-    EditText editdate;
-    EditText editbackup;
-    EditText editstatus;
-    String editchecker;
-    Spinner edittype;
+public class EditLeaveActivity extends AppCompatActivity implements OnItemSelectedListener {
+    DatabaseHelper db = new DatabaseHelper(this);
+    Button editButton;
+    Button cancelButton;
+    EditText name;
+    EditText date;
+    EditText backup;
+    EditText status;
+    TextView checker;
+    //String checker;
+    Spinner type;
     String item;
     boolean adminCheck = false;
     boolean dbSyncCheck = false;
+    private KeyListener listener;
     String[] names = new String[1];
     //String EID;
     private FirebaseAuth.AuthStateListener mAuthListener;
@@ -52,57 +69,256 @@ public class EditLeaveActivity extends AppCompatActivity {
     Calendar myCalendar = Calendar.getInstance();
     private FirebaseAuth mAuth;
 
+
+    DatePickerDialog.OnDateSetListener date2 = new DatePickerDialog.OnDateSetListener() {
+
+        @Override
+        public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+            // TODO Auto-generated method stub
+            myCalendar.set(Calendar.YEAR, year);
+            myCalendar.set(Calendar.MONTH, monthOfYear);
+            myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+            updateLabel();
+        }
+
+
+    };
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_edit_leave);
 
         mAuth = FirebaseAuth.getInstance();
-        final FirebaseUser user = mAuth.getCurrentUser();
+        FirebaseUser user = mAuth.getCurrentUser();
 
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
+        Intent intentReceived = getIntent();
 
-        editupdateButton = (Button) findViewById(R.id.editleaveSubmit);
-        editcancelButton = (Button) findViewById(R.id.editleaveCancel);
+        //Firebase.setAndroidContext(this);
+        //Firebase f = new Firebase("https://goschedule-50998.firebaseio.com/");
+        //f.setValue("Hello World! version 2.0");
 
-        editname = (EditText) findViewById(R.id.editleaveName);
-        editdate = (EditText) findViewById(R.id.editleaveDate);
-        edittype = (Spinner) findViewById(R.id.editleaveType);
-        editbackup = (EditText) findViewById(R.id.editleaveBackUp);
-        editstatus = (EditText) findViewById(R.id.editleaveStatus);
+        editButton = (Button) findViewById(R.id.editleaveSubmit);
+        cancelButton = (Button) findViewById(R.id.editleaveCancel);
 
-        editstatus.setVisibility(View.GONE);
-
-        String c = "[@]";
-        final String[] nameEID = user.getEmail().split(c);
-
-
-
+        name = (EditText) findViewById(R.id.editleaveName);
+        date = (EditText) findViewById(R.id.editleaveDate);
+        type = (Spinner) findViewById(R.id.editleaveType);
+        backup = (EditText) findViewById(R.id.editleaveBackUp);
+        status = (EditText) findViewById(R.id.editleaveStatus);
+        checker = (TextView) findViewById(R.id.editleaveChecker);
+        listener = name.getKeyListener();
 
         Intent intentDateReceived = getIntent();
         String neweditDate= intentDateReceived.getExtras().getString("date");
-        //String neweditName = intentDateReceived.getExtras().getString("name");
         String neweditType = intentDateReceived.getExtras().getString("type");
 
         String neweditBackup = intentDateReceived.getExtras().getString("backup");
         String neweditStatus = intentDateReceived.getExtras().getString("status");
         String neweditChecker = intentDateReceived.getExtras().getString("checker");
 
+        status.setVisibility(View.GONE);
 
-        editname.setText(nameEID[0]);
-        editdate.setText(neweditDate);
+        String c = "[@]";
+        final String[] nameEID = user.getEmail().split(c);
 
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.leave_arrays, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-       edittype.setAdapter(adapter);
-        if (!neweditDate.equals(null)) {
-            int spinnerPosition = adapter.getPosition(neweditDate);
-            edittype.setSelection(spinnerPosition);
+        status.setText(neweditStatus);
+        name.setText(nameEID[0]);
+
+
+        if (user != null) {
+            if (adminCheck) {
+                name.setKeyListener(listener);
+
+            }
+            Query adminQuery = database.getReference().child("admin").limitToFirst(20);
+
+            //adminQuery.addValueEventListener(new ValueEventListener() {
+            adminQuery.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    for (DataSnapshot adminSnapshot : dataSnapshot.getChildren()) {
+                        String value = (String) adminSnapshot.getValue();
+                        names[0] = value;
+                        names[0] = names[0].replaceAll("\\s", "");
+                        //Toast.makeText(LoginActivity.this, names[0], Toast.LENGTH_SHORT).show();
+
+                        String[] admins = names[0].split(",");
+
+                        for (int i = 0; i < admins.length; i++) {
+                            if (admins[i].equals(nameEID)) {
+                                //Toast.makeText(LoginActivity.this, "admin", Toast.LENGTH_SHORT).show();
+                                adminCheck = true;
+                            }
+                        }
+
+                        if (adminCheck) {
+                            name.setKeyListener(listener);
+                        } else {
+                            name.setKeyListener(null);
+                        }
+                        // do your stuff here with value
+                    }
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+                }
+            });
         }
 
 
 
+
+        type.setOnItemSelectedListener(this);
+        final Calendar myCalendar = Calendar.getInstance();
+
+        date.setText(neweditDate);
+        date.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                new DatePickerDialog(EditLeaveActivity.this, date2, myCalendar
+                        .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
+                        myCalendar.get(Calendar.DAY_OF_MONTH)).show();
+            }
+        });
+
+        String compareValue = neweditType;
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.leave_arrays, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        type.setAdapter(adapter);
+        if (!compareValue.equals(null)) {
+            int spinnerPosition = adapter.getPosition(compareValue);
+            type.setSelection(spinnerPosition);
+        }
+        backup.setText(neweditBackup);
+        checker.setVisibility(View.GONE);
+        checker.setText(neweditChecker);
+        editButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editLeave(v);
+            }
+        });
+        cancelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cancelView(v);
+            }
+        });
+
+
+
+    }
+
+
+
+    private void updateLabel() {
+
+        String myFormat = "MM/dd/yyyy"; //In which you need put here
+        SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+
+        date.setText(sdf.format(myCalendar.getTime()));
+    }
+
+
+    public void editLeave(View view) {
+
+
+        if (name.getText().toString().length() > 0 && date.getText().toString().length() > 0 && backup.getText().toString().length() > 0) {
+            boolean logStatus = editLogFB(name.getText().toString(),date.getText().toString(),item,backup.getText().toString(),status.getText().toString(),checker.getText().toString());
+            //Intent back = new Intent(this, MainActivity.class);
+            if (logStatus){
+                Toast.makeText(getApplicationContext(), " Successfully edited leave!", Toast.LENGTH_LONG).show();
+                Intent mainIntent = new Intent(this, MyLeavesActivity.class);
+                this.startActivity(mainIntent);
+                this.finish();
+
+                finish();
+            }
+            else {
+                Toast.makeText(getApplicationContext(), "Failed, please try again.", Toast.LENGTH_LONG).show();
+
+            }
+        }
+
+
+    }
+
+    public void cancelView(View view) {
+        //Intent intent1 = new Intent(this, MainActivity.class);
+        //intent1.putExtra("message", "Canceled.");
+        //startActivity(intent1);
+        Intent mainIntent = new Intent(this, MyLeavesActivity.class);
+        this.startActivity(mainIntent);
+        this.finish();
+    }
+
+
+
+    public boolean editLogFB(String name, String date, final String type, String backup, String status, final String checker) {
+
+
+        date = date.replace("-","/");
+        String[] startDate = date.split("/");
+        String monthyear = startDate[0] + startDate[2];
+        date = startDate[0] + "-" + startDate[1] + "-" + startDate[2];
+        String dateforchecker = startDate[0]+startDate[1]+startDate[2];
+        name = name.replace(".", "-");
+        backup = backup.replace(".", "-");
+
+        final String updatedchecker = name.toUpperCase()+dateforchecker;
+
+        //Firebase.setAndroidContext(this);
+        //Firebase ref = new Firebase("https://goschedule-4ffe9.firebaseio.com/");
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        final DatabaseReference dateRef = database.getReference();
+
+        final String finalDate = date;
+        final String finalBackup = backup;
+
+        dateRef.child("dates")
+                .orderByChild("checker")
+                .equalTo(checker)
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        for (DataSnapshot childSnapshot : dataSnapshot.getChildren()) {
+                            String clubkey = childSnapshot.getKey();
+                            dateRef.child("dates").child(clubkey).child("date").setValue(finalDate);
+                            dateRef.child("dates").child(clubkey).child("type").setValue(type);
+                            dateRef.child("dates").child(clubkey).child("backup").setValue(finalBackup);
+                            dateRef.child("dates").child(clubkey).child("checker").setValue(updatedchecker);
+                        }
+                    }
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
+
+
+            return true;
+
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        // TODO Auto-generated method stub
+        item = parent.getItemAtPosition(position).toString();
+        Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+        // TODO Auto-generated method stub
 
     }
 
@@ -149,8 +365,6 @@ public class EditLeaveActivity extends AppCompatActivity {
                 public void onCancelled(DatabaseError databaseError) {
                 }
             });
-        }else {
-            getMenuInflater().inflate(R.menu.main, menu);
         }
 
 
@@ -168,9 +382,16 @@ public class EditLeaveActivity extends AppCompatActivity {
 	    return true;
 	}*/
         if (id == R.id.weekview){
-            Intent intent = new Intent(this, WeekViewActivity.class);
+            Intent intent = new Intent(this, MainActivity.class);
 
             this.startActivity(intent);
+            this.finish();
+        }
+
+        if (id == R.id.search) {
+
+            Intent mainIntent = new Intent(EditLeaveActivity.this, SearchEIDActivity.class);
+            EditLeaveActivity.this.startActivity(mainIntent);
             this.finish();
         }
 
@@ -215,22 +436,16 @@ public class EditLeaveActivity extends AppCompatActivity {
         if (id == R.id.myleaves) {
 
             Intent mainIntent = new Intent(EditLeaveActivity.this, MyLeavesActivity.class);
+
             EditLeaveActivity.this.startActivity(mainIntent);
 
 
-
-        }
-
-        if (id == R.id.search) {
-
-            Intent mainIntent = new Intent(EditLeaveActivity.this, SearchEIDActivity.class);
-            EditLeaveActivity.this.startActivity(mainIntent);
         }
 
         if (id == R.id.leaves) {
 
-            Intent mainIntent = new Intent(EditLeaveActivity.this, ApproveLeaveActivity.class);
-            EditLeaveActivity.this.startActivity(mainIntent);
+            Intent mainIntent = new Intent(this, ApproveLeaveActivity.class);
+            this.startActivity(mainIntent);
 
 
 
@@ -257,13 +472,10 @@ public class EditLeaveActivity extends AppCompatActivity {
                 }
             });
 
-
         }
 
         return super.onOptionsItemSelected(item);
     }
-
-
-
-
 }
+
+

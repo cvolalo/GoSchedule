@@ -1,16 +1,10 @@
 package com.projectprototype;
 
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
-
 import com.projectprototype.lib.WeekViewEvent;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
-
-import static com.projectprototype.R.color.event_color_01;
 
 /**
  * A basic example of how to use week view library.
@@ -19,7 +13,7 @@ import static com.projectprototype.R.color.event_color_01;
  */
 public class WeekViewActivity extends BaseActivity {
     DatabaseHelper db = new DatabaseHelper(this);
-    List<? extends WeekViewEvent> listLeave;
+    List<WeekViewEvent> listLeave;
 
     //int cmonth = 8;
 
@@ -32,32 +26,46 @@ public class WeekViewActivity extends BaseActivity {
         //List<WeekViewEvent> events = new ArrayList<WeekViewEvent>();
         listLeave = db.getAll();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /*Calendar startTime = Calendar.getInstance();
-        startTime.set(Calendar.HOUR_OF_DAY, 5);
+        Calendar startTime = Calendar.getInstance();
+        startTime.set(Calendar.HOUR_OF_DAY, 0);
         startTime.set(Calendar.MINUTE, 0);
-        startTime.set(Calendar.MONTH, 9);
-        startTime.set(Calendar.DAY_OF_MONTH, 30);
+        startTime.set(Calendar.MONTH, 10);
+        startTime.set(Calendar.DAY_OF_MONTH, 1);
         startTime.set(Calendar.YEAR, 2016);
         Calendar endTime = (Calendar) startTime.clone();
-        endTime.set(Calendar.HOUR_OF_DAY, 6);
-        endTime.set(Calendar.MINUTE, 0);
-        endTime.set(Calendar.MONTH, 9);
-        WeekViewEvent event = new WeekViewEvent(1, "christine.m.v.olalo", startTime, endTime);
+        endTime.set(Calendar.HOUR_OF_DAY, 23);
+        endTime.set(Calendar.MINUTE, 59);
+
+        WeekViewEvent event = new WeekViewEvent(1, "All Saint's Day", null, startTime, endTime, true);
         event.setColor(getResources().getColor(R.color.event_color_02));
-        events.add(event);*/
+        listLeave.add(event);
+
+        startTime = Calendar.getInstance();
+        startTime.set(Calendar.HOUR_OF_DAY, 0);
+        startTime.set(Calendar.MINUTE, 0);
+        startTime.set(Calendar.MONTH, 9);
+        startTime.set(Calendar.DAY_OF_MONTH, 31);
+        startTime.set(Calendar.YEAR, 2016);
+        endTime = (Calendar) startTime.clone();
+        endTime.set(Calendar.HOUR_OF_DAY, 23);
+        endTime.set(Calendar.MINUTE, 59);
+
+        event = new WeekViewEvent(1, "Halloween", null, startTime, endTime, true);
+        event.setColor(getResources().getColor(R.color.event_color_02));
+        listLeave.add(event);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         /*startTime = Calendar.getInstance();
         startTime.set(Calendar.HOUR_OF_DAY, 3);
@@ -203,6 +211,9 @@ public class WeekViewActivity extends BaseActivity {
 
         //return events;
         return listLeave;
+
     }
+
+
 
 }

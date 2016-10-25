@@ -1,6 +1,11 @@
 package com.projectprototype;
 
+import android.annotation.TargetApi;
 import android.app.ListActivity;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.os.Build;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -32,6 +37,7 @@ public class ApproveLeaveActivity extends ListActivity implements AdapterView.On
     DatabaseHelper db = new DatabaseHelper(this);
     private FirebaseAuth mAuth;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
+    private int alertDialogView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,15 +49,18 @@ public class ApproveLeaveActivity extends ListActivity implements AdapterView.On
 
 
         Button HomeButton = (Button) findViewById(R.id.faCancel);
-        ImageView approvedLeave = (ImageView) findViewById(R.id.editleave);
+        Button Approved = (Button) findViewById(R.id.seeApproved);
+        Button ForApproval = (Button)  findViewById(R.id.seeForApproval);
 
         List<String> listLeave = db.getForApprovalLeaves();
-
+        ImageView approvedLeave = (ImageView) findViewById(R.id.editleave);
         //Log.i("Adap", listLeave.get(0));
 
         //lv = (ListView) findViewById(android.R.id.list);
         this.setListAdapter(new ArrayAdapter<String>(this, R.layout.leave_viewer, R.id.ListMyLeave, listLeave));
         getListView().setOnItemClickListener(this);
+
+
 
         HomeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,84 +69,113 @@ public class ApproveLeaveActivity extends ListActivity implements AdapterView.On
             }
         });
 
-        approvedLeave.setOnClickListener(new View.OnClickListener() {
+        Approved.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                seeApproved();
             }
         });
 
 
+        ForApproval.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                seeForApproval();
+            }
+        });
     }
+
+    private void seeForApproval() {
+        List<String> listLeave = db.getForApprovalLeaves();
+        ImageView approvedLeave = (ImageView) findViewById(R.id.editleave);
+        //Log.i("Adap", listLeave.get(0));
+
+        //lv = (ListView) findViewById(android.R.id.list);
+        this.setListAdapter(new ArrayAdapter<String>(this, R.layout.leave_viewer, R.id.ListMyLeave, listLeave));
+        getListView().setOnItemClickListener(this);
+
+    }
+
+    private void seeApproved() {
+        List<String> listLeave = db.getApprovedLeaves();
+        ImageView approvedLeave = (ImageView) findViewById(R.id.editleave);
+        //Log.i("Adap", listLeave.get(0));
+
+        //lv = (ListView) findViewById(android.R.id.list);
+        this.setListAdapter(new ArrayAdapter<String>(this, R.layout.approved_leave_viewer, R.id.ListMyLeave, listLeave));
+        getListView().setOnItemClickListener(null);
+    }
+
 
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         TextView caption = (TextView) findViewById(R.id.ListMyLeave);
         final DatabaseReference ref = database.getReference();
-        String toEdit = (String) caption.getText();
-        //Toast.makeText(ApproveLeaveActivity.this, toEdit, Toast.LENGTH_SHORT).show();
-        String delim = "[,]";
+
+        String toEdit = (String) parent.getItemAtPosition(position);
+        String delim = "[\n]";
         String[] finalLeave = toEdit.split(delim);
 
-        String name = finalLeave[0].toLowerCase();
-        name = name.replace(".", "-");
-        String type = finalLeave[1];
-        final String date = finalLeave[2];
-        String backup = finalLeave[3];
-        backup = backup.replace(".", "-");
-        String checker = finalLeave[4];
+        String checker = finalLeave[0];
         checker = checker.replace(".","-");
 
-        ref.child("dates")
-                .orderByChild("checker")
-                .equalTo(checker)
-                .addListenerForSingleValueEvent(new ValueEventListener() {
+        String a = "[ ]";
+        String splitname = finalLeave[1];
+        String [] tempname = splitname.split(a);
 
 
-                    @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
-                        for (DataSnapshot childSnapshot : dataSnapshot.getChildren()) {
-                            String clubkey = childSnapshot.getKey();
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+        alert.setTitle("Approve Leave");
+        alert.setMessage("Are you sure you want to approve " + tempname[1].toLowerCase() + "'s filed leave?");
+
+        final String finalChecker = checker;
+        alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+                ref.child("dates")
+                        .orderByChild("checker")
+                        .equalTo(finalChecker)
+                        .addListenerForSingleValueEvent(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(DataSnapshot dataSnapshot) {
+                                for (DataSnapshot childSnapshot : dataSnapshot.getChildren()) {
+                                    String clubkey = childSnapshot.getKey();
+                                    ref.child("dates").child(clubkey).child("status").setValue("Approved");
+                                }
+                            }
+                            @Override
+                            public void onCancelled(DatabaseError databaseError) {
+
+                            }
+                        });
+                Toast.makeText(ApproveLeaveActivity.this, "Successfully approved leave!", Toast.LENGTH_SHORT).show();
+                finish();
+                startActivity(getIntent());
+
+            }
+        });
+        alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+                //So sth here when "cancel" clicked.
+            }
+        });
+        alert.show();
+
+        /*final AlertDialog.Builder adb = new AlertDialog.Builder(this);
+        adb.setView(alertDialogView);
+        adb.setTitle("Approve leave?");
+        adb.setIcon(android.R.drawable.ic_dialog_alert);
+        final String finalChecker = checker;
+        adb.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {*/
+
+                //Toast.makeText(ApproveLeaveActivity.this, toEdit, Toast.LENGTH_SHORT).show();
 
 
-                            ref.child("dates").child(clubkey).child("status").setValue("Approved");
-                        }
 
 
 
 
-
-
-                        //ref.orderByChild("name").equalTo(name).orderByChild("date").equalTo(date);
-            /*Query getname = ref.orderByChild("name").equalTo(name);
-            Query getdate = getname.orderByChild("date").equalTo(date);
-            Query gettype = getdate.orderByChild("type").equalTo(type);
-            Query getbackup = gettype.orderByChild("backup").equalTo(backup);
-            ChildEventListener status = getbackup.orderByChild("status").equalTo("For Approval").addListenerForSingleValueEvent (*/
-
-                /*Map<String,Object> dataput = new HashMap<String, Object>();
-                dataput.put("name", name);
-                dataput.put("date", date);
-                dataput.put("type", type);
-                dataput.put("backup", backup);
-                dataput.put("status", "Approved");
-                ref.updateChildren(dataput);*/
-
-
-                        //);
-
-
-                    }
-
-                    @Override
-                    public void onCancelled(DatabaseError databaseError) {
-
-                    }
-
-
-                });
-        Toast.makeText(ApproveLeaveActivity.this, toEdit, Toast.LENGTH_SHORT).show();
 
     }
 
@@ -162,11 +200,5 @@ public class ApproveLeaveActivity extends ListActivity implements AdapterView.On
     //);*/
 
 
-    private void updateEntry(final String name, String date, String type, String backup) {
 
-
-        //Query yey = ref.child("name").equalTo(name);
-
-
-    }
 }

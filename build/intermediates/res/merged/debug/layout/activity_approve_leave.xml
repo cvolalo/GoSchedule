@@ -47,7 +47,7 @@
 
 
         <Button
-            android:id="@+id/faSIT"
+            android:id="@+id/seeApproved"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
@@ -55,13 +55,13 @@
             android:layout_marginRight="2dp"
             android:layout_marginBottom="2dp"
             android:background="#0097a7"
-            android:onClick="getSIT"
-            android:text="SIT"
+            android:onClick="seeApproved"
+            android:text="APPROVED"
             android:textColor="@color/white" />
 
 
         <Button
-            android:id="@+id/faTraining"
+            android:id="@+id/seeForApproval"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
@@ -69,48 +69,11 @@
             android:layout_marginRight="2dp"
             android:layout_marginBottom="2dp"
             android:background="#0097a7"
-            android:onClick="getTraining"
-            android:text="TRAINING"
+            android:onClick="seeForApproval"
+            android:text="FOR APPROVAL"
             android:textColor="@color/white" />
 
-        <Button
-            android:id="@+id/faPMO"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.2"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:layout_marginBottom="2dp"
-            android:background="#0097a7"
-            android:onClick="getPMO"
-            android:text="PMO"
-            android:textColor="@color/white" />
 
-        <Button
-            android:id="@+id/faOpps"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.2"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:layout_marginBottom="2dp"
-            android:background="#0097a7"
-            android:onClick="getOpps"
-            android:text="OPPS"
-            android:textColor="@color/white" />
-
-        <Button
-            android:id="@+id/faCreative"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.2"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:layout_marginBottom="2dp"
-            android:background="#0097a7"
-            android:onClick="getCreative"
-            android:text="Creative"
-            android:textColor="@color/white" />
 
     </LinearLayout>
 

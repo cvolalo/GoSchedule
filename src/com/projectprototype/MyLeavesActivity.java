@@ -26,6 +26,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.Calendar;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -46,40 +47,7 @@ public class MyLeavesActivity extends ListActivity implements AdapterView.OnItem
     Calendar myCalendar = Calendar.getInstance();
     private FirebaseAuth mAuth;
 
-    public static class Resource {
-        String date;
-        String name;
-        String type;
-        String backup;
-        String status;
-        String checker;
 
-        public Resource() {
-            // empty default constructor, necessary for Firebase to be able to deserialize blog posts
-        }
-
-
-
-        public String getDate() {
-            return date;
-        }
-        public String getName() {
-            return name;
-        }
-        public String getType() {
-            return type;
-        }
-        public String getBackup() {
-            return backup;
-        }
-        public String getStatus() {
-            return status;
-        }
-        public String getChecker() {
-            return checker;
-        }
-
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,56 +68,27 @@ public class MyLeavesActivity extends ListActivity implements AdapterView.OnItem
 
         DatabaseReference ref = database.getReference("dates");
 
-        ref.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot snapshot) {
-                //System.out.println("There are " + snapshot.getChildrenCount() + " blog posts");
-
-                db.deleteAll();
-                for (DataSnapshot personSnapshot: snapshot.getChildren()) {
-                    Resource person = personSnapshot.getValue(Resource.class);
-                    nameConverted = person.getName();
-                    nameConverted = nameConverted.replace("-",".");
-                    db.createLog(nameConverted,person.getDate(),person.getType(),person.getBackup(),person.getStatus(),person.getChecker());
-
-
-                    //System.out.println(post.getAuthor() + " - " + post.getTitle());
-                }
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                //System.out.println("The read failed: " + firebaseError.getMessage());
-            }
-
-            //@Override
-            //public void onCancelled(FirebaseError firebaseError) {
-            //      System.out.println("The read failed: " + firebaseError.getMessage());
-            //}
-        });
-        /*public void editLeave(View view) {
-            FirebaseUser user = mAuth.getCurrentUser();
-            String c = "[@]";
-            String[] nameEID = user.getEmail().split(c);
-            Intent intent1 = new Intent(this, EditLeaveActivity.class);
-            intent1.putExtra("nameEID", nameEID[0]);
-            intent1.putExtra("")
-            startActivity(intent1);
-        }*/
-
-
         String c = "[@]";
         String[] nameEID = user.getEmail().split(c);
         listLeave = db.getAllInName(nameEID[0]);
 
         //Log.i("Adap", listLeave.get(0));
+        myAdapter = new ArrayAdapter<String>(this, R.layout.leave_viewer, R.id.ListMyLeave, listLeave);
 
         //lv = (ListView) findViewById(android.R.id.list);
-        this.setListAdapter(new ArrayAdapter<String>(this, R.layout.leave_viewer, R.id.ListMyLeave, listLeave));
+        this.setListAdapter(myAdapter);
         getListView().setOnItemClickListener(this);
 
     }
+
+
+
+    public void onResume(){
+        super.onResume();
+
+    }
+
+
 
 
 
@@ -165,7 +104,7 @@ public class MyLeavesActivity extends ListActivity implements AdapterView.OnItem
         final DatabaseReference ref = database.getReference();
 
         Intent intent = new Intent(MyLeavesActivity.this, EditLeaveActivity.class);
-        String toEdit = (String) caption.getText();
+        String toEdit = (String) parent.getItemAtPosition(position);
         //Toast.makeText(ApproveLeaveActivity.this, toEdit, Toast.LENGTH_SHORT).show();
         String delim = "[\n]";
         String[] finalLeave = toEdit.split(delim);
@@ -173,18 +112,38 @@ public class MyLeavesActivity extends ListActivity implements AdapterView.OnItem
         String c = "[@]";
         String[] tempname = user.getEmail().split(c);
         String name = tempname[0].toLowerCase();
-        String date = finalLeave[0];
-        String type = finalLeave[1];
-        String backup = finalLeave[2];
-        String checker = finalLeave[3];
+
+        String a = "[ ]";
+        String splitdate = finalLeave[1];
+        String [] tempdate = splitdate.split(a);
+        String date = tempdate[1];
+
+        String b = ": ";
+        String splittype = finalLeave[2];
+        String [] temptype = splittype.split(b);
+        String type = temptype[1];
+
+        String d = ": ";
+        String splitbackup = finalLeave[3];
+        String [] tempbackup = splitbackup.split(d);
+        String backup = tempbackup[1];
+
+        String e = ": ";
+        String splitstatus = finalLeave[4];
+        String [] tempstatus = splitstatus.split(d);
+        String status = tempstatus[1];
+
+        String checker = finalLeave[0];
 
         intent.putExtra("name", name);
         intent.putExtra("date", date);
         intent.putExtra("type", type);
         intent.putExtra("backup", backup);
         intent.putExtra("checker", checker);
+        intent.putExtra("status", status);
 
         startActivity(intent);
+        finish();
 
 
 

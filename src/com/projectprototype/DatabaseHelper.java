@@ -7,10 +7,8 @@ import java.util.List;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
-import android.database.DatabaseErrorHandler;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
 
 import com.projectprototype.lib.WeekViewEvent;
 
@@ -118,9 +116,10 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 		if (cursor.moveToFirst()) {
 			do {
 				id = Integer.parseInt(cursor.getString(0));
-				name = cursor.getString(1);
+				name = cursor.getString(1).toUpperCase();
 				type = cursor.getString(3);
 				backup = cursor.getString(4);
+				backup = backup.replace("-",".");
 
 				// Add book to books
 				//Log.i("myApp", Integer.toString(id));
@@ -141,6 +140,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 		String type;
 		String backup;
 		String checker;
+		String status;
 
 		//Log.i("myApp", date);
 		// select book query
@@ -158,13 +158,15 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 				date = cursor.getString(2);
 				type = cursor.getString(3);
 				backup = cursor.getString(4);
+				backup = backup.replace("-",".");
+				status = cursor.getString(5);
 				checker = cursor.getString(6);
 
 				// Add book to books
 				//Log.i("myApp", Integer.toString(id));
 				//Log.i("myApp", name + " ( " + type + " ) ");
 
-				output.add("Date: " + date + "\nType: " + type + "\nBack up: " + backup + "\n" + checker);
+				output.add(checker +"\nDate: " + date + "\nType: " + type + "\nBack up: " + backup + "\nStatus: " + status);
 				//Log.i("myApp", cursor.getString(2));
 				//Log.i("myapp", output.get(id-1));
 			} while (cursor.moveToNext());
@@ -193,7 +195,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 		return false;
 	}
 
-	public List<? extends WeekViewEvent> getAll() {
+	public List<WeekViewEvent> getAll() {
 
 		List<WeekViewEvent> events = new ArrayList<WeekViewEvent>();
 
@@ -222,6 +224,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 				type = cursor.getString(3);
 				date = cursor.getString(2);
 				backup = cursor.getString(4);
+				backup = backup.replace("-",".");
 
 				//Context context = null;
 				String[] dateParts = date.split("-");
@@ -244,7 +247,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 				startTime.set(Calendar.DAY_OF_MONTH, dateDay);
 				startTime.set(Calendar.YEAR, dateYear);
 				Calendar endTime = (Calendar) startTime.clone();
-				endTime.set(Calendar.HOUR_OF_DAY, hour);
+				endTime.set(Calendar.HOUR_OF_DAY, (int) hour);
 				endTime.set(Calendar.MINUTE, 0);
 				WeekViewEvent event = new WeekViewEvent(id, name + "\nType: " + type + "\nBack up: " + backup, startTime, endTime);
 				//event.setColor(000000);
@@ -259,238 +262,6 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 			} while (cursor.moveToNext());
 		}
 		return events;
-	}
-
-	/*public List<String> getSIT() {
-		List<String> output = new ArrayList<String>();
-		Integer id;
-		String date;
-		String type;
-		String name;
-		String backup;
-		String checker;
-
-		//Log.i("myApp", date);
-		// select book query
-		//String query = "SELECT  * FROM " + table_LEAVES;
-		String query = "SELECT * FROM FiledLeaves WHERE name IN ('christine.m.v.olalo','rhubel.r.gulanes','jayson.j.b.bondad'," +
-				"'ma.a.d.serrano','katrina.h.quililan','jaicel.p.p.espino','patrick.ian.a.limpin','mark.klifford.b.diao','maitha.l.teodoro'," +
-				"'louie.d.p.mandigal') ORDER BY date DESC";
-
-		// get reference of the BookDB database
-		SQLiteDatabase db = this.getWritableDatabase();
-		Cursor cursor = db.rawQuery(query, null);
-
-		// parse all results
-		if (cursor.moveToFirst()) {
-			do {
-				id = Integer.parseInt(cursor.getString(0));
-				date = cursor.getString(2);
-				type = cursor.getString(3);
-				name = cursor.getString(1);
-				backup = cursor.getString(4);
-				checker = cursor.getString(6);
-
-				// Add book to books
-				//Log.i("myApp", Integer.toString(id));
-				//Log.i("myApp", name + " ( " + type + " ) ");
-				output.add(name.toUpperCase() + ", " + type + "\n" + date + "\n" + backup + "\n" + checker);
-				//Log.i("myApp", cursor.getString(2));
-				//Log.i("myapp", output.get(id-1));
-			} while (cursor.moveToNext());
-		}
-		return output;
-	}*/
-
-	/*public List<String> getOpps() {
-		List<String> output = new ArrayList<String>();
-		Integer id;
-		String date;
-		String type;
-		String name;
-		String backup;
-		String checker;
-
-		//Log.i("myApp", date);
-		// select book query
-		//String query = "SELECT  * FROM " + table_LEAVES;
-		String query = "SELECT * FROM FiledLeaves WHERE name IN ('john.arvee.r.flores','abigail.d.gabriel','nickolle.t.noveza'," +
-				"'jayson.p.labatorio','k.r.de.la.fuente','renn.louie.s.pineda') AND status = 'For Approval' ORDER BY date DESC";
-
-		// get reference of the BookDB database
-		SQLiteDatabase db = this.getWritableDatabase();
-		Cursor cursor = db.rawQuery(query, null);
-
-		// parse all results
-		if (cursor.moveToFirst()) {
-			do {
-				id = Integer.parseInt(cursor.getString(0));
-				date = cursor.getString(2);
-				type = cursor.getString(3);
-				name = cursor.getString(1);
-				backup = cursor.getString(4);
-				checker = cursor.getString(6);
-
-				// Add book to books
-				//Log.i("myApp", Integer.toString(id));
-				//Log.i("myApp", name + " ( " + type + " ) ");
-				output.add(name.toUpperCase() + "," + type + "," + date + "," + backup + "," + checker);
-				//Log.i("myApp", cursor.getString(2));
-				//Log.i("myapp", output.get(id-1));
-			} while (cursor.moveToNext());
-		}
-		return output;
-	}
-
-	/*public List<String> getCreative() {
-		List<String> output = new ArrayList<String>();
-		Integer id;
-		String date;
-		String type;
-		String name;
-		String backup;
-
-		//Log.i("myApp", date);
-		// select book query
-		//String query = "SELECT  * FROM " + table_LEAVES;
-		String query = "SELECT * FROM FiledLeaves WHERE name IN ('arvin.o.tupil','joann.s.salamat','ken.louise.c.toyama'," +
-				"'mary.l.l.dela.torre') ORDER BY date DESC";
-
-		// get reference of the BookDB database
-		SQLiteDatabase db = this.getWritableDatabase();
-		Cursor cursor = db.rawQuery(query, null);
-
-		// parse all results
-		if (cursor.moveToFirst()) {
-			do {
-				id = Integer.parseInt(cursor.getString(0));
-				date = cursor.getString(2);
-				type = cursor.getString(3);
-				name = cursor.getString(1);
-				backup = cursor.getString(4);
-
-				// Add book to books
-				//Log.i("myApp", Integer.toString(id));
-				//Log.i("myApp", name + " ( " + type + " ) ");
-				output.add(name.toUpperCase() + ", " + type + "\n" + date + ", " + backup);
-				//Log.i("myApp", cursor.getString(2));
-				//Log.i("myapp", output.get(id-1));
-			} while (cursor.moveToNext());
-		}
-		return output;
-	}*/
-
-	/*public List<String> getPMO() {
-		List<String> output = new ArrayList<String>();
-		Integer id;
-		String date;
-		String type;
-		String name;
-		String backup;
-
-		//Log.i("myApp", date);
-		// select book query
-		//String query = "SELECT  * FROM " + table_LEAVES;
-		String query = "SELECT * FROM FiledLeaves WHERE name IN ('bianca.a.del.puerto','abegael.f.bang-og','angelique.c.loria'," +
-				"'joelyn.q.bueno','owen.nino.g.obiedo') ORDER BY date DESC";
-
-		// get reference of the BookDB database
-		SQLiteDatabase db = this.getWritableDatabase();
-		Cursor cursor = db.rawQuery(query, null);
-
-		// parse all results
-		if (cursor.moveToFirst()) {
-			do {
-				id = Integer.parseInt(cursor.getString(0));
-				date = cursor.getString(2);
-				type = cursor.getString(3);
-				name = cursor.getString(1);
-				backup = cursor.getString(4);
-
-				// Add book to books
-				//Log.i("myApp", Integer.toString(id));
-				//Log.i("myApp", name + " ( " + type + " ) ");
-				output.add(name.toUpperCase() + ", " + type + "\n" + date + ", " + backup);
-				//Log.i("myApp", cursor.getString(2));
-				//Log.i("myapp", output.get(id-1));
-			} while (cursor.moveToNext());
-		}
-		return output;
-	}*/
-
-	/*public List<String> getTraining() {
-		List<String> output = new ArrayList<String>();
-		Integer id;
-		String date;
-		String type;
-		String name;
-		String backup;
-
-		//Log.i("myApp", date);
-		// select book query
-		//String query = "SELECT  * FROM " + table_LEAVES;
-		String query = "SELECT * FROM FiledLeaves WHERE name IN ('ann.f.o.alegria','jiezel.b.t.hernandez','mark.a.s.manese'," +
-				"'mirasol.s.manlapaz') ORDER BY date DESC";
-
-		// get reference of the BookDB database
-		SQLiteDatabase db = this.getWritableDatabase();
-		Cursor cursor = db.rawQuery(query, null);
-
-		// parse all results
-		if (cursor.moveToFirst()) {
-			do {
-				id = Integer.parseInt(cursor.getString(0));
-				date = cursor.getString(2);
-				type = cursor.getString(3);
-				name = cursor.getString(1);
-				backup = cursor.getString(4);
-
-				// Add book to books
-				//Log.i("myApp", Integer.toString(id));
-				//Log.i("myApp", name + " ( " + type + " ) ");
-				output.add(name.toUpperCase() + ", " + type + "\n" + date + ", " + backup);
-				//Log.i("myApp", cursor.getString(2));
-				//Log.i("myapp", output.get(id-1));
-			} while (cursor.moveToNext());
-		}
-		return output;
-	}*/
-
-	public void updateEntry(String name, String date, String type, String backup) {
-
-		/*List<String> output = new ArrayList<String>();
-		//String output = "Success";
-		Integer id;*/
-		String status = "Approved";
-
-		//Log.i("myApp", date);
-		// select book query
-		//String query = "SELECT  * FROM " + table_LEAVES;
-		SQLiteDatabase db = this.getWritableDatabase();
-		String query = "UPDATE FiledLeaves SET status = '" + status + "' WHERE name = '" + name + "' AND date = '" + date + "' AND type = '" + type + "' AND backup = '" + backup + "'";
-		db.execSQL(query);
-		// get reference of the BookDB database
-
-		/*Cursor cursor = db.rawQuery(query, null);
-
-		// parse all results
-		if (cursor.moveToFirst()) {
-			do {
-				id = Integer.parseInt(cursor.getString(0));
-				date = cursor.getString(2);
-				type = cursor.getString(3);
-				name = cursor.getString(1);
-				backup = cursor.getString(4);
-
-				// Add book to books
-				//Log.i("myApp", Integer.toString(id));
-				//Log.i("myApp", name + " ( " + type + " ) ");
-				output.add(name.toUpperCase() + ", " + type + "\n" + date + ", " + backup);
-				//Log.i("myApp", cursor.getString(2));
-				//Log.i("myapp", output.get(id-1));
-			} while (cursor.moveToNext());
-		}*/
-		//return output;
 	}
 
 	public List<String> getForApprovalLeaves() {
@@ -524,11 +295,52 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 				// Add book to books
 				//Log.i("myApp", Integer.toString(id));
 				//Log.i("myApp", name + " ( " + type + " ) ");
-				output.add(name.toUpperCase() + "," + type + "," + date + "," + backup + "," + checker);
+				output.add(checker +"\nName: " + name + "\nDate: " + date + "\nType: " + type + "\nBack up: " + backup);
 				//Log.i("myApp", cursor.getString(2));
 				//Log.i("myapp", output.get(id-1));
 			} while (cursor.moveToNext());
 		}
 		return output;
 	}
+
+	public List<String> getApprovedLeaves() {
+		List<String> output = new ArrayList<String>();
+		Integer id;
+		String date;
+		String type;
+		String name;
+		String backup;
+		String checker;
+
+		//Log.i("myApp", date);
+		// select book query
+		//String query = "SELECT  * FROM " + table_LEAVES;
+		String query = "SELECT * FROM FiledLeaves WHERE status = 'Approved' ORDER BY date DESC";
+
+		// get reference of the BookDB database
+		SQLiteDatabase db = this.getWritableDatabase();
+		Cursor cursor = db.rawQuery(query, null);
+
+		// parse all results
+		if (cursor.moveToFirst()) {
+			do {
+				id = Integer.parseInt(cursor.getString(0));
+				date = cursor.getString(2);
+				type = cursor.getString(3);
+				name = cursor.getString(1);
+				backup = cursor.getString(4);
+				checker = cursor.getString(6);
+
+				// Add book to books
+				//Log.i("myApp", Integer.toString(id));
+				//Log.i("myApp", name + " ( " + type + " ) ");
+				output.add(checker +"\nName: " + name + "\nDate: " + date + "\nType: " + type + "\nBack up: " + backup);
+				//Log.i("myApp", cursor.getString(2));
+				//Log.i("myapp", output.get(id-1));
+			} while (cursor.moveToNext());
+		}
+		return output;
+	}
+
+
 }

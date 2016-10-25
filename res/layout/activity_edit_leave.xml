@@ -31,7 +31,7 @@
             android:gravity="center_horizontal"
             android:padding="5dp"
             android:paddingLeft="5dp"
-            android:text="File Leave"
+            android:text="Edit Leave"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -138,6 +138,13 @@
                 android:layout_weight="0.75"
                 android:text="For Approval"
                 android:ems="10" />
+
+            <TextView
+                android:id="@+id/editleaveChecker"
+                android:layout_weight="0.25"
+                android:ems="10"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
         </LinearLayout>
 
 

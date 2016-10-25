@@ -40,11 +40,7 @@ public class SearchEIDActivity extends ListActivity implements AdapterView.OnIte
 
         searchEIDButton = (Button) findViewById(R.id.searchSubmit);
         cancelEIDButton = (Button) findViewById(R.id.searchCancel);
-        Button SIT = (Button) findViewById(R.id.searchSIT);
-        Button Training = (Button) findViewById(R.id.searchTraining);
-        Button PMO = (Button) findViewById(R.id.searchPMO);
-        Button Creative = (Button) findViewById(R.id.searchCreative);
-        Button Opps = (Button) findViewById(R.id.searchOpps);
+
 
         EID = (EditText) findViewById(R.id.searchName);
 
@@ -60,113 +56,11 @@ public class SearchEIDActivity extends ListActivity implements AdapterView.OnIte
                 cancelEIDView(v);
             }
         });
-        SIT.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                searchSIT(v);
-            }
-        });
-        Training.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                searchTraining(v);
-            }
-        });
-        PMO.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                searchPMO(v);
-            }
-        });
-        Creative.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                searchCreative(v);
-            }
-        });
-        Opps.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                searchOpps(v);
-            }
-        });
+
 
     }
 
-    public void searchSIT(View view) {
-        //Intent intent1 = new Intent(this, MainActivity.class);
-        //intent1.putExtra("message", "Canceled.");
-        //startActivity(intent1);
 
-        listLeave = db.getSIT();
-
-        //Log.i("Adap", listLeave.get(0));
-
-        lv = (ListView) findViewById(android.R.id.list);
-        myAdapter = new ArrayAdapter<String>(SearchEIDActivity.this, android.R.layout.simple_list_item_1, listLeave);
-        getListView().setOnItemClickListener(this);
-        lv.setAdapter(myAdapter);
-    }
-
-    public void searchTraining(View view) {
-        //Intent intent1 = new Intent(this, MainActivity.class);
-        //intent1.putExtra("message", "Canceled.");
-        //startActivity(intent1);
-
-        listLeave = db.getTraining();
-
-        //Log.i("Adap", listLeave.get(0));
-
-        lv = (ListView) findViewById(android.R.id.list);
-        myAdapter = new ArrayAdapter<String>(SearchEIDActivity.this, android.R.layout.simple_list_item_1, listLeave);
-        getListView().setOnItemClickListener(this);
-        lv.setAdapter(myAdapter);
-    }
-
-    public void searchOpps(View view) {
-        //Intent intent1 = new Intent(this, MainActivity.class);
-        //intent1.putExtra("message", "Canceled.");
-        //startActivity(intent1);
-
-        listLeave = db.getOpps();
-
-        //Log.i("Adap", listLeave.get(0));
-
-        lv = (ListView) findViewById(android.R.id.list);
-        myAdapter = new ArrayAdapter<String>(SearchEIDActivity.this, android.R.layout.simple_list_item_1, listLeave);
-        getListView().setOnItemClickListener(this);
-        lv.setAdapter(myAdapter);
-    }
-
-    public void searchPMO(View view) {
-        //Intent intent1 = new Intent(this, MainActivity.class);
-        //intent1.putExtra("message", "Canceled.");
-        //startActivity(intent1);
-
-        listLeave = db.getPMO();
-
-        //Log.i("Adap", listLeave.get(0));
-
-        lv = (ListView) findViewById(android.R.id.list);
-        myAdapter = new ArrayAdapter<String>(SearchEIDActivity.this, android.R.layout.simple_list_item_1, listLeave);
-        getListView().setOnItemClickListener(this);
-        lv.setAdapter(myAdapter);
-    }
-
-    public void searchCreative(View view) {
-        //Intent intent1 = new Intent(this, MainActivity.class);
-        //intent1.putExtra("message", "Canceled.");
-        //startActivity(intent1);
-
-        listLeave = db.getCreative();
-
-        //Log.i("Adap", listLeave.get(0));
-
-        lv = (ListView) findViewById(android.R.id.list);
-        myAdapter = new ArrayAdapter<String>(SearchEIDActivity.this, android.R.layout.simple_list_item_1, listLeave);
-        getListView().setOnItemClickListener(this);
-        lv.setAdapter(myAdapter);
-    }
 
     public void searchLeave(View view) {
         //Intent intent1 = new Intent(this, MainActivity.class);
@@ -178,7 +72,7 @@ public class SearchEIDActivity extends ListActivity implements AdapterView.OnIte
         //Log.i("Adap", listLeave.get(0));
 
         lv = (ListView) findViewById(android.R.id.list);
-        myAdapter = new ArrayAdapter<String>(SearchEIDActivity.this, android.R.layout.simple_list_item_1, listLeave);
+        myAdapter = new ArrayAdapter<String>(SearchEIDActivity.this, R.layout.search_leave_viewer, R.id.ListMyLeave, listLeave);
         getListView().setOnItemClickListener(this);
         lv.setAdapter(myAdapter);
     }

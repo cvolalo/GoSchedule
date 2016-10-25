@@ -6,7 +6,8 @@
 
     <string name="signout">Sign Out</string>
     <string name="weekview">Week View</string>
-    <string name="leaves">Leaves</string>
+    <string name="leaves">Filed Leaves</string>
+    <string name="search">Search</string>
     <string name="resources">Resources</string>
     <string name="reset">Reset Password</string>
     <string name="title_activity_leave">GoSchedule</string>

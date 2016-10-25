@@ -189,6 +189,31 @@ public abstract class BaseActivity extends AppCompatActivity implements WeekView
             this.finish();
         }
 
+        if (id == R.id.search) {
+
+            Intent mainIntent = new Intent(this, SearchEIDActivity.class);
+            this.startActivity(mainIntent);
+        }
+
+
+        if (id == R.id.myleaves) {
+
+            Intent mainIntent = new Intent(this, MyLeavesActivity.class);
+
+            this.startActivity(mainIntent);
+
+
+        }
+
+        if (id == R.id.leaves) {
+
+            Intent mainIntent = new Intent(this, ApproveLeaveActivity.class);
+            this.startActivity(mainIntent);
+
+
+
+        }
+
         if (id == R.id.signout) {
 
             //mAuth = FirebaseAuth.getInstance();

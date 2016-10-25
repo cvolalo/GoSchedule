@@ -28,6 +28,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.method.KeyListener;
 import android.util.Log;
 import android.util.MutableInt;
 import android.view.Menu;
@@ -55,11 +56,12 @@ public class LeaveActivity extends AppCompatActivity implements OnItemSelectedLi
 	String checker;
 	Spinner type;
 	String item;
-	boolean adminCheck = false;
+	boolean adminCheck;
 	boolean dbSyncCheck = false;
 	String[] names = new String[1];
 	//String EID;
 	private FirebaseAuth.AuthStateListener mAuthListener;
+	private KeyListener listener;
 
 	FirebaseDatabase database = FirebaseDatabase.getInstance();
 	Calendar myCalendar = Calendar.getInstance();
@@ -114,13 +116,13 @@ public class LeaveActivity extends AppCompatActivity implements OnItemSelectedLi
 		final String[] nameEID = user.getEmail().split(c);
 
 
-		name.setText(nameEID[0]);
+		name.setText(nameEID[0], TextView.BufferType.EDITABLE);;
+		listener = name.getKeyListener();
+		final String forCheck = nameEID[0] + "@accenture.com";
 
 
-		if (user != null) {
 			if (adminCheck) {
-
-
+				name.setKeyListener(listener);
 			}
 			Query adminQuery = database.getReference().child("admin").limitToFirst(20);
 
@@ -137,18 +139,18 @@ public class LeaveActivity extends AppCompatActivity implements OnItemSelectedLi
 						String[] admins = names[0].split(",");
 
 						for (int i = 0; i < admins.length; i++) {
-							if (admins[i].equals(nameEID)) {
+							if (admins[i].equals(forCheck)) {
 								//Toast.makeText(LoginActivity.this, "admin", Toast.LENGTH_SHORT).show();
 								adminCheck = true;
 							}
 						}
 
 						if (adminCheck) {
-
+							name.setKeyListener(listener);
 						} else {
 							name.setKeyListener(null);
 						}
-						// do your stuff here with value
+
 					}
 				}
 
@@ -156,7 +158,7 @@ public class LeaveActivity extends AppCompatActivity implements OnItemSelectedLi
 				public void onCancelled(DatabaseError databaseError) {
 				}
 			});
-		}
+
 
 
 
@@ -207,52 +209,25 @@ public class LeaveActivity extends AppCompatActivity implements OnItemSelectedLi
 
 
 		if (name.getText().toString().length() > 0 && date.getText().toString().length() > 0 && backup.getText().toString().length() > 0) {
+			boolean logStatus = createLogFB(name.getText().toString(),date.getText().toString(),item,backup.getText().toString(),status.getText().toString(),checker);
+			//Intent back = new Intent(this, MainActivity.class);
+			if (logStatus){
+				Toast.makeText(getApplicationContext(), "Added Leave!", Toast.LENGTH_LONG).show();
 
-			/*
-			startDate, endDate
-
-			String[] startDateArray = startDate.split("/");
-
-			int initialVal = Integer.parse(startDateArray[1]);
-			int initialMonth = startDateArray[0];
-			int initialYear = startDateArray[2];
-
-			String[] endDateArray = endDate.split("/");
-			int finalVal = endDateArray[1];
-			int finalMonth = finalDateArray[0];
-			int finalYear = finalDateArray[2];
-
-			for(int i = initialVal; i <= finalVal; i++){
-
-				date = initialMonth + "/" + i + "/" + initialYear;
-
-				boolean logStatus = createLogFB(name.getText().toString(),date.getText().toString(),item,backup.getText().toString(),status.getText().toString(),checker);
-
-				if (logStatus){
-			Toast.makeText(getApplicationContext(), "Added Leave!", Toast.LENGTH_LONG).show();
-
-			finish();
+				finish();
+			}
+			else {
+				Toast.makeText(getApplicationContext(), "Failed, please try again.", Toast.LENGTH_LONG).show();
+			}
 		}
-		else {
-			Toast.makeText(getApplicationContext(), "Failed, please try again.", Toast.LENGTH_LONG).show();
-		}
-
 
 		if (name.getText().toString().length() == 0) {
-				Toast.makeText(getApplicationContext(), "EID is required.", Toast.LENGTH_LONG).show();
+			Toast.makeText(getApplicationContext(), "EID is required.", Toast.LENGTH_LONG).show();
 		}
 
 		else if (date.getText().toString().length() == 0) {
 			Toast.makeText(getApplicationContext(), "Date is required.", Toast.LENGTH_LONG).show();
-	}
 
-			}
-
-			 */
-
-
-			//boolean logStatus = createLogFB(name.getText().toString(),date.getText().toString(),item,backup.getText().toString(),status.getText().toString(),checker);
-		//Intent back = new Intent(this, MainActivity.class);
 
 		}
 
@@ -274,10 +249,11 @@ public class LeaveActivity extends AppCompatActivity implements OnItemSelectedLi
 		String[] startDate = date.split("/");
 		String monthyear = startDate[0] + startDate[2];
 		date = startDate[0] + "-" + startDate[1] + "-" + startDate[2];
+		String dateforchecker = startDate[0]+startDate[1]+startDate[2];
 		name = name.replace(".", "-");
 		backup = backup.replace(".", "-");
 
-		checker = name+date+type;
+		checker = name.toUpperCase()+dateforchecker;
 
 		//Firebase.setAndroidContext(this);
 		//Firebase ref = new Firebase("https://goschedule-4ffe9.firebaseio.com/");
@@ -393,7 +369,7 @@ public class LeaveActivity extends AppCompatActivity implements OnItemSelectedLi
 	    return true;
 	}*/
 		if (id == R.id.weekview){
-			Intent intent = new Intent(this, WeekViewActivity.class);
+			Intent intent = new Intent(this, MainActivity.class);
 
 			this.startActivity(intent);
 			this.finish();
@@ -450,7 +426,14 @@ public class LeaveActivity extends AppCompatActivity implements OnItemSelectedLi
 
 		}
 
+		if (id == R.id.leaves) {
 
+			Intent mainIntent = new Intent(this, ApproveLeaveActivity.class);
+			this.startActivity(mainIntent);
+
+
+
+		}
 
 
 		if (id == R.id.reset) {
