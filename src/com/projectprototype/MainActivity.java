@@ -26,6 +26,7 @@ import com.projectprototype.lib.WeekView;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
@@ -46,7 +47,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-	DatabaseHelper db = new DatabaseHelper(this);
+	DatabaseHelper db;
 	Button logLeaveButton;
 	public Calendar month;
 	public CalendarAdapter adapter;
@@ -104,17 +105,16 @@ public class MainActivity extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		//this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_main);
+
+		db = new DatabaseHelper(this);
 		mAuth = FirebaseAuth.getInstance();
 
 		FirebaseUser user = mAuth.getCurrentUser();
-
-
-
-			if (user != null) {
+		if (user != null) {
 			// User is not logged in
-
-				Toast.makeText(MainActivity.this, "Welcome " + user.getEmail() + "!", Toast.LENGTH_SHORT).show();
+			Toast.makeText(MainActivity.this, "Welcome " + user.getEmail() + "!", Toast.LENGTH_SHORT).show();
 		}
+
 
 		Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
 		setSupportActionBar(myToolbar);
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
         //Initialize Calendar View with Gridview
 		month = Calendar.getInstance();
 		setDateToday();
-		
+
 		items = new ArrayList<String>();
 		adapter = new CalendarAdapter(this, month);
 		   
@@ -154,8 +154,9 @@ public class MainActivity extends AppCompatActivity {
 					nameConverted = person.getName();
 					nameConverted = nameConverted.replace("-",".");
 					db.createLog(nameConverted,person.getDate(),person.getType(), person.getBackup(), person.getStatus(), person.getChecker());
-					handler = new Handler();
-					handler.post(calendarUpdater);
+
+					updateCalendar();
+//					AsyncTask.execute(calendarUpdater);
 					//System.out.println(post.getAuthor() + " - " + post.getTitle());
 				}
 
@@ -261,8 +262,9 @@ public class MainActivity extends AppCompatActivity {
 	{
 		TextView title  = (TextView) findViewById(R.id.title);
 		adapter.refreshDays();
-		adapter.notifyDataSetChanged(); 
-		handler.post(calendarUpdater); // generate some random calendar items 
+		adapter.notifyDataSetChanged();
+		updateCalendar();
+//		AsyncTask.execute(calendarUpdater); // generate some random calendar items
 		title.setText(android.text.format.DateFormat.format("MMMM yyyy", month));
 	}
 	
@@ -543,12 +545,62 @@ public class MainActivity extends AppCompatActivity {
 		}*/
 	}
 
-    /**@Override
+    @Override
     public void onDestroy() {
-        super.onStart();
-        mAuth.addAuthStateListener(mAuthListener);
-    }**/
+        super.onDestroy();
+        db.close();
+    }
 
+	AsyncTask updateCalendarTask;
 
+	private void updateCalendar() {
+		if (updateCalendarTask != null) {
+			updateCalendarTask.cancel(true);
+		}
+
+		updateCalendarTask = new AsyncTask() {
+
+			@Override
+			protected void onPreExecute() {
+				super.onPreExecute();
+				items.clear();
+			}
+
+			@Override
+			protected void onPostExecute(Object o) {
+				super.onPostExecute(o);
+
+				adapter.setItems(items);
+				adapter.notifyDataSetChanged();
+			}
+
+			@Override
+			protected Object doInBackground(Object[] params) {
+				String toPass;
+				String years = "" + month.get(Calendar.YEAR);
+				String months = "" + (month.get(Calendar.MONTH)+1);
+				if(months.length()==1) {
+					months = "0"+months;
+				}
+
+				// format random values. You can implement a dedicated class to provide real values
+				for(int i=0;i<=31;i++) {
+
+					toPass = Integer.toString(i);
+					if (toPass.length() == 1){
+						toPass = "0" + toPass;
+					}
+
+					if (db.dateHit(toPass, months+years)){
+						items.add(Integer.toString(i));
+					}
+
+				}
+				return null;
+			}
+		};
+
+		updateCalendarTask.execute();
+	}
 	
 }

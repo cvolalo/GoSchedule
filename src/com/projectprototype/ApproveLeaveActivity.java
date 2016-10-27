@@ -34,7 +34,7 @@ import java.util.Map;
 
 public class ApproveLeaveActivity extends ListActivity implements AdapterView.OnItemClickListener{
 
-    DatabaseHelper db = new DatabaseHelper(this);
+    DatabaseHelper db;
     private FirebaseAuth mAuth;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     private int alertDialogView;
@@ -44,6 +44,7 @@ public class ApproveLeaveActivity extends ListActivity implements AdapterView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_approve_leave);
 
+        db = new DatabaseHelper(this);
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser user = mAuth.getCurrentUser();
 
@@ -200,5 +201,9 @@ public class ApproveLeaveActivity extends ListActivity implements AdapterView.On
     //);*/
 
 
-
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        db.close();
+    }
 }

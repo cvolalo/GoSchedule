@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseUser;
 import java.util.List;
 
 public class SearchEIDActivity extends ListActivity implements AdapterView.OnItemClickListener {
-    DatabaseHelper db = new DatabaseHelper(this);
+    DatabaseHelper db;
     List<String> listLeave;
     ListView lv;
     ArrayAdapter<String> myAdapter;
@@ -34,6 +34,7 @@ public class SearchEIDActivity extends ListActivity implements AdapterView.OnIte
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_eid);
 
+        db = new DatabaseHelper(this);
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser user = mAuth.getCurrentUser();
         Intent intentReceived = getIntent();
@@ -90,5 +91,9 @@ public class SearchEIDActivity extends ListActivity implements AdapterView.OnIte
 
     }
 
-
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        db.close();
+    }
 }

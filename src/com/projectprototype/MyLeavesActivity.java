@@ -36,7 +36,7 @@ import java.util.Map;
 public class MyLeavesActivity extends ListActivity implements AdapterView.OnItemClickListener {
 
     Button backHome;
-    DatabaseHelper db = new DatabaseHelper(this);
+    DatabaseHelper db;
     List<String> listLeave;
 
     ArrayAdapter<String> myAdapter;
@@ -54,6 +54,7 @@ public class MyLeavesActivity extends ListActivity implements AdapterView.OnItem
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_leaves);
 
+        db = new DatabaseHelper(this);
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser user = mAuth.getCurrentUser();
 
@@ -148,5 +149,11 @@ public class MyLeavesActivity extends ListActivity implements AdapterView.OnItem
 
 
 
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        db.close();
     }
 }
