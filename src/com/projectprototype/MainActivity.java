@@ -100,6 +100,36 @@ public class MainActivity extends AppCompatActivity {
 		  
 	}
 
+	ValueEventListener valueEventListener = new ValueEventListener() {
+		@Override
+		public void onDataChange(DataSnapshot snapshot) {
+			//System.out.println("There are " + snapshot.getChildrenCount() + " blog posts");
+
+			db.deleteAll();
+			for (DataSnapshot personSnapshot: snapshot.getChildren()) {
+				Resource person = personSnapshot.getValue(Resource.class);
+				nameConverted = person.getName();
+				nameConverted = nameConverted.replace("-",".");
+				db.createLog(nameConverted,person.getDate(),person.getType(), person.getBackup(), person.getStatus(), person.getChecker());
+
+				updateCalendar();
+//					AsyncTask.execute(calendarUpdater);
+				//System.out.println(post.getAuthor() + " - " + post.getTitle());
+			}
+
+		}
+
+		@Override
+		public void onCancelled(DatabaseError databaseError) {
+			//System.out.println("The read failed: " + firebaseError.getMessage());
+		}
+
+		//@Override
+		//public void onCancelled(FirebaseError firebaseError) {
+		//      System.out.println("The read failed: " + firebaseError.getMessage());
+		//}
+	};
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -137,41 +167,9 @@ public class MainActivity extends AppCompatActivity {
         //progressDialog1.setMessage("Retrieving Data...");
         //progressDialog1.show();
 
-        DatabaseReference ref = database.getReference("dates");
-
 		//Get Firebase Data
 		//Firebase.setAndroidContext(this);
 		//Firebase ref = new Firebase("https://goschedule-4ffe9.firebaseio.com/dates");
-
-		ref.addValueEventListener(new ValueEventListener() {
-			@Override
-			public void onDataChange(DataSnapshot snapshot) {
-				//System.out.println("There are " + snapshot.getChildrenCount() + " blog posts");
-
-				db.deleteAll();
-				for (DataSnapshot personSnapshot: snapshot.getChildren()) {
-					Resource person = personSnapshot.getValue(Resource.class);
-					nameConverted = person.getName();
-					nameConverted = nameConverted.replace("-",".");
-					db.createLog(nameConverted,person.getDate(),person.getType(), person.getBackup(), person.getStatus(), person.getChecker());
-
-					updateCalendar();
-//					AsyncTask.execute(calendarUpdater);
-					//System.out.println(post.getAuthor() + " - " + post.getTitle());
-				}
-
-			}
-
-			@Override
-			public void onCancelled(DatabaseError databaseError) {
-				//System.out.println("The read failed: " + firebaseError.getMessage());
-			}
-
-			//@Override
-		    //public void onCancelled(FirebaseError firebaseError) {
-		    //      System.out.println("The read failed: " + firebaseError.getMessage());
-		    //}
-		});
 		
 		   
 		TextView title  = (TextView) findViewById(R.id.title);
@@ -545,14 +543,37 @@ public class MainActivity extends AppCompatActivity {
 		}*/
 	}
 
-    @Override
+	@Override
+	protected void onResume() {
+		super.onResume();
+		DatabaseReference ref = database.getReference("dates");
+		ref.addValueEventListener(valueEventListener);
+	}
+
+	@Override
+	protected void onPause() {
+		super.onPause();
+		DatabaseReference ref = database.getReference("dates");
+		ref.removeEventListener(valueEventListener);
+		if(updateCalendarTask != null &&
+				updateCalendarTask.getStatus() != AsyncTask.Status.FINISHED) {
+			updateCalendarTask.cancel(true);
+		}
+	}
+
+	@Override
     public void onDestroy() {
         super.onDestroy();
         db.close();
     }
 
+	AsyncTask updateCalendarTask;
 	private void updateCalendar() {
-		new AsyncTask() {
+		if(updateCalendarTask != null &&
+				updateCalendarTask.getStatus() != AsyncTask.Status.FINISHED) {
+			updateCalendarTask.cancel(true);
+		}
+		updateCalendarTask = new AsyncTask() {
 
 			@Override
 			protected void onPreExecute() {
@@ -592,7 +613,9 @@ public class MainActivity extends AppCompatActivity {
 				}
 				return null;
 			}
-		}.execute();
+		};
+
+		updateCalendarTask.execute();
 	}
 	
 }
