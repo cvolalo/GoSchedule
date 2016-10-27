@@ -551,14 +551,8 @@ public class MainActivity extends AppCompatActivity {
         db.close();
     }
 
-	AsyncTask updateCalendarTask;
-
 	private void updateCalendar() {
-		if (updateCalendarTask != null) {
-			updateCalendarTask.cancel(true);
-		}
-
-		updateCalendarTask = new AsyncTask() {
+		new AsyncTask() {
 
 			@Override
 			protected void onPreExecute() {
@@ -598,9 +592,7 @@ public class MainActivity extends AppCompatActivity {
 				}
 				return null;
 			}
-		};
-
-		updateCalendarTask.execute();
+		}.execute();
 	}
 	
 }
