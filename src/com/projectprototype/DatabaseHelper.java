@@ -27,6 +27,8 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 	private static final String leave_CHECKER = "checker";
 	private static final String leave_MONTHYEAR = "MMYYYY";
 
+	Cursor cursor;
+
 	public DatabaseHelper(Context context) {
 		super(context, database_NAME, null, database_VERSION);
 		// TODO Auto-generated constructor stub
@@ -110,7 +112,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 
 		// get reference of the BookDB database
 		SQLiteDatabase db = this.getWritableDatabase();
-		Cursor cursor = db.rawQuery(query, null);
+		cursor = db.rawQuery(query, null);
 
 		// parse all results
 		if (cursor.moveToFirst()) {
@@ -129,6 +131,9 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 				//Log.i("myapp", output.get(id-1));
 			} while (cursor.moveToNext());
 		}
+
+		db.close();
+		cursor.close();
 		return output;
 	}
 
@@ -149,7 +154,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 
 		// get reference of the BookDB database
 		SQLiteDatabase db = this.getWritableDatabase();
-		Cursor cursor = db.rawQuery(query, null);
+		cursor = db.rawQuery(query, null);
 
 		// parse all results
 		if (cursor.moveToFirst()) {
@@ -172,6 +177,9 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 			} while (cursor.moveToNext());
 		}
 
+		db.close();
+		cursor.close();
+
 		return output;
 	}
 	
@@ -179,7 +187,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 		String date;
 		String query = "SELECT  * FROM FiledLeaves WHERE MMYYYY = '" + monthyear + "'";
 		SQLiteDatabase db = this.getWritableDatabase();
-		Cursor cursor = db.rawQuery(query, null);
+		cursor = db.rawQuery(query, null);
 
 		boolean result = false;
 
@@ -196,6 +204,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 		}
 
 		// very important to close cursors, it causes memory leak
+		db.close();
 		cursor.close();
 
 		return result;
@@ -219,7 +228,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 
 		String query = "SELECT * FROM FiledLeaves ORDER BY date";
 		SQLiteDatabase db = this.getWritableDatabase();
-		Cursor cursor = db.rawQuery(query, null);
+		cursor = db.rawQuery(query, null);
 
 		// parse all results
 		if (cursor.moveToFirst()) {
@@ -267,6 +276,10 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 
 			} while (cursor.moveToNext());
 		}
+
+		db.close();
+		cursor.close();
+
 		return events;
 	}
 
@@ -286,7 +299,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 
 		// get reference of the BookDB database
 		SQLiteDatabase db = this.getWritableDatabase();
-		Cursor cursor = db.rawQuery(query, null);
+		cursor = db.rawQuery(query, null);
 
 		// parse all results
 		if (cursor.moveToFirst()) {
@@ -306,6 +319,10 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 				//Log.i("myapp", output.get(id-1));
 			} while (cursor.moveToNext());
 		}
+
+		db.close();
+		cursor.close();
+
 		return output;
 	}
 
@@ -325,7 +342,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 
 		// get reference of the BookDB database
 		SQLiteDatabase db = this.getWritableDatabase();
-		Cursor cursor = db.rawQuery(query, null);
+		cursor = db.rawQuery(query, null);
 
 		// parse all results
 		if (cursor.moveToFirst()) {
@@ -345,6 +362,10 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 				//Log.i("myapp", output.get(id-1));
 			} while (cursor.moveToNext());
 		}
+
+		db.close();
+		cursor.close();
+
 		return output;
 	}
 
