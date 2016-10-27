@@ -181,6 +181,8 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 		SQLiteDatabase db = this.getWritableDatabase();
 		Cursor cursor = db.rawQuery(query, null);
 
+		boolean result = false;
+
 		// parse all results
 		if (cursor.moveToFirst()) {
 			do {
@@ -188,11 +190,15 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 				String[] dateArr = date.split("-");
 
 				if (day.equals(dateArr[1])){
-					return true;
+					result = true;
 				}
 			} while (cursor.moveToNext());
 		}
-		return false;
+
+		// very important to close cursors, it causes memory leak
+		cursor.close();
+
+		return result;
 	}
 
 	public List<WeekViewEvent> getAll() {
