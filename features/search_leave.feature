@@ -7,17 +7,17 @@ Feature: Search Leave
   Then I press view with id "loginButton"
   Then I wait for the "SEARCH BY EID" button to appear
   
+    	
   Scenario: Search Leave    
-  	Given I press the "SEARCH BY EID" button
-  	Then I should see "Search Leave"
+  	Given I press the "Search by EID" button
   	Then I enter text "louie.d.p.mandigal" into field with id "searchName"
+  	Then I hide keyboard
   	Then I press "SEARCH"
   	
   Scenario: User Cancels	
-  	Given I press the "SEARCH BY EID" button
-  	Then I should see "Search Leave"
+  	Given I press the "Search by EID" button  	
   	Then I press view with id "searchCancel"
-  	
+  	Then I should see "Search by EID"
   	
   	
    	
