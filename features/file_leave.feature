@@ -3,7 +3,9 @@ Feature: Login feature
   Background:
   Then I should see "Account LogIn"
   Then I enter text "louie.d.p.mandigal" into field with id "loginEmail"
+  Then I hide keyboard
   Then I enter text "Qwerty3!" into field with id "loginPassword"
+  Then I hide keyboard
   Then I press view with id "loginButton"
   Then I wait for the "File Leave" button to appear
   	
@@ -17,10 +19,11 @@ Feature: Login feature
     Given I press the "File Leave" button
     Then I should see "File Leave"
 	Then I enter text "louie.d.p.mandigal" into field with id "leaveName"	
+	Then I hide keyboard
 	Then I press view with id "leaveDate"
 	Then I press view with id "leaveDate"
 	Given I press the "OK" button	
-	Then I select "Vacation Leave" from "leaveType"
+	Then I select "Sick Leave" from "leaveType"
 	Then I press view with id "radio0"
 	Then I press "Submit"	
 	Then I should see "File Leave"
