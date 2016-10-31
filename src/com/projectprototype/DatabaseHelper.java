@@ -27,9 +27,12 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 	private static final String leave_CHECKER = "checker";
 	private static final String leave_MONTHYEAR = "MMYYYY";
 
+	SQLiteDatabase db;
+	Cursor cursor;
+
 	public DatabaseHelper(Context context) {
 		super(context, database_NAME, null, database_VERSION);
-		// TODO Auto-generated constructor stub
+		db = this.getWritableDatabase();
 	}
 
 
@@ -58,8 +61,6 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 		String monthyear = dateArr[0] + dateArr[2];
 		//date = dateArr[0] + "-" + dateArr[1] + "-" + dateArr[2];
 		
-		SQLiteDatabase db = this.getWritableDatabase();
-		
 		// make values to be inserted
 		ContentValues values = new ContentValues();
 
@@ -74,9 +75,6 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 		// insert book
 		long result = db.insert(table_LEAVES, null, values);
 		
-		// close database transaction
-		db.close();
-		
 		if (result == -1){
 			return false;
 		}
@@ -88,9 +86,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 
 
 	public void deleteAll() {
-		SQLiteDatabase db = this.getWritableDatabase();
 		db.delete(table_LEAVES,null,null);
-		db.close();
 	}
 	
 	public List<String> getAllInDate(String date) {
@@ -109,8 +105,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 		String query = "SELECT  * FROM FiledLeaves WHERE date = '" + date + "'";
 
 		// get reference of the BookDB database
-		SQLiteDatabase db = this.getWritableDatabase();
-		Cursor cursor = db.rawQuery(query, null);
+		cursor = db.rawQuery(query, null);
 
 		// parse all results
 		if (cursor.moveToFirst()) {
@@ -129,6 +124,8 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 				//Log.i("myapp", output.get(id-1));
 			} while (cursor.moveToNext());
 		}
+
+		cursor.close();
 		return output;
 	}
 
@@ -147,9 +144,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 		//String query = "SELECT  * FROM " + table_LEAVES;
 		String query = "SELECT * FROM FiledLeaves WHERE name = '" + name + "' ORDER BY date DESC";
 
-		// get reference of the BookDB database
-		SQLiteDatabase db = this.getWritableDatabase();
-		Cursor cursor = db.rawQuery(query, null);
+		cursor = db.rawQuery(query, null);
 
 		// parse all results
 		if (cursor.moveToFirst()) {
@@ -172,14 +167,15 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 			} while (cursor.moveToNext());
 		}
 
+		cursor.close();
+
 		return output;
 	}
 	
 	public boolean dateHit(String day, String monthyear){
 		String date;
 		String query = "SELECT  * FROM FiledLeaves WHERE MMYYYY = '" + monthyear + "'";
-		SQLiteDatabase db = this.getWritableDatabase();
-		Cursor cursor = db.rawQuery(query, null);
+		cursor = db.rawQuery(query, null);
 
 		boolean result = false;
 
@@ -218,8 +214,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 
 
 		String query = "SELECT * FROM FiledLeaves ORDER BY date";
-		SQLiteDatabase db = this.getWritableDatabase();
-		Cursor cursor = db.rawQuery(query, null);
+		cursor = db.rawQuery(query, null);
 
 		// parse all results
 		if (cursor.moveToFirst()) {
@@ -267,6 +262,9 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 
 			} while (cursor.moveToNext());
 		}
+
+		cursor.close();
+
 		return events;
 	}
 
@@ -285,8 +283,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 		String query = "SELECT * FROM FiledLeaves WHERE status = 'For Approval' ORDER BY date DESC";
 
 		// get reference of the BookDB database
-		SQLiteDatabase db = this.getWritableDatabase();
-		Cursor cursor = db.rawQuery(query, null);
+		cursor = db.rawQuery(query, null);
 
 		// parse all results
 		if (cursor.moveToFirst()) {
@@ -306,6 +303,9 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 				//Log.i("myapp", output.get(id-1));
 			} while (cursor.moveToNext());
 		}
+
+		cursor.close();
+
 		return output;
 	}
 
@@ -324,8 +324,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 		String query = "SELECT * FROM FiledLeaves WHERE status = 'Approved' ORDER BY date DESC";
 
 		// get reference of the BookDB database
-		SQLiteDatabase db = this.getWritableDatabase();
-		Cursor cursor = db.rawQuery(query, null);
+		cursor = db.rawQuery(query, null);
 
 		// parse all results
 		if (cursor.moveToFirst()) {
@@ -345,8 +344,9 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 				//Log.i("myapp", output.get(id-1));
 			} while (cursor.moveToNext());
 		}
+
+		cursor.close();
+
 		return output;
 	}
-
-
 }

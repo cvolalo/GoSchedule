@@ -53,6 +53,8 @@ public abstract class BaseActivity extends AppCompatActivity implements WeekView
     boolean dbSyncCheck = false;
     String[] names = new String[1];
 
+    DatabaseHelper db;
+
     private FirebaseAuth.AuthStateListener mAuthListener;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
 
@@ -62,6 +64,8 @@ public abstract class BaseActivity extends AppCompatActivity implements WeekView
         //this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         setContentView(R.layout.activity_base);
+
+        db = new DatabaseHelper(this);
 
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser user = mAuth.getCurrentUser();
@@ -108,6 +112,12 @@ public abstract class BaseActivity extends AppCompatActivity implements WeekView
                 logLeave(v);
             }
         });
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        db.close();
     }
 
     public void logLeave(View view) {

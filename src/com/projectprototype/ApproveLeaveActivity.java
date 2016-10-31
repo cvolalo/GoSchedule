@@ -34,16 +34,19 @@ import java.util.Map;
 
 public class ApproveLeaveActivity extends ListActivity implements AdapterView.OnItemClickListener{
 
-    DatabaseHelper db = new DatabaseHelper(this);
+    DatabaseHelper db;
     private FirebaseAuth mAuth;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     private int alertDialogView;
+
+    List<String> listForApprovalLeave, listApprovedLeave;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_approve_leave);
 
+        db = new DatabaseHelper(this);
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser user = mAuth.getCurrentUser();
 
@@ -85,31 +88,36 @@ public class ApproveLeaveActivity extends ListActivity implements AdapterView.On
         });
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        listApprovedLeave = db.getApprovedLeaves();
+        listForApprovalLeave = db.getForApprovalLeaves();
+    }
+
     private void seeForApproval() {
-        List<String> listLeave = db.getForApprovalLeaves();
         ImageView approvedLeave = (ImageView) findViewById(R.id.editleave);
         //Log.i("Adap", listLeave.get(0));
 
         //lv = (ListView) findViewById(android.R.id.list);
-        this.setListAdapter(new ArrayAdapter<String>(this, R.layout.leave_viewer, R.id.ListMyLeave, listLeave));
+        this.setListAdapter(new ArrayAdapter<String>(this, R.layout.leave_viewer, R.id.ListMyLeave, listForApprovalLeave));
         getListView().setOnItemClickListener(this);
 
     }
 
     private void seeApproved() {
-        List<String> listLeave = db.getApprovedLeaves();
         ImageView approvedLeave = (ImageView) findViewById(R.id.editleave);
         //Log.i("Adap", listLeave.get(0));
 
         //lv = (ListView) findViewById(android.R.id.list);
-        this.setListAdapter(new ArrayAdapter<String>(this, R.layout.approved_leave_viewer, R.id.ListMyLeave, listLeave));
+        this.setListAdapter(new ArrayAdapter<String>(this, R.layout.approved_leave_viewer, R.id.ListMyLeave, listApprovedLeave));
         getListView().setOnItemClickListener(null);
     }
 
 
 
     @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+    public void onItemClick(final AdapterView<?> parent, View view, final int position, long id) {
         TextView caption = (TextView) findViewById(R.id.ListMyLeave);
         final DatabaseReference ref = database.getReference();
 
@@ -141,7 +149,16 @@ public class ApproveLeaveActivity extends ListActivity implements AdapterView.On
                                 for (DataSnapshot childSnapshot : dataSnapshot.getChildren()) {
                                     String clubkey = childSnapshot.getKey();
                                     ref.child("dates").child(clubkey).child("status").setValue("Approved");
+
                                 }
+
+                                //TODO: update database
+                                String approvedEntry = listForApprovalLeave.get(position);
+                                listForApprovalLeave.remove(approvedEntry);
+                                listApprovedLeave.add(approvedEntry);
+
+                                // refresh list
+                                seeForApproval();
                             }
                             @Override
                             public void onCancelled(DatabaseError databaseError) {
@@ -149,8 +166,8 @@ public class ApproveLeaveActivity extends ListActivity implements AdapterView.On
                             }
                         });
                 Toast.makeText(ApproveLeaveActivity.this, "Successfully approved leave!", Toast.LENGTH_SHORT).show();
-                finish();
-                startActivity(getIntent());
+//                finish();
+//                startActivity(getIntent());
 
             }
         });
@@ -200,5 +217,9 @@ public class ApproveLeaveActivity extends ListActivity implements AdapterView.On
     //);*/
 
 
-
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        db.close();
+    }
 }

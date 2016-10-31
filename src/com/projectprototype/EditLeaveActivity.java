@@ -47,7 +47,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class EditLeaveActivity extends AppCompatActivity implements OnItemSelectedListener {
-    DatabaseHelper db = new DatabaseHelper(this);
+    DatabaseHelper db;
     Button editButton;
     Button cancelButton;
     EditText name;
@@ -91,7 +91,7 @@ public class EditLeaveActivity extends AppCompatActivity implements OnItemSelect
         super.onCreate(savedInstanceState);
         //this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_edit_leave);
-
+        db = new DatabaseHelper(this);
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser user = mAuth.getCurrentUser();
 
@@ -475,6 +475,12 @@ public class EditLeaveActivity extends AppCompatActivity implements OnItemSelect
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        db.close();
     }
 }
 

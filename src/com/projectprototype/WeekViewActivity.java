@@ -12,7 +12,7 @@ import java.util.List;
  * Website: http://alamkanak.github.io
  */
 public class WeekViewActivity extends BaseActivity {
-    DatabaseHelper db = new DatabaseHelper(this);
+
     List<WeekViewEvent> listLeave;
 
     //int cmonth = 8;

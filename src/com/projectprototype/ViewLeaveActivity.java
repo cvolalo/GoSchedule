@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class ViewLeaveActivity extends ListActivity implements OnItemClickListener{
-	DatabaseHelper db = new DatabaseHelper(this);
+	DatabaseHelper db;
 	List<String> listLeave;
 	//ListView lv;
 	ArrayAdapter<String> myAdapter;
@@ -33,6 +33,7 @@ public class ViewLeaveActivity extends ListActivity implements OnItemClickListen
 		super.onCreate(savedInstanceState);
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_view_leave);
+		db = new DatabaseHelper(this);
 		mAuth = FirebaseAuth.getInstance();
 		FirebaseUser user = mAuth.getCurrentUser();
 		Intent intentDateReceived = getIntent();
@@ -72,5 +73,11 @@ public class ViewLeaveActivity extends ListActivity implements OnItemClickListen
 	public void onItemClick(AdapterView arg0, View arg1, int arg2, long arg3) {
 		// TODO Auto-generated method stub
 
+	}
+
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		db.close();
 	}
 }
