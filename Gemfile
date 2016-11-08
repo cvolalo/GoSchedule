@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-source "http://rubygems.org"
+source "https://rubygems.org"
 # gem "rails"
 #gem 'calabash-cucumber', '0.16.3'
 gem 'calabash-android', '0.5.14'
