@@ -24,9 +24,9 @@ public class TestNG_testcases extends AppiumDriverBase{
   	  driver.findElement(By.id("loginEmail")).sendKeys("mary.l.l.dela.torre");
   	  driver.findElement(By.id("loginPassword")).sendKeys("qwerty");
   	  driver.findElement(By.name("Login")).click();
-  	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-  	  System.out.println("--------Login Complete!--------");
-  	  driver.findElement(By.name("We"));
+  	  driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
+	  System.out.println("--------Login Complete!--------");
+  	  //driver.findElement(By.name("We"));
   	  takeScreenShot();
   	 }
     
@@ -38,7 +38,7 @@ public class TestNG_testcases extends AppiumDriverBase{
   	  // Enter Date
   	  driver.findElement(By.id("leaveDate")).click();
   	  //driver.findElement(By.xpath("//android.widget.NumberPicker[@index='0' and @text='Nov']")).sendKeys("Nov");
-  	  ((WebElement) driver.findElements(By.xpath("//android.widget.NumberPicker")).get(1)).sendKeys("25");
+  	  driver.findElements(By.xpath("//android.widget.NumberPicker")).get(1).sendKeys("25");
   	  //driver.findElement(By.xpath("//android.widget.NumberPicker[@index='2' and @text='2016']")).sendKeys("2016");
   	  driver.findElement(By.name("Done")).click();
   	  //System.out.println("Date entered...");
