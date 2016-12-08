@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="appium.TestNG_testcases" duration-ms="100204" started-at="2016-12-08T06:58:32Z" finished-at="2016-12-08T07:00:12Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="100204" started-at="2016-12-08T06:58:32Z" finished-at="2016-12-08T07:00:12Z">
+      <class name="appium.TestNG_testcases">
+        <test-method status="PASS" signature="createAppiumDriver()[pri:0, instance:appium.TestNG_testcases@68837a77]" name="createAppiumDriver" is-config="true" duration-ms="38929" started-at="2016-12-08T14:58:32Z" finished-at="2016-12-08T14:59:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAppiumDriver -->
+        <test-method status="PASS" signature="Login_Complete()[pri:1, instance:appium.TestNG_testcases@68837a77]" name="Login_Complete" duration-ms="32483" started-at="2016-12-08T14:59:11Z" finished-at="2016-12-08T14:59:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_Complete -->
+        <test-method status="PASS" signature="File_leave_Complete()[pri:2, instance:appium.TestNG_testcases@68837a77]" name="File_leave_Complete" duration-ms="21978" started-at="2016-12-08T14:59:43Z" finished-at="2016-12-08T15:00:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- File_leave_Complete -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:appium.TestNG_testcases@68837a77]" name="afterTest" is-config="true" duration-ms="6788" started-at="2016-12-08T15:00:05Z" finished-at="2016-12-08T15:00:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- appium.TestNG_testcases -->
+    </test> <!-- Command line test -->
+  </suite> <!-- appium.TestNG_testcases -->
+</testng-results>
