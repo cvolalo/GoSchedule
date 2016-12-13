@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-skipped">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\mary.l.l.dela.torre\AppData\Local\Temp\testng-eclipse--1738112854\testng-customsuite.xml</span>
+                    <span>C:\Users\mary.l.l.dela.torre\AppData\Local\Temp\testng-eclipse-558158791\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,40 +91,46 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">6 methods,  6 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
                     </span>
-                    <div class="method-list-content failed suite-Default_suite">
+                    <div class="method-list-content skipped suite-Default_suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="appium.TestNG_testcases_FILE_LEAVE" hash-for-method="File_leave_Complete_2">File_leave_Complete_2</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="appium.TestNG_testcases" hash-for-method="Approve_Leave_Complete">Approve_Leave_Complete</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Default_suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="appium.TestNG_testcases" hash-for-method="Check_Leave">Check_Leave</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="appium.TestNG_testcases" hash-for-method="File_leave_Complete">File_leave_Complete</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="appium.TestNG_testcases" hash-for-method="Find_Leave">Find_Leave</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="appium.TestNG_testcases" hash-for-method="Login_Complete">Login_Complete</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="appium.TestNG_testcases" hash-for-method="Update_Leave_Complete">Update_Leave_Complete</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -136,55 +142,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+          <div class="suite-Default_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">appium.TestNG_testcases_FILE_LEAVE</span>
+              <img src="skipped.png"/>
+              <span class="class-name">appium.TestNG_testcases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="File_leave_Complete_2">
-                  </a> <!-- File_leave_Complete_2 -->
-                  <span class="method-name">File_leave_Complete_2</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at appium.TestNG_testcases_FILE_LEAVE.File_leave_Complete_2(TestNG_testcases_FILE_LEAVE.java:22)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-
-</div> <!-- stack-trace -->
+                  <a name="Approve_Leave_Complete">
+                  </a> <!-- Approve_Leave_Complete -->
+                  <span class="method-name">Approve_Leave_Complete</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
-          <div class="suite-Default_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">appium.TestNG_testcases</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_Leave">
+                  </a> <!-- Check_Leave -->
+                  <span class="method-name">Check_Leave</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="File_leave_Complete">
@@ -194,17 +171,31 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="Find_Leave">
+                  </a> <!-- Find_Leave -->
+                  <span class="method-name">Find_Leave</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="Login_Complete">
                   </a> <!-- Login_Complete -->
                   <span class="method-name">Login_Complete</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Update_Leave_Complete">
+                  </a> <!-- Update_Leave_Complete -->
+                  <span class="method-name">Update_Leave_Complete</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
+          </div> <!-- suite-Default_suite-class-skipped -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\mary.l.l.dela.torre\AppData\Local\Temp\testng-eclipse--1738112854\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\mary.l.l.dela.torre\AppData\Local\Temp\testng-eclipse-558158791\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -214,21 +205,19 @@
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;appium.TestNG_testcases&quot;/&gt;
-      &lt;class name=&quot;appium.TestNG_testcases_FILE_LEAVE&quot;/&gt;
-      &lt;class name=&quot;appium.AppiumDriverBase&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
   &lt;test name=&quot;Default test(failed)&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;appium.TestNG_testcases_FILE_LEAVE&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;File_leave_Complete_2&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- appium.TestNG_testcases_FILE_LEAVE --&gt;
       &lt;class name=&quot;appium.TestNG_testcases&quot;&gt;
         &lt;methods&gt;
+          &lt;include name=&quot;Update_Leave_Complete&quot;/&gt;
+          &lt;include name=&quot;Login_Complete&quot;/&gt;
           &lt;include name=&quot;createAppiumDriver&quot;/&gt;
-          &lt;include name=&quot;afterTest&quot;/&gt;
+          &lt;include name=&quot;Check_Leave&quot;/&gt;
+          &lt;include name=&quot;File_leave_Complete&quot;/&gt;
+          &lt;include name=&quot;Find_Leave&quot;/&gt;
+          &lt;include name=&quot;Approve_Leave_Complete&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- appium.TestNG_testcases --&gt;
     &lt;/classes&gt;
@@ -244,10 +233,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (3 classes)</span>
+                <span class="test-name">Default test (1 class)</span>
               </li>
               <li>
-                <span class="test-name">Default test(failed) (2 classes)</span>
+                <span class="test-name">Default test(failed) (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -273,24 +262,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Login_Complete')
 data.setCell(0, 2, 'appium.TestNG_testcases')
-data.setCell(0, 3, 27059);
+data.setCell(0, 3, 6);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'File_leave_Complete')
+data.setCell(1, 1, 'Approve_Leave_Complete')
 data.setCell(1, 2, 'appium.TestNG_testcases')
-data.setCell(1, 3, 22349);
+data.setCell(1, 3, 5);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'File_leave_Complete_2')
-data.setCell(2, 2, 'appium.TestNG_testcases_FILE_LEAVE')
-data.setCell(2, 3, 4);
+data.setCell(2, 1, 'Update_Leave_Complete')
+data.setCell(2, 2, 'appium.TestNG_testcases')
+data.setCell(2, 3, 5);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Check_Leave')
+data.setCell(3, 2, 'appium.TestNG_testcases')
+data.setCell(3, 3, 3);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'File_leave_Complete')
+data.setCell(4, 2, 'appium.TestNG_testcases')
+data.setCell(4, 3, 3);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Find_Leave')
+data.setCell(5, 2, 'appium.TestNG_testcases')
+data.setCell(5, 3, 2);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 49 seconds</span>
+              <span class="suite-total-time">Total running time: 24 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -305,27 +306,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">appium.AppiumDriverBase</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">createAppiumDriver</span>
-                <br/>
-                <span class="ignored-method-name">afterTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">appium.TestNG_testcases_FILE_LEAVE</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">createAppiumDriver</span>
-                <br/>
-                <span class="ignored-method-name">afterTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -336,33 +319,35 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">appium.TestNG_testcases</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">createAppiumDriver</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">Login_Complete</span>
-                <span class="method-start">18927 ms</span>
+                <span class="method-start">2832 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">File_leave_Complete</span>
-                <span class="method-start">45994 ms</span>
+                <span class="method-start">2850 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">appium.TestNG_testcases_FILE_LEAVE</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">File_leave_Complete_2</span>
-                <span class="method-start">68352 ms</span>
+                <span class="method-name">Update_Leave_Complete</span>
+                <span class="method-start">2863 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">appium.TestNG_testcases</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">68471 ms</span>
-              </div> <!-- configuration-test after -->
+              <div class="test-method">
+                <span class="method-name">Approve_Leave_Complete</span>
+                <span class="method-start">2872 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Check_Leave</span>
+                <span class="method-start">2881 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Find_Leave</span>
+                <span class="method-start">2886 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
