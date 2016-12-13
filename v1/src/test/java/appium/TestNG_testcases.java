@@ -19,7 +19,10 @@ import org.testng.annotations.Test;
 public class TestNG_testcases extends AppiumDriverBase{
 	 
     //Test Annotation changes any java function to TestNG test case
-    @Test (priority=1)
+    
+    //insert login and file_leave here
+	
+	@Test (priority=1)
     public void Login_Complete() {
   	  driver.findElement(By.id("loginEmail")).sendKeys("mary.l.l.dela.torre");
   	  driver.findElement(By.id("loginPassword")).sendKeys("qwerty");
@@ -31,7 +34,7 @@ public class TestNG_testcases extends AppiumDriverBase{
   	 }
     
     @Test (priority=2)
-  //Click on File Leave button
+      //Click on File Leave button
   	  public void File_leave_Complete() {  	  	  
   	  driver.findElement(By.name("File Leave")).click();
 
@@ -60,6 +63,65 @@ public class TestNG_testcases extends AppiumDriverBase{
   	  takeScreenShot();
   	 }
     
+	
+    @Test (priority=3)
+  //Click on More Options
+	  public void Update_Leave_Complete() {
+    	  
+  	    //start of update_leave
+    	driver.findElement(By.name("More options")).click();
+    	driver.findElement(By.name("My Leaves")).click();
+    	driver.findElement(By.id("ListMyLeave")).click();
+    	driver.findElement(By.id("editleaveDate")).click();
+    	((WebElement) driver.findElements(By.xpath("//android.widget.NumberPicker")).get(1)).sendKeys("29");
+    	driver.findElement(By.name("Done")).click();
+    	// Enter Leave Type
+    	driver.findElement(By.id("editleaveType")).click();
+    	driver.findElement(By.name("Emergency Leave")).click();
+    	//System.out.println("Leave Type entered...");
+    	  
+    	// Enter Backup Resource
+      	driver.findElement(By.id("editleaveBackUp")).sendKeys("another.backup");
+      	//System.out.println("Backup Resource entered...");
+      	  
+      	driver.findElement(By.name("UPDATE")).click();
+      	driver.findElement(By.id("myleavestext"));
+      	driver.findElement(By.name("BACK")).click();
+    	takeScreenShot();
+    }
+    @Test (priority=4)
+    //Click on More Options
+  	  public void Approve_Leave_Complete() {
+    	driver.findElement(By.name("More options")).click();
+    	driver.findElement(By.name("Filed Leaves")).click();
+    	driver.findElement(By.id("ListMyLeave")).click();
+    	driver.findElement(By.name("Ok")).click();
+    	driver.findElement(By.name("APPROVED")).click();
+    	driver.findElement(By.id("ListMyLeave"));
+    	driver.findElement(By.name("BACK")).click();
+    }
+	    @Test (priority=5)
+    //Click on More Options
+  	  public void Check_Leave() {
+    	driver.findElement(By.name("More options")).click();
+    	driver.findElement(By.name("Filed Leaves")).click();
+    	driver.findElement(By.id("ListMyLeave")).click();
+    	driver.findElement(By.name("Ok")).click();
+    	driver.findElement(By.name("APPROVED")).click();
+    	driver.findElement(By.id("ListMyLeave"));
+    	driver.findElement(By.name("BACK")).click();
+    }
+		    @Test (priority=6)
+    //Click on More Options
+  	  public void Find_Leave() {
+    	driver.findElement(By.name("More options")).click();
+    	driver.findElement(By.name("Filed Leaves")).click();
+    	driver.findElement(By.id("ListMyLeave")).click();
+    	driver.findElement(By.name("Ok")).click();
+    	driver.findElement(By.name("APPROVED")).click();
+    	driver.findElement(By.id("ListMyLeave"));
+    	driver.findElement(By.name("BACK")).click();
+    }
     public void takeScreenShot() {
     	  
 		  // Set folder name to store screenshots.
@@ -80,4 +142,6 @@ public class TestNG_testcases extends AppiumDriverBase{
 		   e.printStackTrace();
 		  }
 		 }
+    
+    
 }
