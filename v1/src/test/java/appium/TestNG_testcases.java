@@ -100,6 +100,27 @@ public class TestNG_testcases extends AppiumDriverBase{
     	driver.findElement(By.id("ListMyLeave"));
     	driver.findElement(By.name("BACK")).click();
     }
+	    @Test (priority=5)
+    //Click on More Options
+  	  public void Check_Leave() {
+    	driver.findElement(By.name("More options")).click();
+    	driver.findElement(By.name("Filed Leaves")).click();
+    	driver.findElement(By.id("ListMyLeave")).click();
+    	driver.findElement(By.name("Ok")).click();
+    	driver.findElement(By.name("APPROVED")).click();
+    	driver.findElement(By.id("ListMyLeave"));
+    	driver.findElement(By.name("BACK")).click();
+    }
+		    @Test (priority=6)
+    //Click on More Options
+  	  public void Find_Leave() {
+    	driver.findElement(By.name("More options")).click();
+    	driver.findElement(By.name("Filed Leaves")).click();
+    	driver.findElement(By.id("ListMyLeave")).click();
+    	driver.findElement(By.name("Ok")).click();
+    	driver.findElement(By.name("APPROVED")).click();
+    	driver.findElement(By.id("ListMyLeave"));
+    	driver.findElement(By.name("BACK")).click();
     }
     public void takeScreenShot() {
     	  
