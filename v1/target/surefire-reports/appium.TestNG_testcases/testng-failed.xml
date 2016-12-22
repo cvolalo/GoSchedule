@@ -10,13 +10,9 @@
     <classes>
       <class name="appium.TestNG_testcases">
         <methods>
-          <include name="Update_Leave_Complete"/>
-          <include name="Login_Complete"/>
           <include name="createAppiumDriver"/>
-          <include name="Check_Leave"/>
-          <include name="File_leave_Complete"/>
+          <include name="afterTest"/>
           <include name="Find_Leave"/>
-          <include name="Approve_Leave_Complete"/>
         </methods>
       </class> <!-- appium.TestNG_testcases -->
     </classes>

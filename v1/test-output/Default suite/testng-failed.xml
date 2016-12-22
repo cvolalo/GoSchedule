@@ -4,21 +4,16 @@
   <test verbose="2" name="Default test">
     <classes>
       <class name="appium.TestNG_testcases"/>
-      <class name="appium.TestNG_testcases_FILE_LEAVE"/>
-      <class name="appium.AppiumDriverBase"/>
     </classes>
   </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
-      <class name="appium.TestNG_testcases_FILE_LEAVE">
-        <methods>
-          <include name="File_leave_Complete_2"/>
-        </methods>
-      </class> <!-- appium.TestNG_testcases_FILE_LEAVE -->
       <class name="appium.TestNG_testcases">
         <methods>
           <include name="createAppiumDriver"/>
           <include name="afterTest"/>
+          <include name="Check_Leave"/>
+          <include name="Find_Leave"/>
         </methods>
       </class> <!-- appium.TestNG_testcases -->
     </classes>

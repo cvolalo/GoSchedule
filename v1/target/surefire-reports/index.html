@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-appium.TestNG_testcases">
-              <span class="suite-name border-skipped">appium.TestNG_testcases</span>
+              <span class="suite-name border-failed">appium.TestNG_testcases</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,46 +91,55 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,  6 skipped,  </span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-appium.TestNG_testcases" class="hide-methods skipped suite-appium.TestNG_testcases"> (hide)</a> <!-- hide-methods skipped suite-appium.TestNG_testcases -->
-                      <a href="#" panel-name="suite-appium.TestNG_testcases" class="show-methods skipped suite-appium.TestNG_testcases"> (show)</a> <!-- show-methods skipped suite-appium.TestNG_testcases -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-appium.TestNG_testcases" class="hide-methods failed suite-appium.TestNG_testcases"> (hide)</a> <!-- hide-methods failed suite-appium.TestNG_testcases -->
+                      <a href="#" panel-name="suite-appium.TestNG_testcases" class="show-methods failed suite-appium.TestNG_testcases"> (show)</a> <!-- show-methods failed suite-appium.TestNG_testcases -->
                     </span>
-                    <div class="method-list-content skipped suite-appium.TestNG_testcases">
+                    <div class="method-list-content failed suite-appium.TestNG_testcases">
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-appium.TestNG_testcases" title="appium.TestNG_testcases" hash-for-method="Find_Leave">Find_Leave</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-appium.TestNG_testcases -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-appium.TestNG_testcases" class="hide-methods passed suite-appium.TestNG_testcases"> (hide)</a> <!-- hide-methods passed suite-appium.TestNG_testcases -->
+                      <a href="#" panel-name="suite-appium.TestNG_testcases" class="show-methods passed suite-appium.TestNG_testcases"> (show)</a> <!-- show-methods passed suite-appium.TestNG_testcases -->
+                    </span>
+                    <div class="method-list-content passed suite-appium.TestNG_testcases">
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-appium.TestNG_testcases" title="appium.TestNG_testcases" hash-for-method="Approve_Leave_Complete">Approve_Leave_Complete</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-appium.TestNG_testcases" title="appium.TestNG_testcases" hash-for-method="Check_Leave">Check_Leave</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-appium.TestNG_testcases" title="appium.TestNG_testcases" hash-for-method="File_leave_Complete">File_leave_Complete</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-appium.TestNG_testcases" title="appium.TestNG_testcases" hash-for-method="Find_Leave">Find_Leave</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-appium.TestNG_testcases" title="appium.TestNG_testcases" hash-for-method="Login_Complete">Login_Complete</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-appium.TestNG_testcases" title="appium.TestNG_testcases" hash-for-method="Update_Leave_Complete">Update_Leave_Complete</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-appium.TestNG_testcases -->
+                    </div> <!-- method-list-content passed suite-appium.TestNG_testcases -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -142,9 +151,52 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-appium.TestNG_testcases" class="panel appium.TestNG_testcases">
-          <div class="suite-appium.TestNG_testcases-class-skipped">
+          <div class="suite-appium.TestNG_testcases-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">appium.TestNG_testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Find_Leave">
+                  </a> <!-- Find_Leave -->
+                  <span class="method-name">Find_Leave</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12.15 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;ETDB-510P66T-D&apos;, ip: &apos;10.202.212.24&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_112&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=C:\Users\mary.l.l.dela.torre\.jenkins\workspace\goschedule1\build\outputs\apk\goschedule1-release.apk, appPackage=com.projectprototype, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=emulator-5554, platform=ANDROID, appActivity=com.projectprototype.SplashActivity, desired={app=C:\Users\mary.l.l.dela.torre\.jenkins\workspace\goschedule1\build\outputs\apk\goschedule1-release.apk, appPackage=com.projectprototype, appActivity=com.projectprototype.SplashActivity, platformVersion=4.4.2, browserName=Android, platformName=Android, deviceName=emulator-5554, platform=ANDROID}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: ab0878b1-07e3-421b-9ba1-705c733a4d06
+*** Element info: {Using=id, value=ListMyLeave}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:389)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:215)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at appium.TestNG_testcases.Find_Leave(TestNG_testcases.java:119)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-appium.TestNG_testcases-class-failed -->
+          <div class="suite-appium.TestNG_testcases-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">appium.TestNG_testcases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -171,13 +223,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Find_Leave">
-                  </a> <!-- Find_Leave -->
-                  <span class="method-name">Find_Leave</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="Login_Complete">
                   </a> <!-- Login_Complete -->
                   <span class="method-name">Login_Complete</span>
@@ -191,7 +236,7 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-appium.TestNG_testcases-class-skipped -->
+          </div> <!-- suite-appium.TestNG_testcases-class-passed -->
         </div> <!-- panel appium.TestNG_testcases -->
         <div panel-name="test-xml-appium.TestNG_testcases" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -210,13 +255,9 @@
     &lt;classes&gt;
       &lt;class name=&quot;appium.TestNG_testcases&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;Update_Leave_Complete&quot;/&gt;
-          &lt;include name=&quot;Login_Complete&quot;/&gt;
           &lt;include name=&quot;createAppiumDriver&quot;/&gt;
-          &lt;include name=&quot;Check_Leave&quot;/&gt;
-          &lt;include name=&quot;File_leave_Complete&quot;/&gt;
+          &lt;include name=&quot;afterTest&quot;/&gt;
           &lt;include name=&quot;Find_Leave&quot;/&gt;
-          &lt;include name=&quot;Approve_Leave_Complete&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- appium.TestNG_testcases --&gt;
     &lt;/classes&gt;
@@ -263,34 +304,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Login_Complete')
+data.setCell(0, 1, 'File_leave_Complete')
 data.setCell(0, 2, 'appium.TestNG_testcases')
-data.setCell(0, 3, 3);
+data.setCell(0, 3, 32706);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Approve_Leave_Complete')
+data.setCell(1, 1, 'Update_Leave_Complete')
 data.setCell(1, 2, 'appium.TestNG_testcases')
-data.setCell(1, 3, 1);
+data.setCell(1, 3, 30557);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Update_Leave_Complete')
+data.setCell(2, 1, 'Login_Complete')
 data.setCell(2, 2, 'appium.TestNG_testcases')
-data.setCell(2, 3, 0);
+data.setCell(2, 3, 21321);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'File_leave_Complete')
+data.setCell(3, 1, 'Find_Leave')
 data.setCell(3, 2, 'appium.TestNG_testcases')
-data.setCell(3, 3, 0);
+data.setCell(3, 3, 15018);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'Check_Leave')
+data.setCell(4, 1, 'Approve_Leave_Complete')
 data.setCell(4, 2, 'appium.TestNG_testcases')
-data.setCell(4, 3, 0);
+data.setCell(4, 3, 8183);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'Find_Leave')
+data.setCell(5, 1, 'Check_Leave')
 data.setCell(5, 2, 'appium.TestNG_testcases')
-data.setCell(5, 3, 0);
+data.setCell(5, 3, 7622);
 window.suiteTableData['appium.TestNG_testcases']= { tableData: data, tableDiv: 'times-div-appium.TestNG_testcases'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 ms</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-appium.TestNG_testcases">
               </div> <!-- times-div-appium.TestNG_testcases -->
             </div> <!-- times-div -->
@@ -318,35 +359,39 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">appium.TestNG_testcases</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">createAppiumDriver</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">Login_Complete</span>
-                <span class="method-start">3209 ms</span>
+                <span class="method-start">47806 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">File_leave_Complete</span>
-                <span class="method-start">3214 ms</span>
+                <span class="method-start">69129 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Update_Leave_Complete</span>
-                <span class="method-start">3214 ms</span>
+                <span class="method-start">101840 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Approve_Leave_Complete</span>
-                <span class="method-start">3215 ms</span>
+                <span class="method-start">132398 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Check_Leave</span>
-                <span class="method-start">3216 ms</span>
+                <span class="method-start">140581 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Find_Leave</span>
-                <span class="method-start">3217 ms</span>
+                <span class="method-start">148203 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">163772 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
