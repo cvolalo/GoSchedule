@@ -51,6 +51,7 @@ public class LeaveActivity extends AppCompatActivity implements OnItemSelectedLi
 	Button cancelButton;
 	EditText name;
 	EditText date;
+	//EditText enddate;
 	EditText backup;
 	EditText status;
 	String checker;

@@ -1,50 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="appium.TestNG_testcases" time="93.873" errors="0" skipped="0">
+<testsuite tests="8" failures="1" name="appium.TestNG_testcases" time="5.504" errors="0" skipped="7">
   <properties>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="JOB_NAME" value="Maven-test"/>
+    <property name="JOB_NAME" value="maven-test"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="windows_tracing_logfile" value="C:\BVTBin\Tests\installpackage\csilogfile.log"/>
     <property name="NUMBER_OF_PROCESSORS" value="2"/>
-    <property name="APK_TEST" value="C:\Users\mary.l.l.dela.torre\.jenkins\workspace\runCalabash"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="JENKINS_HOME" value="C:\Users\mary.l.l.dela.torre\.jenkins"/>
-    <property name="HUDSON_SERVER_COOKIE" value="19834694905b785f"/>
-    <property name="POM_ARTIFACTID" value="v1"/>
+    <property name="JENKINS_HOME" value="C:\Users\christine.m.v.olalo\.jenkins"/>
+    <property name="HUDSON_SERVER_COOKIE" value="1f92027e453b43da"/>
     <property name="os.name" value="Windows 7"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_112\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_112\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_112\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_112\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_112\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_112\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_112\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_112\jre\classes"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_101\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_101\jre\classes"/>
     <property name="EXECUTOR_NUMBER" value="0"/>
     <property name="sun.desktop" value="windows"/>
-    <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
-    <property name="M2HOME" value="C:\Users\mary.l.l.dela.torre\apache-maven-3.3.9-bin\apache-maven-3.3.9"/>
+    <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, %PATHEXT%;.RB;.RBW;.RB;.RBW;.RB;.RBW;.RB;.RBW"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="POM_DISPLAYNAME" value="GoSchedule_maven"/>
     <property name="NODE_LABELS" value="master"/>
     <property name="TEMP" value="C:\windows\TEMP"/>
-    <property name="java.runtime.version" value="1.8.0_112-b15"/>
+    <property name="java.runtime.version" value="1.8.0_101-b13"/>
     <property name="ROOT_BUILD_CAUSE" value="MANUALTRIGGER"/>
-    <property name="user.name" value="ETDB-510P66T-D$"/>
-    <property name="Appium" value="C:\Program Files (x86)\Appium\node_modules\appium"/>
+    <property name="user.name" value="ETDB510P6BP-D$"/>
+    <property name="Appium" value="C:\Program Files (x86)\Appium\node_modules\.bin"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="CommonProgramW6432" value="C:\Program Files\Common Files"/>
     <property name="SLAVE_AAPT_TIMEOUT" value="30"/>
     <property name="ProgramFiles" value="C:\Program Files"/>
     <property name="NodeJS" value="C:\Program Files\nodejs"/>
     <property name="user.language" value="en"/>
-    <property name="JOB_BASE_NAME" value="Maven-test"/>
-    <property name="M2" value="C:\Users\mary.l.l.dela.torre\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin"/>
-    <property name="BUILD_DISPLAY_NAME" value="#22"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_112\jre\bin"/>
+    <property name="JOB_BASE_NAME" value="maven-test"/>
+    <property name="BUILD_DISPLAY_NAME" value="#1"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_101\jre\bin"/>
     <property name="BUILD_CAUSE_UPSTREAMTRIGGER" value="true"/>
     <property name="LOCALAPPDATA" value="C:\windows\system32\config\systemprofile\AppData\Local"/>
-    <property name="java.version" value="1.8.0_112"/>
+    <property name="java.version" value="1.8.0_101"/>
     <property name="PROCESSOR_LEVEL" value="21"/>
     <property name="user.timezone" value="Asia/Shanghai"/>
-    <property name="USERNAME" value="ETDB-510P66T-D$"/>
+    <property name="USERNAME" value="ETDB510P6BP-D$"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="NODE_NAME" value="master"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_112\jre\lib\endorsed"/>
-    <property name="BUILD_ID" value="22"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_101\jre\lib\endorsed"/>
+    <property name="BUILD_ID" value="1"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="file.encoding.pkg" value="sun.io"/>
@@ -54,78 +49,73 @@
     <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
     <property name="user.country" value="US"/>
     <property name="ALLUSERSPROFILE" value="C:\ProgramData"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_112\jre"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_101\jre"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="os.version" value="6.1"/>
-    <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
     <property name="TMP" value="C:\windows\TEMP"/>
     <property name="path.separator" value=";"/>
-    <property name="java.vm.version" value="25.112-b15"/>
+    <property name="java.vm.version" value="25.101-b13"/>
     <property name="user.variant" value=""/>
     <property name="CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="FP_NO_HOST_CHECK" value="NO"/>
-    <property name="JAVA_HOME" value="C:\Program Files\Java\jdk1.8.0_112"/>
+    <property name="JAVA_HOME" value="C:\Program Files\Java\jdk1.8.0_101"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="CommonProgramFiles" value="C:\Program Files\Common Files"/>
-    <property name="ComSpec" value="C:\windows\system32\cmd.exe"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="POM_PACKAGING" value="jar"/>
-    <property name="user.script" value=""/>
-    <property name="COMPUTERNAME" value="ETDB-510P66T-D"/>
     <property name="SERVICE_ID" value="jenkins"/>
-    <property name="POM_GROUPID" value="GoSchedule"/>
+    <property name="COMPUTERNAME" value="ETDB510P6BP-D"/>
+    <property name="user.script" value=""/>
     <property name="VBOX_MSI_INSTALL_PATH" value="C:\Program Files\Oracle\VirtualBox\"/>
-    <property name="user.home" value="C:\windows\system32\config\systemprofile"/>
     <property name="PUBLIC" value="C:\Users\Public"/>
-    <property name="BUILD_TAG" value="jenkins-Maven-test-22"/>
-    <property name="JENKINS_SERVER_COOKIE" value="19834694905b785f"/>
+    <property name="user.home" value="C:\windows\system32\config\systemprofile"/>
+    <property name="BUILD_TAG" value="jenkins-maven-test-1"/>
+    <property name="JENKINS_SERVER_COOKIE" value="1f92027e453b43da"/>
     <property name="HUDSON_URL" value="http://localhost:8080/"/>
     <property name="ProgramData" value="C:\ProgramData"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="USERPROFILE" value="C:\windows\system32\config\systemprofile"/>
     <property name="CLASSPATH" value=""/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_112\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Users\mary.l.l.dela.torre\apache-maven-3.3.9-bin\apache-maven-3.3.9/bin;C:\Program Files\Java\jdk1.8.0_112/bin;C:\Program Files\Java\jdk1.8.0_112\bin;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files (x86)\Symantec\VIP Access Client\;C:\HashiCorp\Vagrant\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Brackets\command;C:\Program Files\Android\Android Studio\gradle\gradle-2.14.1\bin;%ANDROID_HOME%\platform-tools;%ANDROID_HOME%\tools;C:\Users\mary.l.l.dela.torre\AppData\Local\Android\sdk\platform-tools;C:\Users\mary.l.l.dela.torre\AppData\Local\Android\sdk\tools;C:\Program Files\nodejs;C:\Program Files (x86)\nodejs\;C:\Users\mary.l.l.dela.torre\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;C:\Program Files (x86)\Appium\node_modules\appium\bin\;C:\Users\mary.l.l.dela.torre\AppData\Local\Android\sdk\build-tools\24.0.2;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_101\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Apache Maven\apache-maven-3.3.9/bin;C:\Program Files\Java\jdk1.8.0_101/bin;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\:C:\Program Files\Java\jdk1.8.0_101\bin;C:\Program Files (x86)\Brackets\command;C:\Program Files\Git\cmd;C:\cygwin64\bin;C:\apache-ant-1.9.7\bin;C:\Ruby23-x64\bin;C:\Users\louie.d.p.mandigal\AppData\Local\Android\sdk\tools;C:\Users\louie.d.p.mandigal\AppData\Local\Android\sdk\platform-tools;C:\Users\louie.d.p.mandigal\Downloads\ansi160\x64;C:\Users\louie.d.p.mandigal\Downloads\Console2;C:\Program Files\Android\Android Studio\gradle\gradle-2.14.1\bin;C:\Users\louie.d.p.mandigal\Downloads\msysgit-master\msysgit-master\bin;C:\cygwin64\bin;C:\HashiCorp\Vagrant\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Appium\node_modules\.bin;C:\Apache Maven\apache-maven-3.3.9\bin;C:\Users\christine.m.v.olalo\AppData\Local\Android\Sdk;;."/>
     <property name="ROOT_BUILD_CAUSE_MANUALTRIGGER" value="true"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="APPDATA" value="C:\windows\system32\config\systemprofile\AppData\Roaming"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="maven.home" value="C:\Users\mary.l.l.dela.torre\apache-maven-3.3.9-bin\apache-maven-3.3.9"/>
-    <property name="java.class.path" value="C:\Users\mary.l.l.dela.torre\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven33-agent-1.8.1.jar;C:\Users\mary.l.l.dela.torre\apache-maven-3.3.9-bin\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;C:\Users\mary.l.l.dela.torre\apache-maven-3.3.9-bin\apache-maven-3.3.9/conf/logging"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven33Main C:\Users\mary.l.l.dela.torre\apache-maven-3.3.9-bin\apache-maven-3.3.9 C:\Users\mary.l.l.dela.torre\.jenkins\war\WEB-INF\lib\remoting-2.62.jar C:\Users\mary.l.l.dela.torre\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven33-interceptor-1.8.1.jar C:\Users\mary.l.l.dela.torre\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.8.1.jar 53119"/>
-    <property name="Path" value="C:\Program Files\Java\jdk1.8.0_112\bin;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files (x86)\Symantec\VIP Access Client\;C:\HashiCorp\Vagrant\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Brackets\command;C:\Program Files\Android\Android Studio\gradle\gradle-2.14.1\bin;%ANDROID_HOME%\platform-tools;%ANDROID_HOME%\tools;C:\Users\mary.l.l.dela.torre\AppData\Local\Android\sdk\platform-tools;C:\Users\mary.l.l.dela.torre\AppData\Local\Android\sdk\tools;C:\Program Files\nodejs;C:\Program Files (x86)\nodejs\;C:\Users\mary.l.l.dela.torre\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;C:\Program Files (x86)\Appium\node_modules\appium\bin\;C:\Users\mary.l.l.dela.torre\AppData\Local\Android\sdk\build-tools\24.0.2;"/>
+    <property name="maven.home" value="C:\Apache Maven\apache-maven-3.3.9"/>
+    <property name="java.class.path" value="C:\Users\christine.m.v.olalo\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven33-agent-1.8.1.jar;C:\Apache Maven\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;C:\Apache Maven\apache-maven-3.3.9/conf/logging"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven33Main C:\Apache Maven\apache-maven-3.3.9 C:\Users\christine.m.v.olalo\.jenkins\war\WEB-INF\lib\remoting-2.62.jar C:\Users\christine.m.v.olalo\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven33-interceptor-1.8.1.jar C:\Users\christine.m.v.olalo\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.8.1.jar 59361"/>
+    <property name="Path" value="C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\:C:\Program Files\Java\jdk1.8.0_101\bin;C:\Program Files (x86)\Brackets\command;C:\Program Files\Git\cmd;C:\cygwin64\bin;C:\apache-ant-1.9.7\bin;C:\Ruby23-x64\bin;C:\Users\louie.d.p.mandigal\AppData\Local\Android\sdk\tools;C:\Users\louie.d.p.mandigal\AppData\Local\Android\sdk\platform-tools;C:\Users\louie.d.p.mandigal\Downloads\ansi160\x64;C:\Users\louie.d.p.mandigal\Downloads\Console2;C:\Program Files\Android\Android Studio\gradle\gradle-2.14.1\bin;C:\Users\louie.d.p.mandigal\Downloads\msysgit-master\msysgit-master\bin;C:\cygwin64\bin;C:\HashiCorp\Vagrant\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Appium\node_modules\.bin;C:\Apache Maven\apache-maven-3.3.9\bin;C:\Users\christine.m.v.olalo\AppData\Local\Android\Sdk;"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="PROCESSOR_ARCHITECTURE" value="AMD64"/>
-    <property name="PATH+JDK" value="C:\Program Files\Java\jdk1.8.0_112/bin"/>
+    <property name="PATH+JDK" value="C:\Program Files\Java\jdk1.8.0_101/bin"/>
     <property name="PROCESSOR_IDENTIFIER" value="AMD64 Family 21 Model 48 Stepping 1, AuthenticAMD"/>
     <property name="java.vm.specification.version" value="1.8"/>
-    <property name="CUSTOM_WORKSPACE" value="C:\Users\mary.l.l.dela.torre\.jenkins\workspace\goschedule1 "/>
     <property name="sun.os.patch.level" value="Service Pack 1"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="M2_HOME" value="C:\Users\mary.l.l.dela.torre\apache-maven-3.3.9-bin\apache-maven-3.3.9"/>
+    <property name="M2_HOME" value="C:\Apache Maven\apache-maven-3.3.9"/>
     <property name="java.io.tmpdir" value="C:\windows\TEMP\"/>
     <property name="OS" value="Windows_NT"/>
-    <property name="HUDSON_HOME" value="C:\Users\mary.l.l.dela.torre\.jenkins"/>
-    <property name="PATH+MAVEN" value="C:\Users\mary.l.l.dela.torre\apache-maven-3.3.9-bin\apache-maven-3.3.9/bin"/>
+    <property name="HUDSON_HOME" value="C:\Users\christine.m.v.olalo\.jenkins"/>
+    <property name="PATH+MAVEN" value="C:\Apache Maven\apache-maven-3.3.9/bin"/>
     <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
-    <property name="BUILD_URL" value="http://localhost:8080/job/Maven-test/22/"/>
+    <property name="BUILD_URL" value="http://localhost:8080/job/maven-test/1/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="os.arch" value="amd64"/>
     <property name="SystemRoot" value="C:\windows"/>
     <property name="windows_tracing_flags" value="3"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_112\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
-    <property name="user.dir" value="C:\Users\mary.l.l.dela.torre\Desktop\repo\original_repo\goschedule\v1"/>
-    <property name="JOB_URL" value="http://localhost:8080/job/Maven-test/"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
+    <property name="user.dir" value="C:\Users\christine.m.v.olalo\workspace\goschedule\v1"/>
+    <property name="JOB_URL" value="http://localhost:8080/job/maven-test/"/>
     <property name="USERDOMAIN" value="DIR"/>
     <property name="line.separator" value="
 "/>
-    <property name="MAVEN_HOME" value="C:\Users\mary.l.l.dela.torre\apache-maven-3.3.9-bin\apache-maven-3.3.9"/>
+    <property name="MAVEN_HOME" value="C:\Apache Maven\apache-maven-3.3.9"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="BUILD_NUMBER" value="22"/>
-    <property name="BASE" value="C:\Users\mary.l.l.dela.torre\.jenkins"/>
-    <property name="ANDROID_HOME" value="C:\Users\mary.l.l.dela.torre\AppData\Local\Android\sdk"/>
+    <property name="BUILD_NUMBER" value="1"/>
+    <property name="BASE" value="C:\Users\christine.m.v.olalo\.jenkins"/>
+    <property name="ANDROID_HOME" value="C:\Users\christine.m.v.olalo\AppData\Local\Android\Sdk"/>
     <property name="JENKINS_URL" value="http://localhost:8080/"/>
     <property name="PROCESSOR_REVISION" value="3001"/>
     <property name="UATDATA" value="C:\windows\SysWOW64\CCM\UATData\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77"/>
@@ -133,14 +123,96 @@
     <property name="windir" value="C:\windows"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="SystemDrive" value="C:"/>
-    <property name="maven3.interceptor" value="C:\Users\mary.l.l.dela.torre\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven33-interceptor-1.8.1.jar"/>
-    <property name="WORKSPACE" value="C:\Users\mary.l.l.dela.torre\.jenkins\workspace\Maven-test"/>
-    <property name="maven3.interceptor.common" value="C:\Users\mary.l.l.dela.torre\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.8.1.jar"/>
-    <property name="WINSW_EXECUTABLE" value="C:\Users\mary.l.l.dela.torre\.jenkins\jenkins.exe"/>
+    <property name="maven3.interceptor" value="C:\Users\christine.m.v.olalo\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven33-interceptor-1.8.1.jar"/>
+    <property name="WORKSPACE" value="C:\Users\christine.m.v.olalo\.jenkins\workspace\maven-test"/>
+    <property name="maven3.interceptor.common" value="C:\Users\christine.m.v.olalo\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.8.1.jar"/>
+    <property name="WINSW_EXECUTABLE" value="C:\Users\christine.m.v.olalo\.jenkins\jenkins.exe"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="PSModulePath" value="C:\windows\system32\WindowsPowerShell\v1.0\Modules\"/>
     <property name="BUILD_CAUSE" value="UPSTREAMTRIGGER"/>
   </properties>
-  <testcase classname="appium.TestNG_testcases" name="Login_Complete" time="59.02"/>
-  <testcase classname="appium.TestNG_testcases" name="File_leave_Complete" time="34.853"/>
+  <testcase classname="appium.TestNG_testcases" name="createAppiumDriver" time="5.474">
+    <failure message="A new session could not be created. (Original error: Bad app: C:\Users\mary.l.l.dela.torre\.jenkins\workspace\goschedule1\build\outputs\apk\goschedule1-release.apk. App paths need to be absolute, or relative to the appium server install dir, or a URL to compressed file, or a special app name. cause: Error: Error locating the app: ENOENT, stat &apos;C:\Users\mary.l.l.dela.torre\.jenkins\workspace\goschedule1\build\outputs\apk\goschedule1-release.apk&apos;) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 669 milliseconds
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;ETDB510P6BP-D&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Bad app: C:\Users\mary.l.l.dela.torre\.jenkins\workspace\goschedule1\build\outputs\apk\goschedule1-release.apk. App paths need to be absolute, or relative to the appium server install dir, or a URL to compressed file, or a special app name. cause: Error: Error locating the app: ENOENT, stat &apos;C:\Users\mary.l.l.dela.torre\.jenkins\workspace\goschedule1\build\outputs\apk\goschedule1-release.apk&apos;) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 669 milliseconds
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;ETDB510P6BP-D&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:161)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:170)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:82)
+	at appium.AppiumDriverBase.createAppiumDriver(AppiumDriverBase.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:656)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@5680a178
+</system-out>
+  </testcase>
+  <testcase classname="appium.TestNG_testcases" name="Login_Complete" time="0.024">
+    <skipped/>
+  </testcase>
+  <testcase classname="appium.TestNG_testcases" name="File_leave_Complete" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="appium.TestNG_testcases" name="Update_Leave_Complete" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="appium.TestNG_testcases" name="Approve_Leave_Complete" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="appium.TestNG_testcases" name="Check_Leave" time="0.006">
+    <skipped/>
+  </testcase>
+  <testcase classname="appium.TestNG_testcases" name="Find_Leave" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="appium.TestNG_testcases" name="afterTest" time="0">
+    <skipped/>
+  </testcase>
 </testsuite>

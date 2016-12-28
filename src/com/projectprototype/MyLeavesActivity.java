@@ -137,6 +137,7 @@ public class MyLeavesActivity extends ListActivity implements AdapterView.OnItem
         String checker = finalLeave[0];
 
         intent.putExtra("name", name);
+
         intent.putExtra("date", date);
         intent.putExtra("type", type);
         intent.putExtra("backup", backup);
@@ -150,6 +151,7 @@ public class MyLeavesActivity extends ListActivity implements AdapterView.OnItem
 
 
     }
+
 
     @Override
     protected void onDestroy() {

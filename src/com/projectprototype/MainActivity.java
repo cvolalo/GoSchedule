@@ -402,14 +402,7 @@ public class MainActivity extends AppCompatActivity {
 			MainActivity.this.startActivity(mainIntent);
 		}
 
-		if (id == R.id.leaves) {
 
-			Intent mainIntent = new Intent(MainActivity.this, ApproveLeaveActivity.class);
-			MainActivity.this.startActivity(mainIntent);
-
-
-
-		}
 
 		if (id == R.id.reset) {
 
