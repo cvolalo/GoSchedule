@@ -394,6 +394,15 @@ public class MainActivity extends AppCompatActivity {
 
 		}
 
+		if (id == R.id.leaves) {
+
+			Intent mainIntent = new Intent(MainActivity.this, ApproveLeaveActivity.class);
+			MainActivity.this.startActivity(mainIntent);
+
+
+
+		}
+
 		if (id == R.id.search) {
 
 			Intent mainIntent = new Intent(MainActivity.this, SearchEIDActivity.class);
