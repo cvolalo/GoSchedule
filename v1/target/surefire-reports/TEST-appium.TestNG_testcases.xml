@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="1" name="appium.TestNG_testcases" time="115.953" errors="0" skipped="0">
+<testsuite tests="6" failures="2" name="appium.TestNG_testcases" time="123.237" errors="0" skipped="0">
   <properties>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="JOB_NAME" value="Maven-test"/>
+    <property name="JOB_NAME" value="Functional_Test"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="windows_tracing_logfile" value="C:\BVTBin\Tests\installpackage\csilogfile.log"/>
     <property name="NUMBER_OF_PROCESSORS" value="2"/>
@@ -13,7 +13,7 @@
     <property name="POM_ARTIFACTID" value="v1"/>
     <property name="os.name" value="Windows 7"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_112\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_112\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_112\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_112\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_112\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_112\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_112\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_112\jre\classes"/>
-    <property name="EXECUTOR_NUMBER" value="1"/>
+    <property name="EXECUTOR_NUMBER" value="0"/>
     <property name="sun.desktop" value="windows"/>
     <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
     <property name="M2HOME" value="C:\Users\mary.l.l.dela.torre\apache-maven-3.3.9-bin\apache-maven-3.3.9"/>
@@ -31,9 +31,9 @@
     <property name="ProgramFiles" value="C:\Program Files"/>
     <property name="NodeJS" value="C:\Program Files\nodejs"/>
     <property name="user.language" value="en"/>
-    <property name="JOB_BASE_NAME" value="Maven-test"/>
+    <property name="JOB_BASE_NAME" value="Functional_Test"/>
     <property name="M2" value="C:\Users\mary.l.l.dela.torre\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin"/>
-    <property name="BUILD_DISPLAY_NAME" value="#25"/>
+    <property name="BUILD_DISPLAY_NAME" value="#38"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_112\jre\bin"/>
     <property name="BUILD_CAUSE_UPSTREAMTRIGGER" value="true"/>
     <property name="LOCALAPPDATA" value="C:\windows\system32\config\systemprofile\AppData\Local"/>
@@ -44,7 +44,7 @@
     <property name="sun.arch.data.model" value="64"/>
     <property name="NODE_NAME" value="master"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_112\jre\lib\endorsed"/>
-    <property name="BUILD_ID" value="25"/>
+    <property name="BUILD_ID" value="38"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="file.encoding.pkg" value="sun.io"/>
@@ -78,7 +78,7 @@
     <property name="VBOX_MSI_INSTALL_PATH" value="C:\Program Files\Oracle\VirtualBox\"/>
     <property name="user.home" value="C:\windows\system32\config\systemprofile"/>
     <property name="PUBLIC" value="C:\Users\Public"/>
-    <property name="BUILD_TAG" value="jenkins-Maven-test-25"/>
+    <property name="BUILD_TAG" value="jenkins-Functional_Test-38"/>
     <property name="JENKINS_SERVER_COOKIE" value="19834694905b785f"/>
     <property name="HUDSON_URL" value="http://localhost:8080/"/>
     <property name="ProgramData" value="C:\ProgramData"/>
@@ -93,14 +93,14 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="maven.home" value="C:\Users\mary.l.l.dela.torre\apache-maven-3.3.9-bin\apache-maven-3.3.9"/>
     <property name="java.class.path" value="C:\Users\mary.l.l.dela.torre\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven33-agent-1.8.1.jar;C:\Users\mary.l.l.dela.torre\apache-maven-3.3.9-bin\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;C:\Users\mary.l.l.dela.torre\apache-maven-3.3.9-bin\apache-maven-3.3.9/conf/logging"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven33Main C:\Users\mary.l.l.dela.torre\apache-maven-3.3.9-bin\apache-maven-3.3.9 C:\Users\mary.l.l.dela.torre\.jenkins\war\WEB-INF\lib\remoting-2.62.jar C:\Users\mary.l.l.dela.torre\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven33-interceptor-1.8.1.jar C:\Users\mary.l.l.dela.torre\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.8.1.jar 63554"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven33Main C:\Users\mary.l.l.dela.torre\apache-maven-3.3.9-bin\apache-maven-3.3.9 C:\Users\mary.l.l.dela.torre\.jenkins\war\WEB-INF\lib\remoting-2.62.jar C:\Users\mary.l.l.dela.torre\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven33-interceptor-1.8.1.jar C:\Users\mary.l.l.dela.torre\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.8.1.jar 55379"/>
     <property name="Path" value="C:\Program Files\Java\jdk1.8.0_112\bin;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files (x86)\Symantec\VIP Access Client\;C:\HashiCorp\Vagrant\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Brackets\command;C:\Program Files\Android\Android Studio\gradle\gradle-2.14.1\bin;%ANDROID_HOME%\platform-tools;%ANDROID_HOME%\tools;C:\Users\mary.l.l.dela.torre\AppData\Local\Android\sdk\platform-tools;C:\Users\mary.l.l.dela.torre\AppData\Local\Android\sdk\tools;C:\Program Files\nodejs;C:\Program Files (x86)\nodejs\;C:\Users\mary.l.l.dela.torre\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;C:\Program Files (x86)\Appium\node_modules\appium\bin\;C:\Users\mary.l.l.dela.torre\AppData\Local\Android\sdk\build-tools\23.0.1;"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="PROCESSOR_ARCHITECTURE" value="AMD64"/>
     <property name="PATH+JDK" value="C:\Program Files\Java\jdk1.8.0_112/bin"/>
     <property name="PROCESSOR_IDENTIFIER" value="AMD64 Family 21 Model 48 Stepping 1, AuthenticAMD"/>
     <property name="java.vm.specification.version" value="1.8"/>
-    <property name="CUSTOM_WORKSPACE" value="C:\Users\mary.l.l.dela.torre\.jenkins\workspace\goschedule1 "/>
+    <property name="CUSTOM_WORKSPACE" value="C:\Users\mary.l.l.dela.torre\.jenkins\workspace\Build Application "/>
     <property name="sun.os.patch.level" value="Service Pack 1"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="M2_HOME" value="C:\Users\mary.l.l.dela.torre\apache-maven-3.3.9-bin\apache-maven-3.3.9"/>
@@ -109,7 +109,7 @@
     <property name="HUDSON_HOME" value="C:\Users\mary.l.l.dela.torre\.jenkins"/>
     <property name="PATH+MAVEN" value="C:\Users\mary.l.l.dela.torre\apache-maven-3.3.9-bin\apache-maven-3.3.9/bin"/>
     <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
-    <property name="BUILD_URL" value="http://localhost:8080/job/Maven-test/25/"/>
+    <property name="BUILD_URL" value="http://localhost:8080/job/Functional_Test/38/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="os.arch" value="amd64"/>
@@ -117,13 +117,13 @@
     <property name="windows_tracing_flags" value="3"/>
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_112\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
     <property name="user.dir" value="C:\Users\mary.l.l.dela.torre\Desktop\repo\original_repo\goschedule\v1"/>
-    <property name="JOB_URL" value="http://localhost:8080/job/Maven-test/"/>
+    <property name="JOB_URL" value="http://localhost:8080/job/Functional_Test/"/>
     <property name="USERDOMAIN" value="DIR"/>
     <property name="line.separator" value="
 "/>
     <property name="MAVEN_HOME" value="C:\Users\mary.l.l.dela.torre\apache-maven-3.3.9-bin\apache-maven-3.3.9"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="BUILD_NUMBER" value="25"/>
+    <property name="BUILD_NUMBER" value="38"/>
     <property name="BASE" value="C:\Users\mary.l.l.dela.torre\.jenkins"/>
     <property name="ANDROID_HOME" value="C:\Users\mary.l.l.dela.torre\AppData\Local\Android\sdk"/>
     <property name="JENKINS_URL" value="http://localhost:8080/"/>
@@ -134,35 +134,34 @@
     <property name="file.encoding" value="Cp1252"/>
     <property name="SystemDrive" value="C:"/>
     <property name="maven3.interceptor" value="C:\Users\mary.l.l.dela.torre\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven33-interceptor-1.8.1.jar"/>
-    <property name="WORKSPACE" value="C:\Users\mary.l.l.dela.torre\.jenkins\workspace\Maven-test"/>
+    <property name="WORKSPACE" value="C:\Users\mary.l.l.dela.torre\.jenkins\workspace\Functional_Test"/>
     <property name="maven3.interceptor.common" value="C:\Users\mary.l.l.dela.torre\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.8.1.jar"/>
     <property name="WINSW_EXECUTABLE" value="C:\Users\mary.l.l.dela.torre\.jenkins\jenkins.exe"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="PSModulePath" value="C:\windows\system32\WindowsPowerShell\v1.0\Modules\"/>
     <property name="BUILD_CAUSE" value="UPSTREAMTRIGGER"/>
   </properties>
-  <testcase classname="appium.TestNG_testcases" name="Login_Complete" time="21.324"/>
-  <testcase classname="appium.TestNG_testcases" name="File_leave_Complete" time="32.712"/>
-  <testcase classname="appium.TestNG_testcases" name="Update_Leave_Complete" time="30.562"/>
-  <testcase classname="appium.TestNG_testcases" name="Approve_Leave_Complete" time="8.171"/>
-  <testcase classname="appium.TestNG_testcases" name="Check_Leave" time="7.618"/>
-  <testcase classname="appium.TestNG_testcases" name="Find_Leave" time="15.566">
+  <testcase classname="appium.TestNG_testcases" name="Login_Complete" time="19.382"/>
+  <testcase classname="appium.TestNG_testcases" name="File_leave_Complete" time="35.259"/>
+  <testcase classname="appium.TestNG_testcases" name="Update_Leave_Complete" time="32.754"/>
+  <testcase classname="appium.TestNG_testcases" name="Approve_Leave_Complete" time="7.757"/>
+  <testcase classname="appium.TestNG_testcases" name="Check_Leave" time="15.525">
     <failure message="An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 12.15 seconds
+Command duration or timeout: 12.44 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;ETDB-510P66T-D&apos;, ip: &apos;10.202.212.24&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_112&apos;
+System info: host: &apos;ETDB-510P66T-D&apos;, ip: &apos;10.202.212.62&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_112&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{app=C:\Users\mary.l.l.dela.torre\.jenkins\workspace\goschedule1\build\outputs\apk\goschedule1-release.apk, appPackage=com.projectprototype, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=emulator-5554, platform=ANDROID, appActivity=com.projectprototype.SplashActivity, desired={app=C:\Users\mary.l.l.dela.torre\.jenkins\workspace\goschedule1\build\outputs\apk\goschedule1-release.apk, appPackage=com.projectprototype, appActivity=com.projectprototype.SplashActivity, platformVersion=4.4.2, browserName=Android, platformName=Android, deviceName=emulator-5554, platform=ANDROID}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: ab0878b1-07e3-421b-9ba1-705c733a4d06
+Session ID: 20298e81-d268-49a5-84bb-77a9dce031f8
 *** Element info: {Using=id, value=ListMyLeave}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 12.15 seconds
+Command duration or timeout: 12.44 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;ETDB-510P66T-D&apos;, ip: &apos;10.202.212.24&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_112&apos;
+System info: host: &apos;ETDB-510P66T-D&apos;, ip: &apos;10.202.212.62&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_112&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{app=C:\Users\mary.l.l.dela.torre\.jenkins\workspace\goschedule1\build\outputs\apk\goschedule1-release.apk, appPackage=com.projectprototype, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=emulator-5554, platform=ANDROID, appActivity=com.projectprototype.SplashActivity, desired={app=C:\Users\mary.l.l.dela.torre\.jenkins\workspace\goschedule1\build\outputs\apk\goschedule1-release.apk, appPackage=com.projectprototype, appActivity=com.projectprototype.SplashActivity, platformVersion=4.4.2, browserName=Android, platformName=Android, deviceName=emulator-5554, platform=ANDROID}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: ab0878b1-07e3-421b-9ba1-705c733a4d06
+Session ID: 20298e81-d268-49a5-84bb-77a9dce031f8
 *** Element info: {Using=id, value=ListMyLeave}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -184,7 +183,48 @@ Session ID: ab0878b1-07e3-421b-9ba1-705c733a4d06
 	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
 	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at appium.TestNG_testcases.Find_Leave(TestNG_testcases.java:119)
+	at appium.TestNG_testcases.Check_Leave(TestNG_testcases.java:107)
+</failure>
+  </testcase>
+  <testcase classname="appium.TestNG_testcases" name="Find_Leave" time="12.56">
+    <failure message="An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12.57 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;ETDB-510P66T-D&apos;, ip: &apos;10.202.212.62&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_112&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=C:\Users\mary.l.l.dela.torre\.jenkins\workspace\goschedule1\build\outputs\apk\goschedule1-release.apk, appPackage=com.projectprototype, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=emulator-5554, platform=ANDROID, appActivity=com.projectprototype.SplashActivity, desired={app=C:\Users\mary.l.l.dela.torre\.jenkins\workspace\goschedule1\build\outputs\apk\goschedule1-release.apk, appPackage=com.projectprototype, appActivity=com.projectprototype.SplashActivity, platformVersion=4.4.2, browserName=Android, platformName=Android, deviceName=emulator-5554, platform=ANDROID}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 20298e81-d268-49a5-84bb-77a9dce031f8
+*** Element info: {Using=name, value=More options}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12.57 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;ETDB-510P66T-D&apos;, ip: &apos;10.202.212.62&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_112&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=C:\Users\mary.l.l.dela.torre\.jenkins\workspace\goschedule1\build\outputs\apk\goschedule1-release.apk, appPackage=com.projectprototype, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=emulator-5554, platform=ANDROID, appActivity=com.projectprototype.SplashActivity, desired={app=C:\Users\mary.l.l.dela.torre\.jenkins\workspace\goschedule1\build\outputs\apk\goschedule1-release.apk, appPackage=com.projectprototype, appActivity=com.projectprototype.SplashActivity, platformVersion=4.4.2, browserName=Android, platformName=Android, deviceName=emulator-5554, platform=ANDROID}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 20298e81-d268-49a5-84bb-77a9dce031f8
+*** Element info: {Using=name, value=More options}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:421)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByName(DefaultGenericMobileDriver.java:102)
+	at io.appium.java_client.AppiumDriver.findElementByName(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByName(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByName.findElement(By.java:300)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at appium.TestNG_testcases.Find_Leave(TestNG_testcases.java:116)
 </failure>
   </testcase>
 </testsuite>

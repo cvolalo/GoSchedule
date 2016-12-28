@@ -12,6 +12,7 @@
         <methods>
           <include name="createAppiumDriver"/>
           <include name="afterTest"/>
+          <include name="Check_Leave"/>
           <include name="Find_Leave"/>
         </methods>
       </class> <!-- appium.TestNG_testcases -->
