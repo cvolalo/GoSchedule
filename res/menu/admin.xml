@@ -16,17 +16,15 @@
         android:icon="@drawable/ic_search"
         app:showAsAction="ifRoom"/>
 
+
+
     <item
         android:id="@+id/myleaves"
         android:orderInCategory="100"
         android:title="@string/myleaves"
         app:showAsAction="never"/>
 
-    <item
-        android:id="@+id/leaves"
-        android:orderInCategory="100"
-        android:title="Filed Leaves"
-        app:showAsAction="never"/>
+
 
     <item
         android:id="@+id/reset"
