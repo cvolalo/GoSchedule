@@ -35,10 +35,10 @@ public class AppiumDriverBase {
    //relative path to apk file
    //final File classpathRoot = new File(System.getProperty("user.dir"));
    //final File appDir = new File(classpathRoot, "src/test/resources/apps/");
-   //final File appDir = new File("C:/Users/mary.l.l.dela.torre/.jenkins/workspace/Build Application/build/outputs/apk/");
-   final File appDir = new File("C:/Users/mary.l.l.dela.torre/Desktop/repo/original_repo/goschedule/");
-   //final File app = new File(appDir, "Build Application-release.apk");
-   final File app = new File(appDir, "goschedule-release.apk");
+   final File appDir = new File("C:/Users/mary.l.l.dela.torre/.jenkins/workspace/Build Application/build/outputs/apk/");
+   //final File appDir = new File("C:/Users/mary.l.l.dela.torre/Desktop/repo/original_repo/goschedule/");
+   final File app = new File(appDir, "Build Application-release.apk");
+   //final File app = new File(appDir, "goschedule-release.apk");
 
    //setting up desired capability
    DesiredCapabilities caps = new DesiredCapabilities();
