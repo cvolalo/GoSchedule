@@ -1,6 +1,5 @@
 package appium;
  
-import io.appium.java_client.MobileBy;
 
 import java.io.File;
 import java.io.IOException;
@@ -17,14 +16,11 @@ import org.testng.annotations.Test;
 
 public class TestNG_testcases extends AppiumDriverBase{
 	 
-    //Test Annotation changes any java function to TestNG test case
-    
-    //insert login and file_leave here
-	
 	@Test (priority=1)
     public void Login_Complete() {
   	  driver.findElement(By.id("loginEmail")).sendKeys("mary.l.l.dela.torre");
   	  driver.findElement(By.id("loginPassword")).sendKeys("qwerty");
+  	  takeScreenShot();
   	  driver.findElement(By.name("Login")).click();
   	  driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
 	  System.out.println("--------Login Complete!--------");
@@ -83,35 +79,36 @@ public class TestNG_testcases extends AppiumDriverBase{
     @Test (priority=4)
     //Click on More Options
   	  public void Approve_Leave_Complete() {
+    	//Start of Approve Leave
     	driver.findElement(By.name("More options")).click();
     	driver.findElement(By.name("Filed Leaves")).click();
     	driver.findElement(By.id("ListMyLeave")).click();
     	driver.findElement(By.name("Ok")).click();
     	driver.findElement(By.name("APPROVED")).click();
+    	takeScreenShot();
     	driver.findElement(By.id("ListMyLeave"));
+    	System.out.println("--------Approved Leave!--------");
     	driver.findElement(By.name("BACK")).click();
     }
 	@Test (priority=5)
     //Click on More Options
   	  public void Check_Leave() {
-    	driver.findElement(By.name("More options")).click();
-    	driver.findElement(By.name("Filed Leaves")).click();
-    	driver.findElement(By.id("ListMyLeave")).click();
-    	driver.findElement(By.name("Ok")).click();
-    	driver.findElement(By.name("APPROVED")).click();
-    	driver.findElement(By.id("ListMyLeave"));
-    	driver.findElement(By.name("BACK")).click();
+		//Start of Check Leave
+		driver.findElement(By.name("29")).click();
+	  	takeScreenShot();
+	  	driver.findElement(By.name("BACK")).click();
+	  	System.out.println("--------Viewed Leave by Day View!--------");
     }
 	@Test (priority=6)
-    //Click on More Options
-  	  public void Find_Leave() {
-    	driver.findElement(By.name("More options")).click();
-    	driver.findElement(By.name("Filed Leaves")).click();
-    	driver.findElement(By.id("ListMyLeave")).click();
-    	driver.findElement(By.name("Ok")).click();
-    	driver.findElement(By.name("APPROVED")).click();
-    	driver.findElement(By.id("ListMyLeave"));
-    	driver.findElement(By.name("BACK")).click();
+  	  public void Search_Leave() {
+		//Start of Search Leave
+    	driver.findElement(By.name("Search")).click();
+    	driver.findElement(By.name("Enter EID")).sendKeys("mary.l.l.dela.torre");
+    	takeScreenShot();
+    	driver.findElement(By.name("Search")).click();
+    	takeScreenShot();
+    	System.out.println("--------Leave Searched!--------");
+    	driver.findElement(By.name("Cancel")).click();
     }
     public void takeScreenShot() {
     	  

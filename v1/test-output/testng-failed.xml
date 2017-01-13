@@ -6,16 +6,4 @@
       <class name="appium.TestNG_testcases"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="appium.TestNG_testcases">
-        <methods>
-          <include name="createAppiumDriver"/>
-          <include name="afterTest"/>
-          <include name="Check_Leave"/>
-          <include name="Find_Leave"/>
-        </methods>
-      </class> <!-- appium.TestNG_testcases -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
