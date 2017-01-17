@@ -34,8 +34,8 @@ public class TestNG_testcases extends AppiumDriverBase{
 
   	  // Enter Date
   	  driver.findElement(By.id("leaveDate")).click();
-  	  ((WebElement) driver.findElements(By.xpath("//android.widget.NumberPicker")).get(0)).sendKeys("Dec");
-  	  ((WebElement) driver.findElements(By.xpath("//android.widget.NumberPicker")).get(1)).sendKeys("25");
+  	  ((WebElement) driver.findElements(By.xpath("//android.widget.NumberPicker")).get(0)).sendKeys("Jan");
+  	  ((WebElement) driver.findElements(By.xpath("//android.widget.NumberPicker")).get(1)).sendKeys("13");
   	  driver.findElement(By.name("Done")).click();
   	  
   	  // Enter Leave Type
