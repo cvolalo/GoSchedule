@@ -23,7 +23,7 @@ public class TestNG_testcases extends AppiumDriverBase{
   	  takeScreenShot();
   	  driver.findElement(By.name("Login")).click();
   	  driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
-	  logger.log("--------Login Complete!--------");
+	  System.out.println("--------Login Complete!--------");
   	  takeScreenShot();
   	 }
     
@@ -47,7 +47,7 @@ public class TestNG_testcases extends AppiumDriverBase{
   	  
   	  //Submit Button
   	  driver.findElement(By.name("Submit")).click();
-  	  logger.log("--------Leave Added!--------");
+  	  System.out.println("--------Leave Added!--------");
   	  takeScreenShot();
   	 }
     
@@ -73,7 +73,7 @@ public class TestNG_testcases extends AppiumDriverBase{
       	driver.findElement(By.name("UPDATE")).click();
       	driver.findElement(By.id("myleavestext"));
       	driver.findElement(By.name("BACK")).click();
-      	logger.log("--------Updated Leave!--------");
+      	System.out.println("--------Updated Leave!--------");
     	takeScreenShot();
     }
     @Test (priority=4)
@@ -87,7 +87,7 @@ public class TestNG_testcases extends AppiumDriverBase{
     	driver.findElement(By.name("APPROVED")).click();
     	takeScreenShot();
     	driver.findElement(By.id("ListMyLeave"));
-    	logger.log("--------Approved Leave!--------");
+    	System.out.println("--------Approved Leave!--------");
     	driver.findElement(By.name("BACK")).click();
     }
 	@Test (priority=5)
@@ -97,7 +97,7 @@ public class TestNG_testcases extends AppiumDriverBase{
 		driver.findElement(By.name("29")).click();
 	  	takeScreenShot();
 	  	driver.findElement(By.name("BACK")).click();
-	  	logger.log("--------Viewed Leave by Day View!--------");
+	  	System.out.println("--------Viewed Leave by Day View!--------");
     }
 	@Test (priority=6)
   	  public void Search_Leave() {
@@ -107,7 +107,7 @@ public class TestNG_testcases extends AppiumDriverBase{
     	takeScreenShot();
     	driver.findElement(By.name("Search")).click();
     	takeScreenShot();
-    	logger.log("--------Leave Searched!--------");
+    	System.out.println("--------Leave Searched!--------");
     	driver.findElement(By.name("Cancel")).click();
     }
     public void takeScreenShot() {
