@@ -23,12 +23,12 @@ public class TestNG_testcases extends AppiumDriverBase{
   	  takeScreenShot();
   	  driver.findElement(By.name("Login")).click();
   	  driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
-	  System.out.println("--------Login Complete!--------");
+	  logger.log("--------Login Complete!--------");
   	  takeScreenShot();
   	 }
     
     @Test (priority=2)
-      //Click on File Leave button
+      //Click on File Leave button, 1 screenshot
   	  public void File_leave_Complete() {  	  	  
   	  driver.findElement(By.name("File Leave")).click();
 
@@ -47,13 +47,13 @@ public class TestNG_testcases extends AppiumDriverBase{
   	  
   	  //Submit Button
   	  driver.findElement(By.name("Submit")).click();
-  	  System.out.println("--------Leave Added!--------");
+  	  logger.log("--------Leave Added!--------");
   	  takeScreenShot();
   	 }
     
 	
     @Test (priority=3)
-  //Click on More Options
+  //Click on More Options, 1 screenshot
 	  public void Update_Leave_Complete() {
     	  
   	    //start of update_leave
@@ -73,11 +73,11 @@ public class TestNG_testcases extends AppiumDriverBase{
       	driver.findElement(By.name("UPDATE")).click();
       	driver.findElement(By.id("myleavestext"));
       	driver.findElement(By.name("BACK")).click();
-      	System.out.println("--------Updated Leave!--------");
+      	logger.log("--------Updated Leave!--------");
     	takeScreenShot();
     }
     @Test (priority=4)
-    //Click on More Options
+    //Click on More Options, 1 screenshot
   	  public void Approve_Leave_Complete() {
     	//Start of Approve Leave
     	driver.findElement(By.name("More options")).click();
@@ -87,27 +87,27 @@ public class TestNG_testcases extends AppiumDriverBase{
     	driver.findElement(By.name("APPROVED")).click();
     	takeScreenShot();
     	driver.findElement(By.id("ListMyLeave"));
-    	System.out.println("--------Approved Leave!--------");
+    	logger.log("--------Approved Leave!--------");
     	driver.findElement(By.name("BACK")).click();
     }
 	@Test (priority=5)
-    //Click on More Options
+    //Click on More Options, 1 screenshot
   	  public void Check_Leave() {
 		//Start of Check Leave
 		driver.findElement(By.name("29")).click();
 	  	takeScreenShot();
 	  	driver.findElement(By.name("BACK")).click();
-	  	System.out.println("--------Viewed Leave by Day View!--------");
+	  	logger.log("--------Viewed Leave by Day View!--------");
     }
 	@Test (priority=6)
   	  public void Search_Leave() {
-		//Start of Search Leave
+		//Start of Search Leave, 1 screenshot
     	driver.findElement(By.name("Search")).click();
     	driver.findElement(By.name("Enter EID")).sendKeys("mary.l.l.dela.torre");
     	takeScreenShot();
     	driver.findElement(By.name("Search")).click();
     	takeScreenShot();
-    	System.out.println("--------Leave Searched!--------");
+    	logger.log("--------Leave Searched!--------");
     	driver.findElement(By.name("Cancel")).click();
     }
     public void takeScreenShot() {
@@ -116,7 +116,7 @@ public class TestNG_testcases extends AppiumDriverBase{
 		  destDir = "screenshots";
 		  // Capture screenshot.
 		  File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		  // Set date format to set It as screenshot file name.
+		  
 		  dateFormat = new SimpleDateFormat("dd-MMM-yyyy__hh_mm_ssaa");
 		  // Create folder under project with name "screenshots" provided to destDir.
 		  new File(destDir).mkdirs();

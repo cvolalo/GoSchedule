@@ -3,18 +3,17 @@ package appium;
 import io.appium.java_client.android.AndroidDriver;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+
+
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.io.FileUtils;
+
 import org.openqa.selenium.Dimension;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
@@ -33,12 +32,12 @@ public class AppiumDriverBase {
    protected void createAppiumDriver() throws MalformedURLException, InterruptedException {
 
    //relative path to apk file
-   //final File classpathRoot = new File(System.getProperty("user.dir"));
+   
    //final File appDir = new File(classpathRoot, "src/test/resources/apps/");
    final File appDir = new File("C:/Users/mary.l.l.dela.torre/.jenkins/workspace/Build Application/build/outputs/apk/");
-   //final File appDir = new File("C:/Users/mary.l.l.dela.torre/Desktop/repo/New Folder/goschedule/");
+   
    final File app = new File(appDir, "Build Application-release.apk");
-   //final File app = new File(appDir, "goschedule-release.apk");
+   
 
    //setting up desired capability
    DesiredCapabilities caps = new DesiredCapabilities();
@@ -51,6 +50,7 @@ public class AppiumDriverBase {
    caps.setCapability("appActivity", "com.projectprototype.SplashActivity");
 
    //initializing driver object
+
    driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), caps);
    driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
