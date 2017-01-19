@@ -36,7 +36,7 @@ public class AppiumDriverBase {
    //final File appDir = new File(classpathRoot, "src/test/resources/apps/");
    final File appDir = new File("C:/Program Files (x86)/Jenkins/workspace/Build_Application/");
    
-   final File app = new File(appDir, "goschedule-release.apk");
+   final File app = new File(appDir, "Build_Application-release.apk");
    
 
    //setting up desired capability
