@@ -36,8 +36,8 @@ keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
 android {
     lintOptions {
-        abortOnError false
-    } 
+        checkReleaseBuilds false
+    } 
     signingConfigs {
         config {
             keyAlias keystoreProperties['keyAlias']
