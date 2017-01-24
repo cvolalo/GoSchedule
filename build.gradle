@@ -35,9 +35,10 @@ def keystoreProperties = new Properties()
 keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
 android {
-    lintOptions {
-        checkReleaseBuilds false
-    } 
+	lintOptions{
+	    checkReleaseBuilds false
+		}
+		
     signingConfigs {
         config {
             keyAlias keystoreProperties['keyAlias']
