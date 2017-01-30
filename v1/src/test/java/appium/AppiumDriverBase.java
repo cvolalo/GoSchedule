@@ -34,7 +34,7 @@ public class AppiumDriverBase {
    //relative path to apk file
    
    //final File appDir = new File(classpathRoot, "src/test/resources/apps/");
-   final File appDir = new File("C:/Program Files (x86)/Jenkins/workspace/Build_Application/build/outputs/apk/");
+   final File appDir = new File("C:/jenkins/workspace/Devops/Goschedule/Build_Application/build/outputs/apk/");
    
    final File app = new File(appDir, "Build_Application-release.apk");
    

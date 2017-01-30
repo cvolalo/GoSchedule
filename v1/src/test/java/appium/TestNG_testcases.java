@@ -34,8 +34,8 @@ public class TestNG_testcases extends AppiumDriverBase{
 
   	  // Enter Date
   	  driver.findElement(By.id("leaveDate")).click();
-  	  ((WebElement) driver.findElements(By.xpath("//android.widget.NumberPicker")).get(0)).sendKeys("Jan");
-  	  ((WebElement) driver.findElements(By.xpath("//android.widget.NumberPicker")).get(1)).sendKeys("13");
+  	  ((WebElement) driver.findElements(By.xpath("//android.widget.NumberPicker")).get(0)).sendKeys("Feb");
+  	  ((WebElement) driver.findElements(By.xpath("//android.widget.NumberPicker")).get(1)).sendKeys("14");
   	  driver.findElement(By.name("Done")).click();
   	  
   	  // Enter Leave Type
@@ -61,11 +61,11 @@ public class TestNG_testcases extends AppiumDriverBase{
     	driver.findElement(By.name("My Leaves")).click();
     	driver.findElement(By.id("ListMyLeave")).click();
     	driver.findElement(By.id("editleaveDate")).click();
-    	((WebElement) driver.findElements(By.xpath("//android.widget.NumberPicker")).get(1)).sendKeys("29");
+    	((WebElement) driver.findElements(By.xpath("//android.widget.NumberPicker")).get(1)).sendKeys("28");
     	driver.findElement(By.name("Done")).click();
     	// Enter Leave Type
     	driver.findElement(By.id("editleaveType")).click();
-    	driver.findElement(By.name("Emergency Leave")).click();
+    	driver.findElement(By.name("Vacation Leave")).click();
     	  
     	// Enter Backup Resource
       	driver.findElement(By.id("editleaveBackUp")).sendKeys("another.backup.resource");
